@@ -20,7 +20,7 @@
 % Choose pra, prb, prc, prd, pre, prl, prstab, prstper, or rmp for journal
 %  Add 'draft' option to mark overfull boxes with black boxes
 %  Add 'showkeys' option to make keywords appear
-\documentclass[aps,pre,preprint,groupedaddress]{revtex4-2}
+\documentclass[aps,pre,preprint,groupedaddress,showkeys]{revtex4-2}
 %\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-2}
 %\documentclass[aps,prl,reprint,groupedaddress]{revtex4-2}
 
@@ -46,7 +46,6 @@
 % Use the 'preprintnumbers' class option to override journal defaults
 % to display numbers if necessary
 
-
 %Title of paper
 \title{Disturbed STW part}
 
@@ -61,7 +60,10 @@
 % other information
 % \affiliation can be followed by \email, \homepage, \thanks as well.
 \author{Yo Kanno}
+\email{kanno@email.address}
+
 \author{Mie Ichihara}
+\email{ichihara@eri.u-tokyo.ac.jp}
 
 %\email[]{Your e-mail address}
 %\homepage[]{Your web page}
@@ -79,13 +81,15 @@
 \date{\today}
 \begin{abstract}
 % insert abstract here
-Studying the physics of experiments using common materials to simulate geological processes frequently provides novel ideas and insight that can be applied to natural phenomena.
-In this study, a physical system of a laboratory experiment that is assumed to be mathematically equivalent to volcanic eruption systems and its behaviors and physical processes are investigated.
-This study aims to obtain through a laboratory experiment such new insight and ideas that it would be difficult to find directly from field observation and mathematical modeling of volcanic systems.
+We study experimentally the sawtooth wave-like pressure changes associated with flow pattern transitions in a pipe-chamber system. 
+Due to the coupling of elastic capacitance and non-linear pressure drop in the pipe, the characteristic pressure waveforms are observed. 
+For a given fluid concentration, at a constant flow rate and chamber volume, pressure cycles are disturbed spontaneously. 
+We report a modulation of the pressure waveform through experimental parameter: gas flux into the chamber and volume of the chamber. 
+We point out the effect of surface disturbance of downward flow.
 \end{abstract}
 
 % insert suggested keywords - APS authors don't need to do this
-\keywords{Suggested keywords}
+\keywords{Laboratory experiment, Sawtooth waveform, Dynamical system, Flow-induced oscillation, Lumped parameter model, Educational outreach experiment}
 
 %\maketitle must follow title, authors, abstract, and keywords
 \maketitle
@@ -99,7 +103,21 @@ It is well-established that volcanoes are sources of infrasound, defined as acou
 %\section{\label{}}
 
 
-\section{Experimental setup}\label{setup}
+\section{Experimental method}\label{met}
+\subsection{Experimental setup}\label{setup}
+The experimental system comprised a chamber and pipe, where a constant gas flux was maintained in the chamber, and the gas–liquid flow in the pipe. 
+The chamber, pipe, and connecting-joint were constructed using acrylic glass to ensure rigidity and enable direct observations. 
+The chamber was partially filled with water to adjust the compressible gas volume ($V_\mathrm{c}$) (Fig. 2, blue part at the bottom of the chamber). 
+$V_\mathrm{c}$ is maintained at a constant value during each experimental run.
+Gas flux into the chamber ($Q_\mathrm{in}$) was regulated by a micro needle valve (IBS FMNV2) that ensured a constant gas flux of between m3/s. 
+We used sugar syrup diluted in distilled water as the liquid phase. The liquid behaved as a Newtonian fluid, and we measured its viscosity using a BOHLIN CVO Rheometer, and adjusted it to 1 Pa･s at the experimental temperature of 25 °C. Injected gas flowed through the pipe and forced the liquid residing in the pipe upward, resulting in gas–liquid flow within the pipe.
+A pressure sensor (KISTLER 701A with a 5011A charge amplifier) was installed to measure pressure changes in the chamber, and a microphone (Bruel \& Kjaer 4193+2669L with a Nexus 2690 signal conditioner) was mounted to the top of the pipe. Data were sampled at 10 kHz using a PC-based data acquisition system (DEWETRON DEWE-211).
+A high-speed black-and-white camera (Photoron FASTCAM Mini) was synchronized with the data acquisition PC and was focused on the lowermost 200 mm of the pipe, where gas–liquid flow occurred. The field of view was illuminated by a flat backlight source. We used a pale-color syrup so as to improve the visibility of the liquid phase against the gas phase and the pipe. Dark areas were thus shaded according to the thickness of the liquid across the pipe. We used the resulting distribution of light intensity to observe flow patterns.
+The controlled experimental parameters were $V_\mathrm{c}$, $Q_\mathrm{in}$, and the amount of syrup in the pipe; as defined by the initial syrup height $H_\mathrm{s}$. These parameters were fixed during each experimental run. 
+We conducted 143 runs in total, during which the parameters varied from m3/s for $Q_\mathrm{in}$, 20 to 157 cm3 for $V_\mathrm{c}$, and 60 to 150 mm for $H_\mathrm{s}$. 
+Data were recorded from the beginning of each run for at least 20 pressure cycles.
+
+
 
 \section{Result}\label{res}
 \subsection{Signals at bursting}
@@ -107,17 +125,7 @@ It is well-established that volcanoes are sources of infrasound, defined as acou
 \section{Mechanics}\label{mec}
 
 \begin{eqnarray}
-\chi_+(p)\alt{\bf [}2|{\bf p}|(|{\bf p}|+p_z){\bf ]}^{-1/2}
-\left(
-\begin{array}{c}
-|{\bf p}|+p_z\\
-px+ip_y
-\end{array}\right)\;,
-\\
-\left\{%
- \openone234567890abc123\alpha\beta\gamma\delta1234556\alpha\beta
- \frac{1\sum^{a}_{b}}{A^2}%
-\right\}%
+a+b=c
 \label{eq:one}.
 \end{eqnarray}
 Note the open one in Eq.~(\ref{eq:one}).
@@ -202,13 +210,13 @@ automatically numbered.}
 
 % Specify following sections are appendices. Use \appendix* if there
 % only one appendix.
-%\appendix
-%\section{}
+\appendix
+\section{Here is an appendix}
 
 % If you have acknowledgments, this puts in the proper section head.
-%\begin{acknowledgments}
-% put your acknowledgments here.
-%\end{acknowledgments}
+\begin{acknowledgments}
+ put your acknowledgments here, Thank you!
+\end{acknowledgments}
 
 % Create the reference section using BibTeX:
 \bibliography{basename of .bib file}

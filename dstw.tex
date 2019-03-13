@@ -32,6 +32,8 @@
 
 \draft % marks overfull lines with a black rule on the right
 
+\usepackage{graphicx}% Include figure files
+
 \usepackage[mathlines]{lineno}% Enable numbering of text and display math
 \modulolinenumbers[1]% Line numbers with a gap of 5 lines
 \linenumbers\relax % Commence numbering lines
@@ -83,7 +85,7 @@ This study aims to obtain through a laboratory experiment such new insight and i
 \end{abstract}
 
 % insert suggested keywords - APS authors don't need to do this
-%\keywords{}
+\keywords{Suggested keywords}
 
 %\maketitle must follow title, authors, abstract, and keywords
 \maketitle
@@ -103,6 +105,28 @@ It is well-established that volcanoes are sources of infrasound, defined as acou
 \subsection{Signals at bursting}
 
 \section{Mechanics}\label{mec}
+
+\begin{eqnarray}
+\chi_+(p)\alt{\bf [}2|{\bf p}|(|{\bf p}|+p_z){\bf ]}^{-1/2}
+\left(
+\begin{array}{c}
+|{\bf p}|+p_z\\
+px+ip_y
+\end{array}\right)\;,
+\\
+\left\{%
+ \openone234567890abc123\alpha\beta\gamma\delta1234556\alpha\beta
+ \frac{1\sum^{a}_{b}}{A^2}%
+\right\}%
+\label{eq:one}.
+\end{eqnarray}
+Note the open one in Eq.~(\ref{eq:one}).
+
+\begin{figure}
+\includegraphics{fig_1}% Here is how to import EPS art
+\caption{\label{fig:epsart} A figure caption. The figure captions are
+automatically numbered.}
+\end{figure}
 
 \section{Discussion}\label{mec}
 

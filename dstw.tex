@@ -38,6 +38,8 @@
 \modulolinenumbers[1]% Line numbers with a gap of 5 lines
 \linenumbers\relax % Commence numbering lines
 
+\usepackage{siunitx}
+
 \begin{document}
 
 % Use the \preprint command to place your local institutional report
@@ -97,32 +99,70 @@ Through image analyses, we point out the effect of surface disturbance of downwa
 % body of paper here - Use proper section commands
 % References should be done using the \cite, \ref, and \label commands
 \section{Introduction}\label{intro}
-It is well-established that volcanoes are sources of infrasound, defined as acoustic, or sound, waves below 20 Hz.
-\cite{kanno2018} did experiments.
-% Put \label in argument of \section for cross-referencing
-%\section{\label{}}
+Sawtooth wave-like signals can be found in nature, everyday's life to large-scale natural phenomena. 
+For instance, the sawtooth waves are the most common waveforms used to create sounds with music synthesizers.
 
 
 \section{Experimental method}\label{met}
 \subsection{Experimental setup}\label{setup}
-The experimental system comprised a chamber and pipe, where a constant gas flux was maintained in the chamber, and the gas–liquid flow in the pipe. 
+The experimental system comprised a chamber and pipe, where a constant gas flux ($Q_\mathrm{in}$) was maintained in the chamber, and the gas-liquid flow in the pipe. 
 The chamber, pipe, and connecting-joint were constructed using acrylic glass to ensure rigidity and enable direct observations. 
-The chamber was partially filled with water to adjust the compressible gas volume ($V_\mathrm{c}$) (Fig. 2, blue part at the bottom of the chamber). 
-$V_\mathrm{c}$ is maintained at a constant value during each experimental run.
-Gas flux into the chamber ($Q_\mathrm{in}$) was regulated by a micro needle valve (IBS FMNV2) that ensured a constant gas flux of between m3/s. 
-We used sugar syrup diluted in distilled water as the liquid phase. The liquid behaved as a Newtonian fluid, and we measured its viscosity using a BOHLIN CVO Rheometer, and adjusted it to 1 Pa･s at the experimental temperature of 25 °C. Injected gas flowed through the pipe and forced the liquid residing in the pipe upward, resulting in gas–liquid flow within the pipe.
-A pressure sensor (KISTLER 701A with a 5011A charge amplifier) was installed to measure pressure changes in the chamber, and a microphone (Bruel \& Kjaer 4193+2669L with a Nexus 2690 signal conditioner) was mounted to the top of the pipe. Data were sampled at 10 kHz using a PC-based data acquisition system (DEWETRON DEWE-211).
-A high-speed black-and-white camera (Photoron FASTCAM Mini) was synchronized with the data acquisition PC and was focused on the lowermost 200 mm of the pipe, where gas–liquid flow occurred. The field of view was illuminated by a flat backlight source. We used a pale-color syrup so as to improve the visibility of the liquid phase against the gas phase and the pipe. Dark areas were thus shaded according to the thickness of the liquid across the pipe. We used the resulting distribution of light intensity to observe flow patterns.
-The controlled experimental parameters were $V_\mathrm{c}$, $Q_\mathrm{in}$, and the amount of syrup in the pipe; as defined by the initial syrup height $H_\mathrm{s}$. These parameters were fixed during each experimental run. 
-We conducted 143 runs in total, during which the parameters varied from m3/s for $Q_\mathrm{in}$, 20 to 157 cm3 for $V_\mathrm{c}$, and 60 to 150 mm for $H_\mathrm{s}$. 
-Data were recorded from the beginning of each run for at least 20 pressure cycles.
+The compressible gas volume in the chamber ($V_\mathrm{c}$) is maintained at a constant value during each experimental run.
+$Q_\mathrm{in}$ was regulated by a microneedle valve (IBS FMNV2) that ensured a constant gas flux of between \SI{1}{\m^3 / \s}. 
+We used sugar syrup diluted in distilled water as the liquid phase. 
+The liquid behaved as a Newtonian fluid, and we measured its viscosity using a BOHLIN CVO Rheometer and adjusted it to \SI{1}{\Pa \s} at the experimental temperature of \SI{25}{\degreeCelsius}. 
+Injected gas flowed through the pipe and forced the liquid residing in the pipe upward, resulting in gas-liquid flow within the pipe.
+A pressure sensor (KISTLER 701A with a 5011A charge amplifier) was installed to measure pressure changes in the chamber, and a microphone (Br\"uel-Kj\ae r 4193+2669L with a Nexus 2690 signal conditioner) was mounted to the top of the pipe. Data were sampled at \SI{10}{kHz} using a PC-based data acquisition system (DEWETRON DEWE-211).
+A high-speed black-and-white camera (Photoron FASTCAM Mini) was synchronized with the data acquisition PC and was focused on the lowermost \SI{200}{\mm} of the pipe, where gas-liquid flow occurred.
+The field of view was illuminated by a flat backlight source. We used a pale-color syrup to improve the visibility of the liquid phase against the gas phase and the pipe. 
+Dark areas were thus shaded according to the thickness of the liquid across the pipe. 
+We used the resulting distribution of light intensity to observe flow patterns.
+The controlled experimental parameters were $V_\mathrm{c}$, $Q_\mathrm{in}$, and the amount of syrup in the pipe; as defined by the initial syrup height $H_\mathrm{s}$. 
+These parameters were fixed during each experimental run. 
+We conducted 143 runs in total, during which the parameters varied from m3/s for $Q_\mathrm{in}$, 20 to \SI{157} {\cm^3} for $V_\mathrm{c}$, and 60 to \SI{150}{\mm} for $H_\mathrm{s}$.
+
+\subsection{Image Analyses method}\label{ime}
+The thickness of the downward film flow and the position of the liquid slug were analyzed using image analysis.
 
 
 
 \section{Result}\label{res}
-\subsection{Signals at bursting}
+\subsection{Characteristic pressure changes in the chamber}
+
+\subsection{Flow characteristic}
+%作成した流動画像に対して, 画像解析を用いて液スラグ部分を抽出することによって, 各液スラグの位置, 速度, 長さを推定する (\S \ref{ime}). 
+The position, velocity, and length of each liquid slug were estimated by extracting the liquid slug part using image analyses on the created flow image (\S \ref{ime}).
+%この解析結果を用いて, 液スラグ再生成位置と, 液スラグ速度-液膜流厚みの関係を解析する.
+Using these results, the relationship between the liquid slug reconstruction position and the liquid slug velocity-downward film flow thickness were analyzed.
+
+%Unimodal STWや Small fluctuation 発生時には, 液スラグ再生成はパイプ下端で, ほぼ一定間隔で発生していたが, Disturbed STWでは, 液膜流領域内でも液スラグ再生成が発生していた.
+Under the unimodal STW and small fluctuation conditions, liquid slug reconstruction was generated at a substantially constant interval at the lower end of the pipe, but in Disturbed STW conditions, liquid slug reconstruction was also generated in the downward film flow region.
+%液スラグの再生成位置が, 特徴的圧力波形の違いによってどのように分布しているかを, Fig. \ref{Repsite} に示す. 
+%Unimodal STW 発生時には, ほぼ全ての液スラグが決まった位置 (パイプ下端) で再生成する. 一方で, Disturbed STWは, スラグ再生成の位置にばらつきがある. 
+
+%パイプの途中で液スラグが再生成するとき, その原因となった液膜流擾乱は, 比較的液膜流厚みが大きい擾乱になっている (Fig. \ref{DistimVSpre}, \ref{TrimimVSpre}). 
+%また, 流動画像によれば, 液スラグの速度が速い時には, その直下の液膜流厚みが厚く, 液スラグがゆっくり動くときには薄くなっている. この関係を画像解析を用いて定量的に抽出する.
+
+%映像を取得した全ての実験結果に対して, 液スラグ下端の移動速度と, 液スラグ下端直下の液膜流厚みの関係を Fig. \ref{RDKall} に示す. 以下, 液膜流厚みを $h_f$ とする.
+%この結果から, 液スラグの移動速度が小さい (大きい) と, その直下の$h_f$が小さい (大きい) ことがわかる.
+%この結果によれば, 速度が大きくなり, 液スラグの直上の$h_f$よりも, 直下の$h_f$が大きくなれば, 液スラグに流入する液相よりも排出される液相が多くなると考えられる. 
+%すなわち, 液スラグが液膜流上端に達する前に, 液スラグ長さが小さくなっていくことが示唆される.
+
+%それぞれの特徴的圧力波形において, 液スラグ直下の液膜流厚み頻度分布計算した結果を Fig. \ref{RDKhist} に示す. 
+%この結果, Uniodal STWでは, 液膜流の厚みがほぼ均一である一方で, Distubed STWでは液膜流の厚み分布にばらつきがあり, より厚い液膜流擾乱が発生している.
+
 
 \section{Mechanics}\label{mec}
+\subsection{STW waveforms}
+The generation mechanism of STW waveform and its generation condition has been examined based on a simple mathematical model.
+
+
+\subsection{Effective viscosity changes}
+
+\section{Discussion}\label{mec}
+
+\section{Conclusion}\label{con}
+
 
 \begin{eqnarray}
 a+b=c
@@ -132,13 +172,9 @@ Note the open one in Eq.~(\ref{eq:one}).
 
 \begin{figure}
 \includegraphics{fig_1}% Here is how to import EPS art
-\caption{\label{fig:epsart} A figure caption. The figure captions are
-automatically numbered.}
+\caption{\label{fig:epsart} A figure caption. The figure captions are automatically numbered.}
 \end{figure}
 
-\section{Discussion}\label{mec}
-
-\section{Conclusion}\label{con}
 
 % If in two-column mode, this environment will change to single-column
 % format so that long equations can be displayed. Use

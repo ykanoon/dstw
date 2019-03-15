@@ -40,6 +40,7 @@
 
 \usepackage{siunitx}
 
+
 \begin{document}
 % Use the \preprint command to place your local institutional report
 % number in the upper righthand corner of the title page in preprint mode.
@@ -124,19 +125,77 @@ We conducted 143 runs in total, during which the parameters varied from m3/s for
 The thickness of the downward film flow and the position of the liquid slug were analyzed using image analysis.
 
 %Fig. \ref{Rbottom} に, ある時間, ある高さにおけるパイプ画像水平方向断面の暗度分布を示す.  
-
+Fig. \ref{Rbottom} shows the darkness distribution of the horizontal cross section of a pipe image at a certain height for a certain time.
 %パイプ中心に気体が存在する部分 (ガススラグ, 詳細は \S \ref{flowinpipe}) では, パイプ領域内に二つピークが存在し, 管内壁の液膜 (液膜流, 詳細は \S \ref{flowinpipe}) の厚みが薄くなるほどこの二つのピーク間の幅は大きくなる. 
-%この暗度分布は, 使用した水あめには食紅を用いて薄く色づけを行っているため, バックライトからの光は液部分を通る光路長によって決まっていると考えられる. 
+In the part where gas exists at the center of the pipe, there are two peaks in the pipe area, and as the thickness of the liquid film on the inner wall of the pipe becomes thinner, the width between these two peaks becomes larger.
 %空気, 水あめ, アクリルの屈折率をそれぞれ1, 1.44 (島津製作所, \url{https://www.shimadzu.co.jp/opt/products/ref/ref-app05.html}), 1.49 (島津製作所, \url{https://www.shimadzu.co.jp/opt/products/ref/ref-app03.html}) とした上で, 空気, アクリル部分, 及び色付けした水あめ領域を通過する光路長に比例して光が吸収され, 暗くなると考えた. 
+Assuming that the refractive indices of air, liquid, and acrylics are 1, 1.44, and 1.49, respectively, it was thought that light was absorbed and darkened in proportion to the optical path length passing through the air, the liquid, and the acrylic part.
 %カメラへ到達した光が, どのような光路で空気, アクリルパイプ, 液部分を通過して, バックライトの平面光源から到達したのかを, スネルの法則を用いて見積もると, Fig. \ref{raytraseDk} のようになる. 
-%ただし, 光が空気及びアクリル部分を通過する際にも, 距離に比例して光が吸収されるとし, 水あめ領域を通過するときには, 空気及びアクリル領域に比べて光を3倍吸収すると考えた. 
-%仮定する吸収率によって暗度分布が多少異なるが, 暗度のピーク位置には影響を及ぼさない. 
+Using Snell's law, the light paths from the flat backlighting source reaching the camera has passed through the air, the acrylic pipe and the liquid parts are calculated as shown in Fig. \ref{raytraseDk}.
+%ただし, 光が空気及びアクリル部分を通過する際にも, 距離に比例して光が吸収されるとし, 水あめ領域を通過するときには, 空気及びアクリル領域に比べて光を3倍吸収すると考えた.
+When light passed through the air and acrylic part, it was assumed that the light is absorbed in proportion to the distance, and when passing through the liquid parts, it was considered to absorb three times the light compared to the air and acrylic area.
+%仮定する吸収率によって暗度分布が多少異なるが, 暗度のピーク位置には影響を及ぼさない.
+Although the darkness distribution differs somewhat depending on the assumed absorption factor, it does not affect the peak positions of the darkness distributions.
 %実験画像と同様に, パイプ中心に気体がある場合は二つの暗度ピークがみられ, 液膜の厚さが小さくなるほど, ピーク間の幅は大きくなる. 
-%そこで, 暗度ピーク間の幅とパイプ内径の比を実験画像と計算で比較し, パイプ各高さで液膜流厚みを推定する. 一方, 明瞭な暗度のピークが見られない断面は, 液体で満たされた部分 (液スラグ, 詳細は \S \ref{flowinpipe})と判定する.
+As a result of the calculation, as in the experimental results, when there was gas part at the pipe center, two darkness peaks are seen, and the smaller the thickness of the liquid film, the larger the width between the peaks.
+%そこで, 暗度ピーク間の幅とパイプ内径の比を実験画像と計算で比較し, パイプ各高さで液膜流厚みを推定する. 
+%一方, 明瞭な暗度のピークが見られない断面は, 液体で満たされた部分 (液スラグ, 詳細は \S \ref{flowinpipe})と判定する.
+Therefore, the width between the darkness peaks and the ratio of the inner and outer diameter of the pipe are compared with the experimental image and calculation to estimate the actual thickness of the downward film flow at each height of the pipe.
+On the other hand, the cross section where no clear peak of the darkness was judged to be the part filled with liquid.
+
+\subsection{Flow image}\label{flowim}
+%撮影したビデオ映像の各ビデオフレームにおいて, 高さ方向の液膜流厚み分布を推定する. 
+The thickness distribution of downward film flow in the height direction was estimated at each video frame.
+%この結果を幅 1ピクセルの画像として, 時間順に水平方向に連結し, 流動画像を作成する. 
+These results as a 1-pixel-wide image were connected horizontally in time order to create a flow image.
+%流動画像の例を Fig. \ref{UnimslugimageAn}a, \ref{UnimimVSpre} に示す (詳細は \S \ref{PandF}で後述). 
+An example of the flow image is shown in Fig. \ref{UnimslugimageAn}a, \ref{UnimimVSpre}. 
+%赤い部分は, 暗度ピークが不明瞭な領域であり, 液スラグ部分に対応している. 
+The red parts are the area where the dark peaks are unclear and correspond to the ascending liquid slug part while orange to blue part represent downward film flow.
+%また, オレンジ色から青色の領域は, 液膜流の厚みを表しており, 液膜流は流下しているため, 全体に右下がりの陰になっている. 
+
+%作成した流動画像から, 閾値処理によって画像の二値化を行い, 液スラグ領域のピクセルに 1を, それ以外に 0を割り当てる. 
+The created flow image was binarized by thresholding, and 1 was assigned to pixels in the liquid slug area and 0 was assigned to others.
+%ある液スラグ領域のピクセルに対して, 上下左右の近傍8点のうち, どれかが 1であれば, 同じ液スラグ領域であると判定する, 8点近傍連結を用いて, それぞれの液スラグごとにその画像領域をラベリングし, それぞれの液スラグの挙動を追跡した. 
+For any pixel in a liquid slug area, if any one of the eight points in the upper, lower, left, and right areas is 1, it was determined that there is the liquid slug area was the same. 
+The image area was labeled and the behavior of each liquid slug was traced.
+%二値化および領域のラベリング処理には, MATLAB の Image Processing Toolbox (imagesegmenter) を用いた. 
+MATLAB's Image Processing Toolbox (images segmenter) were used for binarization and region labeling.
 
 
 \section{Result}\label{res}
 \subsection{Characteristic pressure changes in the chamber}
+
+%パラメータ $Q_\mathrm{in}$, $V_\mathrm{c}$ の値によって計測された様々な特徴的圧力波形と, パイプ内流れの詳細な解析結果を示す. 
+The various characteristic pressure waveforms measured by the values of the parameters $Q_\mathrm{in}$ and $V_ \mathrm{c}$ and detailed analysis results of the flow in the pipe are shown in following part.
+
+\subsubsection{Unimodal STW}
+%Fig. \ref{ResultPhaseD}内, $\diamondsuit$ で示した実験パラメータにおいて, 一定の時間幅を持ったノコギリ波状の圧力変動が発生した (Fig. \ref{PplotEx}a).
+In the experimental parameters shown as $\diamondsuit$  in Fig. \ref{ResultPhaseD}, sawtooth wave-like pressure change with a fixed time interval was generated (Fig. \ref{PplotEx}a).
+%本研究では, ゆっくりとしたチャンバー圧力の増圧に続いて, 圧力が -5 kPa/s より速く減少し, かつ, 後述する流動様式の遷移が発生するような急減圧が発生した場合, STWが発生したと定義する. 
+In this study, the term of STW will be used if the pressure decreases more rapidly than -5 kPa/s following the gradual pressure increase, which causes the flow mode transition described later.
+%チャンバー圧力波形の, 急減圧発生から次の急減圧までの時間 ($\Delta t$) をSTW時間幅とし,そのヒストグラムを Fig. \ref{histogramall}a に示す. 
+The time ($\Delta t$) from the onset of the abrupt pressure drop to the next pressure drop of the chamber pressure waveform was taken as the STW time width and the histogram is shown in Fig. \ref {histogramall}a.
+%この時, STW時間幅のヒストグラムは Unimodal な分布となることから, この圧力波形を Unimodal STWとする. Unimodal STW は, \cite{kanno2018} で報告した Periodic STWに対応している.
+Let this pressure waveform be the unimodal STW since the histogram of the STW time width became a unimodal distribution.
+The Unimodal STW corresponds to the Periodic STW reported at previous study \citep{kanno2018}.
+%本研究では, 過去の実験に比べて, より大きい $Q_\mathrm{in}$ まで実験を行なった結果, 後述するように, STW波形により多くのバリエーションを見出したため, 特徴的波形の分類を細分化している.
+The classification of characteristic waveforms was subdivided since more variations than the previous study were found in the STW waveform as a result of experimenting to larger $Q_ \mathrm{in}$ than past experiments.
+%パイプ内流れとの対応関係は, \S \ref{PandF} でまとめて示す.
+The correspondence with the flow pattern in the pipe will be summarized in \S \ref{PandF}.
+
+\subsubsection{Small Fluctuation}
+Unimodal STW の発生領域よりもより小さい $Q_\mathrm{in}$, $V_\mathrm{c}$ 下では (Fig. \ref{ResultPhaseD}, ×), STWの発生が見られず, 圧力の Small fluctuation が発生した (Fig. \ref{PplotEx}b)  これは, \cite{kanno2018} で報告した Non-STW に対応している. 圧力波形のスペクトルにおけるピーク周波数から推定した振動周期は 5 - 10 秒程度で, STW 発生時よりもやや短く, 振幅が小さいことが特徴である \cite[Fig. 4]{kanno2018}.
+
+\subsubsection{Disturbed STW}
+Unimodal STW 発生領域よりも大きい $Q_\mathrm{in}$ の条件(Fig. \ref{ResultPhaseD}, ◯) では, 圧力波形は STWの特徴を持っているものの, 周期が一定ではない圧力振動パターンが発生する (Fig. \ref{PplotEx}c). この時の STW時間幅ヒストグラムは, Fig. \ref{histogramall}c で示すように, Unimodal STWと比べてばらつきを持って分布していることから, この特徴的圧力波形を, Disturbed STWとする.
+$Q_\mathrm{in}$ がやや大きい領域 (Fig. \ref{ResultPhaseD}, ☆) では, Unimodal パターン (Fig. \ref{PplotEx}d, $t=0\sim10$, $45\sim85$ s) と Bimodal パターン (Fig. \ref{PplotEx}d, $t=10\sim45$, $85\sim100$ s)を持つ STWサイクルが交互に出現する (Fig. \ref{PplotEx}d). ヒストグラムは, Trimodal な分布になっているため, 以下, この圧力波形を Trimodal STWとする (Fig. \ref{histogramall}e). それぞれのピークは Unimodal STWに比較してばらつきを持って分布しているため, Trimodal STWも Disturbed STWの一種であると分類する. Disturbed STW発生時の波形は, $\Delta t$ が大きいほど, STW各サイクルの圧力振幅 ($\Delta P_c$) が大きくなっている (Fig. \ref{histogramall}d, f).
+
+\subsubsection{Unimodal-HQ STW, n-Type cycle}
+Disturbed STWが発生する領域よりもさらに $Q_\mathrm{in}$ を大きくすると, 再び Unimodal STWが発生する (Fig. \ref{ResultPhaseD}, ▽, \ref{PplotEx}e). この時の特徴的波形を Unimodal-HQ STWとする. また, $V_\mathrm{c}$ が小さいが, $Q_\mathrm{in}$ が Disturbed STWと同程度の条件 (Fig. \ref{ResultPhaseD}, △) では, 急激な圧力現象が一定周期で発生するが, STWに特徴的なゆっくりとした増圧過程は見られず, "n" のような形をしたチャンバー圧力サイクルが繰り返される (Fig. \ref{PplotEx}f). このパラメータ下の振動を, n-Type cycle と呼び, Unimodal STWとは区別する. 
+
+
+
 
 \subsection{Flow characteristic}
 %作成した流動画像に対して, 画像解析を用いて液スラグ部分を抽出することによって, 各液スラグの位置, 速度, 長さを推定する (\S \ref{ime}). 

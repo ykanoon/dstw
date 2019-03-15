@@ -123,6 +123,16 @@ We conducted 143 runs in total, during which the parameters varied from m3/s for
 \subsection{Image Analyses method}\label{ime}
 The thickness of the downward film flow and the position of the liquid slug were analyzed using image analysis.
 
+%Fig. \ref{Rbottom} に, ある時間, ある高さにおけるパイプ画像水平方向断面の暗度分布を示す.  
+
+%パイプ中心に気体が存在する部分 (ガススラグ, 詳細は \S \ref{flowinpipe}) では, パイプ領域内に二つピークが存在し, 管内壁の液膜 (液膜流, 詳細は \S \ref{flowinpipe}) の厚みが薄くなるほどこの二つのピーク間の幅は大きくなる. 
+%この暗度分布は, 使用した水あめには食紅を用いて薄く色づけを行っているため, バックライトからの光は液部分を通る光路長によって決まっていると考えられる. 
+%空気, 水あめ, アクリルの屈折率をそれぞれ1, 1.44 (島津製作所, \url{https://www.shimadzu.co.jp/opt/products/ref/ref-app05.html}), 1.49 (島津製作所, \url{https://www.shimadzu.co.jp/opt/products/ref/ref-app03.html}) とした上で, 空気, アクリル部分, 及び色付けした水あめ領域を通過する光路長に比例して光が吸収され, 暗くなると考えた. 
+%カメラへ到達した光が, どのような光路で空気, アクリルパイプ, 液部分を通過して, バックライトの平面光源から到達したのかを, スネルの法則を用いて見積もると, Fig. \ref{raytraseDk} のようになる. 
+%ただし, 光が空気及びアクリル部分を通過する際にも, 距離に比例して光が吸収されるとし, 水あめ領域を通過するときには, 空気及びアクリル領域に比べて光を3倍吸収すると考えた. 
+%仮定する吸収率によって暗度分布が多少異なるが, 暗度のピーク位置には影響を及ぼさない. 
+%実験画像と同様に, パイプ中心に気体がある場合は二つの暗度ピークがみられ, 液膜の厚さが小さくなるほど, ピーク間の幅は大きくなる. 
+%そこで, 暗度ピーク間の幅とパイプ内径の比を実験画像と計算で比較し, パイプ各高さで液膜流厚みを推定する. 一方, 明瞭な暗度のピークが見られない断面は, 液体で満たされた部分 (液スラグ, 詳細は \S \ref{flowinpipe})と判定する.
 
 
 \section{Result}\label{res}
@@ -137,18 +147,32 @@ Using these results, the relationship between the liquid slug reconstruction pos
 %Unimodal STWや Small fluctuation 発生時には, 液スラグ再生成はパイプ下端で, ほぼ一定間隔で発生していたが, Disturbed STWでは, 液膜流領域内でも液スラグ再生成が発生していた.
 Under the unimodal STW and small fluctuation conditions, liquid slug reconstruction was generated at a substantially constant interval at the lower end of the pipe, but in Disturbed STW conditions, liquid slug reconstruction was also generated in the downward film flow region.
 %液スラグの再生成位置が, 特徴的圧力波形の違いによってどのように分布しているかを, Fig. \ref{Repsite} に示す. 
+Fig. \ref{Repsite} shows how the reconstruction positions of the liquid slug were distributed due to the difference in the characteristic pressure waveform.
 %Unimodal STW 発生時には, ほぼ全ての液スラグが決まった位置 (パイプ下端) で再生成する. 一方で, Disturbed STWは, スラグ再生成の位置にばらつきがある. 
-
+Under the Unimodal STW conditions, almost all the liquid slug was reconstructed at a fixed position: pipe bottom.
+On the other hand, there was variation in the position of slug reconstruction position under the Disturbed STW conditions (hereafter termed halfway reconstruction).
 %パイプの途中で液スラグが再生成するとき, その原因となった液膜流擾乱は, 比較的液膜流厚みが大きい擾乱になっている (Fig. \ref{DistimVSpre}, \ref{TrimimVSpre}). 
+Surface disturbance of downward film flow was relatively large when halfway reconstruction occurred.
 %また, 流動画像によれば, 液スラグの速度が速い時には, その直下の液膜流厚みが厚く, 液スラグがゆっくり動くときには薄くなっている. この関係を画像解析を用いて定量的に抽出する.
+Also, according to the flow image, when the velocity of the liquid slag is large, the thickness of the downward film flow immediately below it was thick, and it becomes thin when the liquid slug moving slowly.
+This relationship was extracted quantitatively using image analyses.
 
 %映像を取得した全ての実験結果に対して, 液スラグ下端の移動速度と, 液スラグ下端直下の液膜流厚みの関係を Fig. \ref{RDKall} に示す. 以下, 液膜流厚みを $h_f$ とする.
+The relationship between the moving velocity at the lower end of the liquid slug and the thickness of the downward film flow immediately below the lower end of the liquid slug is shown in Fig.  for all the experimental results for which flow images were acquired.
+In the following, let the thickness of liquid film flow be $h_f$.
 %この結果から, 液スラグの移動速度が小さい (大きい) と, その直下の$h_f$が小さい (大きい) ことがわかる.
+From this result, it was obtained that $h_f$ immediately below the liquid slug was small (large) if the moving speed is small (large).
 %この結果によれば, 速度が大きくなり, 液スラグの直上の$h_f$よりも, 直下の$h_f$が大きくなれば, 液スラグに流入する液相よりも排出される液相が多くなると考えられる. 
+When the velocity increased and $h_f$ below the liquid slug became larger than $h_f$ above the liquid slug, it is thought that the amount of liquid phase discharged is greater than the liquid phase flowing into the liquid slug.
 %すなわち, 液スラグが液膜流上端に達する前に, 液スラグ長さが小さくなっていくことが示唆される.
+That is, it is suggested that the length of the liquid slug becomes smaller before the liquid slug reaches the upper end of the downward film flow.
+
 
 %それぞれの特徴的圧力波形において, 液スラグ直下の液膜流厚み頻度分布計算した結果を Fig. \ref{RDKhist} に示す. 
+For each characteristic pressure waveform, Fig. \ref{RDKhist} shows the calculated results of the thickness distribution of the downward film flow immediately below the liquid slug.
 %この結果, Uniodal STWでは, 液膜流の厚みがほぼ均一である一方で, Distubed STWでは液膜流の厚み分布にばらつきがあり, より厚い液膜流擾乱が発生している.
+As a result, under the Unimodal STW conditions, the thickness of the liquid film flow is almost uniform, but in the Disturbed STW conditions, the thickness distribution of the downward film flow is uneven, and thicker surface disturbance occurs.
+
 
 
 \section{Mechanics}\label{mec}

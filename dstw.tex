@@ -397,6 +397,154 @@ Also, at $ R_p <1 $, the effect of decreasing the pressure loss in the pipe and 
 In the following, first, in the domain of $ R_p> 1 $, the differences of waveforms depending on $Q_ \mathrm{in}$ are examined.
 
 
+\subsubsection{The Unimodal STW conditions}
+%数理モデルの検討結果を踏まえた上で, Unimodal STWの発生条件を検討する. Unimodal STWが発生している時, STWの一サイクルには複数の液スラグが発生している (Fig. \ref{UnimimVSpre}). 
+Based on the results of examination of mathematical models, the conditions of Unimodal STW are examined.
+When Unimodal STW occurs, multiple liquid slugs are generated in one cycle of STW (Fig. \ref{UnimimVSpre}).
+%すなわち, パイプ下端における液スラグ再生成時間間隔 ($\Delta t_r$) と, 液スラグの上昇時間, すなわち液スラグが再生成し上昇を始めてから, 破裂するまでの時間 ($\Delta t_a$) を比較すると, $\Delta t_r < \Delta t_a$ となっている (Fig. \ref{UnimimVSpre}, Fig. \ref{ascendpattern}a).
+It is $ \Delta t_r <\Delta t_a $ (Fig. \ref{UnimimVSpre}, Fig. \ref{ascendpattern} a), where the liquid slug reconstruction time interval at the lower end of the pipe is $ \Delta t_r $, and the rising time of the liquid slug, that is, the time from the reconstruction of the liquid slug to start rising to the burst is $ \Delta t_a$. 
+
+%再上部の液スラグは, やがて液膜流上端に達すると, 液スラグ上部からの液相の流入がなくなることで, 長さが短くなっていき, 破裂する (Fig. \ref{UnimimVSpre}). 
+%この時, 最上部の液スラグが破裂することで, 流れの実効粘性 (液スラグ長さ) が急減し, 流れがさらに加速する. 
+%ここで, Unimodal STWが発生する領域では, $R_p$ が大きい (概ね $R_p>1$に対応) ため, すぐにはチャンバーの圧力が下がらない (Fig. \ref{ResultPhaseD}, 点線). 
+When the uppermost liquid slug eventually reaches the upper end of the film flow, the inflow of the liquid phase from the upper part of the liquid slug disappears, and the length shortens and ruptures.
+At this time, the rupture of the topmost liquid slug sharply reduces the effective viscosity of the flow (that is liquid slug length) and further accelerates the flow.
+Here, in the region where the unimodal STW occurs, the pressure of the chamber does not immediately decrease because $ R_p $ is large.
+%Fig. \ref{UnimimVSpre} によれば, 後に続く液スラグは液膜流の上端に達する前に破裂している. 後続の液スラグの加速及び液膜流内での破裂は, \cite{kanno2018} のモデルでは説明できない. 
+%本研究で行った画像解析によれば, 液スラグ直下の $h_f$ は, 液スラグの移動速度に依存する (Fig. \ref{RDKall}). 
+According to Fig. \ref{UnimimVSpre}, the subsequent liquid slugs burst before they reached the top of the film flow.
+Subsequent acceleration of the liquid slug and rupture in the film flow cannot be explained by the \cite{kanno 2018} model.
+According to the image analyses conducted in this study, $ h_f $ just below the liquid slug depends on the moving speed of the liquid slug (Fig. \ref{RDKall}).
+
+%Fig. \ref{SlugAnalysisTime2} に, $V_\mathrm{c} = 122$ cm$^3$, $Q_\mathrm{in} = 0.6$ cm$^3$/s 下のUnimodal STWが発生している際のスラグ上昇速度の例を示す. 
+%液スラグ破裂前 ($t<$ 21.5 s), すべての液スラグはほぼ一定速度 (約 0.03 m/s) で上昇しているが, 最上部の液スラグが割れた直後から, 後に続く液スラグが加速し始め, 破裂直前には 0.18 m/s 程度の速度で上昇している. このとき, 後に続く液スラグの上昇速度は, 最上端液スラグ破裂直前の速度 (約 0.05 m/s) よりも大きいため, Fig. \ref{RDKall} の関係から, 液スラグ直下の $h_f$ が直上の $h_f$ よりも大きくなるような速度で移動することで, 液スラグ長さが減少していき, 破裂に至る.
+An example of the slug rise rate when Unimodal STW under $ V_ \mathrm {c} =\SI{122}{cm ^ 3} $, $ Q_ \mathrm {in} = \SI{0.6}{cm ^ 3/ s }$  is shown in Fig. \ref{SlugAnalysisTime2}.
+Before the liquid slug bursts ($ t < \SI{21.5}{s}$), all liquid slugs are rising at a nearly constant velocity (approximately \SI{0.03}{ m / s}), but immediately after the topmost liquid slug rupturing, it begins to accelerate. 
+It is rising at a velocity of about \SI{0.18}{ m / s} just before bursting.
+At this time, the rising velocity of the following liquid slug is higher than the velocity (about \SI{0.05}{ m / s}) just before the topmost liquid slug bursts.
+From the relationship of Fig. \ref{RDKall}, by moving at such a speed that $h_f $ becomes larger than $ h_f $ immediately above, the liquid slug length decreases and it leads to a burst.
+%Unimodal STW発生時には, パイプ内の $h_f$ の分布が比較的均一であり (Fig. \ref{RDKhist}a), 液スラグ破裂時に大きな擾乱が発生しないため, 液スラグはほぼパイプ下端で発生している (Fig. \ref{Repsite}). 
+%液スラグがパイプ下端で発生する場合, 再生成する液スラグの初期長さのばらつきや, 液スラグ成長速度のばらつきは, STWの周期にほぼ影響しないことは, \cite{kanno2018} (Fig. 9) で数値実験によって確かめている. 
+Under the Unimodal STW conditions, the distribution of $ h_f $ in the pipe is relatively uniform (Fig. \ref{RDKhist}a), and no large disturbance occurs at the time of liquid slug rupture (Fig. \ Ref {Repsite}).
+When the liquid slug is reconstructed at the lower end of the pipe, the dispersion of the initial length of the liquid slug to be reconstructed and the dispersion of the liquid slug growth rate have almost no influence on the STW cycle. 
+It is confirmed by numerical experiments.
+
+%以上の検討より, $R_p$ が大きく ($R_p$が1を超える程度), 液スラグ破裂時に大きな擾乱が発生しない程度の $Q_\mathrm{in}$ ($<$0.5-0.6 cm$^3$/s) で, Unimodal STWが発生すると考えられる.
+From the above consideration, it is considered that Unimodal STW occurs when $ R_p $ is large ($ R_p $ is about 1 or more), and $ Q_ \mathrm {in} $ ($< \SI{0.5}{} - \SI{0.6}{cm^3/s}$) that does not cause a large disturbance at the time of liquid slug rupture.
+
+
+%\paragraph{高 $Q_\mathrm{in}$ における $\Delta t_a$ と $\Delta t_r$}
+%本実験では, $Q_\mathrm{in} = 0.5 - 0.7 $ cm$^3$/s を境に, 波形の特徴が変わる (Fig. \ref{ResultPhaseD}). 
+%このパラメータ範囲で計測した特徴的波形の発生条件を考察する上で, まず, $Q_\mathrm{in}$を増加させた時の $\Delta t_r$ と $\Delta t_a$ とに着目する.
+
+%$Q_\mathrm{in}$を増加させた時,  $\Delta t_r$ は小さくなっていくが, $Q_\mathrm{in}> 0.5$ cm$^3$/s ではほとんど $\Delta t_r$ が一定である (Fig. \ref{Intervalcmp}). この振る舞いについて, 実験の解析の結果から得られた $Q_\mathrm{in}-h_f$ の関係と, 液膜流に関する数理モデル \citep{kanno2018} を用いて検討する.
+
+%今回の実験パラメータの範囲内では, $Q_\mathrm{in}$ を増加させていくと, パイプ内流れの上昇速度が大きくなり, 液スラグ直下の $h_f$ が大きくなる (Fig. \ref{RDKall}) ことで, パイプ内鉛直方向の平均的な液膜流厚みは大きくなっていく (Fig. \ref{Raveplot}). $Q_\mathrm{in} > 0.7 $ cm$^3$/s ではパイプ内の平均液膜流厚みはほぼ一定である (Fig. \ref{Raveplot}). この振る舞いは, Fig. \ref{RDKall} で, 液スラグ移動速度が 0.1 m/s よりも大きい時に液スラグ直下の $h_f$ が頭打ちになる様子と整合的である. また, $h_f = 0.4 - 0.6$ mm のとき, 液スラグ上昇速度 $u = 0.1$ m/s は $Q_\alpha = 1.1 \sim 1.4$ cm$^3$/s と対応している.
+ 
+%\cite{kanno2018} では, パイプ下端で, ある長さ $L_i$の長さをもつ擾乱か成長するとき, 液膜流の流下速度が大きければ, その分早く擾乱が成長すると考えた. 液膜流が, 重力と壁面剪断応力が釣り合った状態で流下する自由流下液膜流であると考えると, $h_f$が大きいほど液膜流流下平均速度は大きくなる (\cite{kanno2018}, KEq. 23). したがって, \cite{kanno2018}のモデルによれば, $h_f$ が大きいほど, 液膜流流下平均速度が大きくなり, $\Delta t_r$ が小さくなる. この関係は, 実験において $Q_\mathrm{in}$ を増加させたときの液膜流平均厚み ($\bar{h_f}$, Fig. \ref{Raveplot}) 及び $t_r$ の振る舞い(Fig. \ref{Intervalcmp}) と整合的である.
+
+%液スラグ上昇時間 ($\Delta t_a$) は, 個々の液スラグがパイプ内に生成してから破裂するまでの時間を指す. $Q_\mathrm{in}$ を大きくしていくとパイプ内流れの平均上昇速度が大きくなるため, $\Delta t_a$ は小さくなっていく.
+
+%\paragraph{Unimodal-HQ STWの発生条件}
+%Unimodal-HQ STWの発生時には, STWサイクルには一つの液スラグの上昇のみが関与し, STW時間幅は $\Delta t_r$ と同程度である (Fig. \ref{HiunimVSpre}, Fig. \ref{ascendpattern}b). 
+
+%これは, $Q_\mathrm{in}$を増加させると, スラグ流上昇速度が大きなり, $\Delta t_a$ が小さくなっていくが, $\Delta t_r$ は $Q_\mathrm{in}>0.5$ cm$^3$/s でほぼ一定となるためである (Fig. \ref{Intervalcmp}).
+
+%また, Fig. \ref{RDKall} によれば, 液スラグの上昇速度が 0.1 m/s よりも大きい時, 上昇速度が多少ばらついても, 液膜流の厚みが大きく変わらない. さらに, 擾乱が生じたとしても, 液スラグの上昇速度が速く, 液膜流擾乱が十分に成長する前に, 次の液スラグが上昇してくる. この結果, 各STWの液スラグ再生成はパイプ下端で発生し, 大きくサイクルは乱れないと考えられる. 
+
+%以上の検討から, $R_p$ が十分に大きく, STWが発生する条件下で, $Q_\mathrm{in}$ を大きくしていけば, 液スラグの上昇速度も速くなり, $\Delta t_a < \Delta t_r $ となる程度のやや大きい $Q_\mathrm{in}$ ( $> 0.5 $ cm$^3$/s) でUnimodal-HQ STWが発生すると考えられる.
+
+
+\paragraph{The conditions of Distubed STW}
+%ここまでの考察では, 液スラグが必ずパイプの下端で液スラグ再生成が発生し, 液膜流擾乱の影響は考えていない. しかし, このようなパイプ内流れの高粘性化条件が一定の下では, 周期の乱れを説明することができない.
+In the discussion so far, the liquid slug is always reconstructed at the lower end of the pipe, and the influence of film flow disturbance was not considered. 
+So, we can not explain the disturbance of the period.
+%実験において, $Q_\mathrm{in}$ を大きくしていくと, 徐々に $\Delta t_r$が小さくなっていき, $Q_\mathrm{in} \sim 0.7$ cm$^3$/s になると, $\Delta t_r$ がSTW時間幅と同程度となる (Fig. \ref{Intervalcmp}). この付近の $Q_\mathrm{in}$ 条件下で,  Disturbed STWが発生し始める. 
+In the experiment, as $ Q_ \mathrm {in} $ is increased, $ \Delta t_r $ becomes smaller gradually. 
+Around $ Q_ \mathrm{in} \sim \SI{0.7} {cm^ 3 / s}$, $ \Delta t_r $ becomes comparable to the STW time width (Fig. \ref{Intervalcmp}).
+Disturbed STW starts to occur above this $ Q_ \mathrm {in} $ condition.
+
+%Disturbed STWでは, 液膜流中で不規則に液スラグの再生成が発生していた (Fig. \ref{Repsite}b).
+%このような液膜流途中での液スラグの再生成 (以下, 液膜流内再生成) は, 前のSTWサイクルで破裂した液スラグによって生じた液膜流擾乱が大きい時, その擾乱が流下しつつ成長していくことで発生する (Fig. \ref{DistimVSpre}, \ref{TrimimVSpre}). 実際, Fig. \ref{RDKhist}b によれば, Unimodal STW発生時に比べて, $h_f$の分布にばらつきがあり, より大きな $h_f$ が生じている. これは, Fig. \ref{RDKall} の関係を基にすれば, 液スラグの移動速度が大きいことで, より大きな $h_f$ が生じていると考えられる. 一方で, さらに大きな $Q_\mathrm{in}$ (> 1.4 cm$^3$/s, Unimodal-HQ STW) では, 液膜流擾乱が十分に成長する前に, 次の液スラグが上昇することで, 液膜流内再生成が発生しない (Fig. \ref{HiunimVSpre}). このことから, Disturbed STW では, 液膜流擾乱が成長するタイムスケールと, $\Delta t_r$, $\Delta t_a$ が同程度であることも, 液膜流内再生成が発生する一つの条件であると考えられる.
+In Disturbed STW, reconstruction of liquid slug occurred irregularly in the film flow (Fig. \ref{Repsite} b).
+Such reconstruction during the liquid film flow (hereinafter referred to as halfway reconstruction) was caused when the surface disturbance generated in the previous STW cycle was large and it grew fast (Fig. \ref{DistimVSpre}, \ref{TrimimVSpre}).
+In fact, according to Fig. \ref{RDKhist} b, the distribution of $ h_f $ was more uneven than under the Unimodal STW conditions, and a larger $ h_f $ was generated.
+Based on the relation in Fig. \ref{RDKall}, a larger $ h_f $ is generated because the moving speed of the liquid slug is large.
+On the other hand, in the larger $ Q_ \mathrm {in} $ ($> \SI{1.4}{cm ^ 3/ s}$, Unimodal-HQ STW), the next liquid slug rises before the liquid film flow disturbance grows sufficiently.
+As a result, reconstruction within the film flow does not occur (Fig. \ref{HiunimVSpre}).
+From this, in Disturbed STW, the time scale on which liquid film flow disturbance grows and that $ \Delta t_r $ and $ \Delta t_a $ are comparable. 
+It is considered to be one condition that the halfway reconstruction occurs.
+
+%まず, Disturbed STWのうち, $R_p$ よりが大きい領域で発生する Trimodal STWの発生メカニズムを検討する.  
+%Trimodal STWでは, Unimodal パターンと, Bimodal パターンとが交互に現れていた. 以下, Unimodal パターンを Uni-T, Bimodal パターンを Bi-Tと表記する. 
+%実験では, Uni-T 発生時, パイプ内では, ほぼ一つの液スラグが上昇しており, $\Delta t_a \sim \Delta t_r$ である. この状況は Unimodal-HQ STWに近い. 
+%以下, Uni-T 発生時のSTW時間幅を $\bar{\Delta t}$ と表記する. また, Bi-T 発生時のSTW時間幅を $\Delta t_1$, $\Delta t_2$ ($\Delta t_1<\bar{\Delta t}<\Delta t_2$) とする. ヒストグラムで見えていた3つのピークは, $\Delta t_1$, $\bar{\Delta t}$, $\Delta t_2$ (Fig. \ref{histogramall}e) に対応している. 
+First, we will investigate the generation mechanism of the Trimodal STW that occurs in the region where $ R_p $ is larger than Disturbed STW.
+Under the Trimodal STW conditions, Unimodal pattern and Bimodal pattern appeared alternately.
+In the following, Unimodal pattern is described as Uni-T, and Bimodal pattern is described as Bi-T.
+In the experiment, when Uni-T occurs, almost one liquid slug was rising in the pipe, $ \ Delta t_a \ sim \ Delta t_r $.
+This situation was similar to Unimodal-HQ STW.
+In the following, the STW time width when Uni-T occurs is denoted as $ \bar {\Delta t} $.
+Also, let the STW time width at the time of occurrence of Bi-T be $ \Delta t_1 $ and $ \Delta t_2 $ ($ \Delta t_1 <\bar {\Delta t} <\Delta t_2 $).
+The three peaks visible in the histogram correspond to $ \Delta t_1 $, $ \bar {\Delta t} $, $ \Delta t_2 $ (Fig. \ref{histogramall}e).
+
+%Uni-T から Bi-Tへ遷移するとき, 直前のサイクルで発生した液スラグが, 通常のサイクルよりもややゆっくりと上昇し, その直下の液膜流厚みが薄くなることで, 次の液スラグがやや速く上昇したために, 液スラグが液膜流途中で破裂する (Fig. \ref{TrimimVSpre}, 69 s, Fig. \ref{interpattern}a, b).
+%このときのSTW時間幅は, $\Delta t_{1} < \bar{\Delta t}$ である.
+When transitioning from Uni-T to Bi-T, the liquid slug generated in the previous cycle rose more slowly than in the normal cycle, and the thickness of the liquid film flow immediately below was thinner.
+This caused next liquid slug ascending faster, then the liquid slug burst in the middle of the film flow (Fig. \ Ref {TrimimVSpre}, 69 s, Fig. \ Ref {interpattern} a, b).
+The STW time width at this time is $ \ Delta t_ {1} <\ bar {\ Delta t} $.
+%$\Delta t_{1}$ となるサイクルは, 液膜流内で液スラグ破裂が発生しているため, 破裂直前の速度が大きい. 
+%この結果, 発生直後の液スラグの上昇中に, 液膜流途中での液スラグ再生成, または大きな液膜流擾乱が発生しやすくなる (Fig. \ref{TrimimVSpre}, $t=71$ s, \ref{interpattern}b). 
+%液膜流内再生成や, 大きな擾乱が発生すると, 次のサイクルの液スラグ上昇速度がやや小さくなる. 
+%このときのSTW時間幅は $\Delta t_{2} > \bar{\Delta t}$ となる. 上昇速度がやや小さくなったことによって, 再び液スラグ直下の液膜流は薄くなり, 次の液スラグが速く上昇し, $\Delta t_{1}$ となるサイクルが繰り返される.
+The liquid slug bursts in the liquid film flow so that, in the cycle of $ \Delta t_ {1} $, the velocity immediately before the burst is large.
+As a result, during the rising of the liquid slug immediately after the cycle of $ \Delta t_ {1} $, halfway reconstruction or large liquid film flow disturbance is likely to occur during the next cycle (FIG. \ref{TrimimVSpre}, $ t = 71 $ s , \ ref {interpattern} b).
+When the halfway reconstruction or large disturbance occurred, the liquid slug ascent rate in the next cycle decreased slightly.
+At this time, the STW time width became $ \Delta t_ {2}> \bar{\ Delta t} $. 
+As the rising speed became slightly smaller, the liquid film flow just below the liquid slug became thinner again.
+The next the liquid slug rose rapidly, and the cycle of $ \ Delta t_ {1} $ was repeated.
+%Bi-Tから Uni-T へ遷移する時には, あるとき, なんらかのきっかけで液スラグの液膜流内再生成が発生せず (Fig. \ref{TrimimVSpre}, $t=55\sim56$ s, \ref{interpattern}c), そのまましばらくパイプ下端でのみ液スラグ再生成が発生し, Uni-T が繰り返される. これが Trimodal STWで Uni-T ($\bar{\Delta t}$) と Bi-T ($\Delta t_{1}$, $\Delta t_{2}$) が発生する過程である.
+%Bi-T では, $\Delta t_{1}$ となる短いSTWサイクルにおいて, 液スラグが毎サイクル同じような位置で破裂する. これは, $R_p$ が比較的大きいために, 液スラグが液膜流内にあっても, 破裂するまで加速し続けることができるためであると考えられる. $\Delta t_{1}$ となるSTWサイクルが繰り返し発生し, Bi-T がある程度継続するため, スラグ時間幅の分布が Trimodalになると考えられる.
+At the time of transition from Bi-T to Uni-T, the halfway reconstruction did not occur due to some cause (Fig. \ref{TrimimVSpre}, $ t = 55 \ sim56 $ s, \ Ref {interpattern} c), liquid slug reconstruction occurred only at the lower end of the pipe for a while and Uni-T was repeated.
+This is the process of generating Uni-T ($ \ bar {\ Delta t} $) and Bi-T ($ \Delta t_ {1} $, $ \Delta t_ {2} $) in Trimodal STW.
+In Bi-T, in a short STW cycle of $ \Delta t_ {1} $, the liquid slug burst at the almost same position every cycle.
+This is because $ R_p $ is relatively large, even if the liquid slug is in the liquid film flow, it could continue to accelerate until it burst.
+It is considered that the distribution of the slug time width becomes trimodal because the STW cycle which becomes $ \Delta t_ {1} $ occurs repeatedly and Bi-T continues to some extent.
+
+%Trimodal STWよりもやや $R_p$ が小さい時には, 流れの加速が不十分であるため, 特に$\Delta t_{1}$ となる短いSTWサイクルが安定して発生しにくい. 従って, より液スラグの破裂位置や, 液膜流厚み, 液スラグ再生成位置 (Fig. \ref{Repsite}b) にばらつきが, 結果として周期が乱れたDisturbed STW になると考えられる. \cite{kanno2018} では, 特に液スラグ再生成位置のばらつきが, 周期に大きく影響し, Disturbed STWに近い周期の乱れが発生することを, 数値実験から示している (\cite{kanno2018}, Fig. 9d).
+When $ R_p $ is slightly smaller than the Trimodal STW conditions, short STW cycles, as $ \Delta t_ {1} $, are less likely to occur stably because the flow acceleration is insufficient.
+Therefore, it is thought that the rupturing position of the liquid slug, the thickness of the film flow, and the position of the liquid slag regeneration (Fig. \ref{Repsite} b) are more dispersed resulting in the Disturbed STW.
+In the case of \cite {kanno 2018}, it is shown from numerical experiments that the dispersion of the liquid slug reconstruction position has a large influence on the cycle and the disturbance of the cycle close to Disturbed STW (\cite{kanno2018}, Fig 9d).
+
+すなわち, Disturbed STWにおいては, $Q_\mathrm{in}$ や, $V_\mathrm{c}$ といった実験パラメータが一定であっても, 前のサイクルのガス噴出によって乱された液膜流の構造が, 液膜流表面の擾乱として流下, 成長し, 次のサイクルの液スラグ再生成条件 (位置, 液スラグ成長速度) を乱すことで自発的に周期が乱れていると考えられる. 
+以下, $R_p<1$ の領域 (Fig. \ref{ResultPhaseD}, 点線の下側) において, $Q_\mathrm{in}$ に依存した波形の違いを検討する.
+ 
+\paragraph{Small fluctuationの発生条件}
+Small fluctuation発生時, パイプ下端における液スラグ再生成時間間隔 ($\Delta t_r$) と, 個々の液スラグの上昇時間, すなわち液スラグが再生成し上昇を始めてから破裂するまでの時間 ($\Delta t_a$) を比較すると, $\Delta t_r<\Delta t_a$ である (Fig. \ref{FlctimVSpre}, Fig. \ref{ascendpattern}c). %これは, Unimodal STW発生時と同様に, $Q_\mathrm{in}$ が小さく, スラグ流上昇速度が小さいためであると考えられる.
+液スラグは $\Delta t_a$ 経過後, 液膜流上端に達し, 破裂する. この時, パイプ内にはまだスラグ流が発生している. 最上部の液スラグが破裂することで, 一時的に流れの実効粘性 (液スラグ長さ) が小さくなり, 流れが加速するが, $R_p$ が小さいため, すぐにチャンバーの圧力が下がり, 流れは減速する. 実際の流れでは, 最上部の液スラグが破裂した直後, 取り残された液スラグを含むパイプ内流れは一時的に加速しつつ, スラグ長さが小さくなるが (e.g., Fig. \ref{FlctimVSpre}, $t=176$ s付近), その後圧力のゆるやかな減少とともに速度は減少しつつ, 再びスラグ長さが大きくなっていく(e.g., Fig. \ref{FlctimVSpre}, $t=177$ s付近). 
+このように, 液スラグ長さが小さくなり, 流れが加速し出しても, 後に続く液スラグはすぐに減速しながら再び液スラグ長さが増加するため, スラグ-環状流遷移には至らず, 準定常的なスラグ流が発生し, 圧力波形はSmall fluctuationとなる. 
+
+以上の検討より, Small fluctuationは, $R_p$ が小さく, かつ, $\Delta t_r<\Delta t_a$となる程度の $Q_\mathrm{in}$で発生する. 
+
+
+\paragraph{n-Type cycleの発生条件}
+$R_p$ が小さい領域で, $Q_\mathrm{in}$ が大きく, $\Delta t_a < \Delta t_r$ となる領域では, n-Type cycleが発生している (Fig. \ref{ascendpattern}d). 
+
+実験観察結果によれば, 液スラグ再生成直後, 圧力が増加する (Fig. \ref{NtypimVSpre}). Eq. (\ref{pdropex}) に基づき, Fig. \ref{NtypimVSpre}の実験パラメータの値 ($Q_\mathrm{in}=1.0$ cm$^3$/s, $L_\mathrm{s}= 5$ mm, $a=2.5$ mm, $\rho=1400$ kg/m$^3$) を用いて, 粘性損失, 静水圧を計算すると, それぞれ 0.3 kPa, 0.07 kPaとなる. これは, Fig. \ref{NtypimVSpre} で計測した圧力振幅と整合的である. すなわち, 液スラグ再生成直後の圧力増加に関しては, ガスチャンバー内の弾性要素ではなく, パイプ内の粘性抵抗と静水圧に起因する圧力損失分だけ圧力が増加していると推察する. 
+
+一方で, Fig. \ref{NtypimVSpre} によれば, 液スラグ再生成の直後, チャンバー圧力が増加するが, その後スラグ-環状流遷移までほぼ一定の圧力であり, STWで見られるような持続的な圧力増加は見られない. 
+これは, $V_\mathrm{c}$ が小さいときには, チャンバーへのガスの蓄積が発生せず (Eq. \ref{dpdtex}), また平均的液スラグ上昇速度が大きく平均的な液膜流厚み $h_f$ が大きい (Fig. \ref{Raveplot}) ため, 液スラグ長さが大きくなりにくいためである.
+
+また, n-Type cycle発生時には, $\Delta t_a < \Delta t_r$であるため, 液スラグが破裂しても, 次の液スラグがまだ再生成していない. このため, 液スラグが破裂すると, チャンバー圧力は大気圧まで急減する. 
+
+以上のメカニズムによって, $R_p$ が小さく, かつ, $\Delta t_r >\Delta t_a$となる程度のやや大きい $Q_\mathrm{in}$ ( $> 0.5 $ cm$^3$/s)では, "n" の形をした圧力波形が繰り返す, n-Type cycleが発生する. 
+
+
+
+
+
+
+
 \subsection{Effective viscosity changes}
 
 \section{Discussion}\label{mec}

@@ -32,7 +32,7 @@
 
 \draft % marks overfull lines with a black rule on the right
 
-\usepackage{graphicx}% Include figure files
+\usepackage[dvipdfmx]{graphicx}% Include figure files
 
 \usepackage[mathlines]{lineno}% Enable numbering of text and display math
 \modulolinenumbers[1]% Line numbers with a gap of 5 lines
@@ -71,7 +71,7 @@
 %\homepage[]{Your web page}
 %\thanks{}
 %\altaffiliation{}
-\affiliation{Earthquake Research Institute, University ofTokyo, Yayoi, 1-1-1, Bunkyo, Tokyo 113-0032, Japan}
+\affiliation{Earthquake Research Institute, University of Tokyo, Yayoi, 1-1-1, Bunkyo, Tokyo 113-0032, Japan}
 
 %Collaboration name if desired (requires use of superscriptaddress
 %option in \documentclass). \noaffiliation is required (may also be
@@ -84,10 +84,10 @@
 \begin{abstract}
 % insert abstract here
 We study experimentally sawtooth wave-like pressure changes associated with gas-liquid flow in a pipe-chamber system.
-Due to the coupling of an elastic capacitance of a gas chamber and non-linear pressure drop in the pipe, the characteristic pressure waveforms are observed.
-For specific conditions, pressure cycles are disturbed spontaneously even at a constant flow rate and chamber volume.
-We report a modulation of the pressure waveform through experimental parameters.  
-Through image analyses, we point out the effect of surface disturbance of downward flow.
+Due to the coupling between an elastic capacitance of a gas chamber and variable flow resistance in the pipe flow, the characteristic pressure waveforms are observed.
+For specific conditions, pressure cycles are disturbed spontaneously even at a constant flow supply and chamber volume.
+We report a modulation of the pressure waveforms through experimental parameters.  
+Through image analyses, we point out that the disturbed flow structure by the past flow modulates the effective flow viscosity and the cycle.
 \end{abstract}
 
 % insert suggested keywords - APS authors don't need to do this
@@ -105,21 +105,31 @@ For instance, the sawtooth waves are the most common waveforms used to create so
 
 \section{Experimental method}\label{met}
 \subsection{Experimental setup}\label{setup}
-The experimental system comprised a chamber and pipe, where a constant gas flux ($Q_\mathrm{in}$) was maintained in the chamber, and the gas-liquid flow in the pipe. 
-The chamber, pipe, and connecting-joint were constructed using acrylic glass to ensure rigidity and enable direct observations. 
+The experimental system comprised a chamber and pipe, where a constant gas flux ($Q_\mathrm{in}$) was maintained in the chamber, and the gas-liquid flow in the pipe (Fig. \ref{Apparatus}). 
+The chamber, pipe, and connecting-joint were constructed using acrylic glass to ensure rigidity and enable direct observations.
+At the contact part between this joint and the pipe, an O-ring with a 0.5 mm diameter was inserted to obtain the field of view as much as possible.
+The pipe was fixed so that the central axis was aligned, and the O-ring was pressed downward by fixing at the top the pipe with a drill chuck used for machine tools.
 The compressible gas volume in the chamber ($V_\mathrm{c}$) is maintained at a constant value during each experimental run.
-$Q_\mathrm{in}$ was regulated by a microneedle valve (IBS FMNV2) that ensured a constant gas flux of between \SI{1}{\m^3 / \s}. 
+$Q_\mathrm{in}$ was regulated by a microneedle valve (IBS FMNV2) that ensured a constant gas flux of between \SI{1}{\m^3 /s}. 
 We used sugar syrup diluted in distilled water as the liquid phase. 
-The liquid behaved as a Newtonian fluid, and we measured its viscosity using a BOHLIN CVO Rheometer and adjusted it to \SI{1}{\Pa \s} at the experimental temperature of \SI{25}{\degreeCelsius}. 
+The liquid behaved as a Newtonian fluid, and we measured its viscosity using a BOHLIN CVO Rheometer and adjusted it to \SI{1}{\Pa \s} at the experimental temperature of \SI{25}{\degreeCelsius}.
+The pipe was filled with syrup of \SI{60}{mm} from the bottom of the pipe, and then gas started to inject into the chamber.
 Injected gas flowed through the pipe and forced the liquid residing in the pipe upward, resulting in gas-liquid flow within the pipe.
-A pressure sensor (KISTLER 701A with a 5011A charge amplifier) was installed to measure pressure changes in the chamber, and a microphone (Br\"uel-Kj\ae r 4193+2669L with a Nexus 2690 signal conditioner) was mounted to the top of the pipe. Data were sampled at \SI{10}{kHz} using a PC-based data acquisition system (DEWETRON DEWE-211).
+
+A pressure sensor (KISTLER 701A with a 5011A charge amplifier) was installed to measure pressure changes in the chamber, and a microphone (Br\"uel-Kj\ae r 4193+2669L with a Nexus 2690 signal conditioner) was mounted to the top of the pipe. 
+Data were sampled at \SI{10}{kHz} using a PC-based data acquisition system (DEWETRON DEWE-211).
 A high-speed black-and-white camera (Photoron FASTCAM Mini) was synchronized with the data acquisition PC and was focused on the lowermost \SI{200}{\mm} of the pipe, where gas-liquid flow occurred.
 The field of view was illuminated by a flat backlight source. We used a pale-color syrup to improve the visibility of the liquid phase against the gas phase and the pipe. 
 Dark areas were thus shaded according to the thickness of the liquid across the pipe. 
 We used the resulting distribution of light intensity to observe flow patterns.
 The controlled experimental parameters were $V_\mathrm{c}$, $Q_\mathrm{in}$, and the amount of syrup in the pipe; as defined by the initial syrup height $H_\mathrm{s}$. 
 These parameters were fixed during each experimental run. 
-We conducted 143 runs in total, during which the parameters varied from m3/s for $Q_\mathrm{in}$, 20 to \SI{157} {\cm^3} for $V_\mathrm{c}$, and 60 to \SI{150}{\mm} for $H_\mathrm{s}$.
+The parameters varied from 0.2 to \SI{1.5}{cm^3/s} for $Q_\mathrm{in}$, 20 to \SI{157} {\cm^3} for $V_\mathrm{c}$.
+
+\begin{figure}
+\includegraphics{Newapparatus.eps}%
+\caption{\label{Apparatus} Experimental apparatus.}
+\end{figure}
 
 \subsection{Image Analyses method}\label{ime}
 The thickness of the downward film flow and the position of the liquid slug were analyzed using image analysis.
@@ -129,7 +139,7 @@ Fig. \ref{Rbottom} shows the darkness distribution of the horizontal cross secti
 %パイプ中心に気体が存在する部分 (ガススラグ, 詳細は \S \ref{flowinpipe}) では, パイプ領域内に二つピークが存在し, 管内壁の液膜 (液膜流, 詳細は \S \ref{flowinpipe}) の厚みが薄くなるほどこの二つのピーク間の幅は大きくなる. 
 In the part where gas exists at the center of the pipe, there are two peaks in the pipe area, and as the thickness of the liquid film on the inner wall of the pipe becomes thinner, the width between these two peaks becomes larger.
 %空気, 水あめ, アクリルの屈折率をそれぞれ1, 1.44 (島津製作所, \url{https://www.shimadzu.co.jp/opt/products/ref/ref-app05.html}), 1.49 (島津製作所, \url{https://www.shimadzu.co.jp/opt/products/ref/ref-app03.html}) とした上で, 空気, アクリル部分, 及び色付けした水あめ領域を通過する光路長に比例して光が吸収され, 暗くなると考えた. 
-Assuming that the refractive indices of air, liquid, and acrylics are 1, 1.44, and 1.49, respectively, it was thought that light was absorbed and darkened in proportion to the optical path length passing through the air, the liquid, and the acrylic part.
+Assuming that the refractive indices of air, liquid, and acrylics were 1, 1.44, and 1.49, respectively, it was thought that light was absorbed and darkened in proportion to the optical path length passing through the air, the liquid, and the acrylic part.
 %カメラへ到達した光が, どのような光路で空気, アクリルパイプ, 液部分を通過して, バックライトの平面光源から到達したのかを, スネルの法則を用いて見積もると, Fig. \ref{raytraseDk} のようになる. 
 Using Snell's law, the light paths from the flat backlighting source reaching the camera has passed through the air, the acrylic pipe and the liquid parts are calculated as shown in Fig. \ref{raytraseDk}.
 %ただし, 光が空気及びアクリル部分を通過する際にも, 距離に比例して光が吸収されるとし, 水あめ領域を通過するときには, 空気及びアクリル領域に比べて光を3倍吸収すると考えた.
@@ -143,13 +153,32 @@ As a result of the calculation, as in the experimental results, when there was g
 Therefore, the width between the darkness peaks and the ratio of the inner and outer diameter of the pipe are compared with the experimental image and calculation to estimate the actual thickness of the downward film flow at each height of the pipe.
 On the other hand, the cross section where no clear peak of the darkness was judged to be the part filled with liquid.
 
+\begin{figure}
+\includegraphics{Rbottom.png} 
+\caption{\label{Rbottom} Horizontal darkness distribution in the pipe.
+(Left) Enlarged views of the flow area in the pipe.
+(Right) The spatial distribution of the darkness of the horizontal section indicated by the red line of the left figure.
+In the cross section where the gas flow was at the center of the pipe, there were two peaks in the darkness distribution.}
+\end{figure}
+
+\begin{figure}
+\includegraphics{raytraseDk.png} 
+\caption{\label{raytraseDk}Estimation of darkness distribution through certain liquid film thickness ($ h_f $):
+(Left) The result of using Snell's law to estimate what kind of light path the light reaching the camera had passed through.
+The blue, red, and green lines indicate the light paths that have passed through the air, the acrylic pipe, and the liquid, respectively.
+(Right) Distribution of darkness on the image.
+The larger the value, the longer the liquid part passes and the darker it was.
+If there is a gas at the center of the pipe, two dark peaks appear in the area inside the pipe width.
+Fig. \ Ref {Rbottom} corresponds to the figure in the right column.}
+\end{figure}
+
 \subsection{Flow image}\label{flowim}
 %撮影したビデオ映像の各ビデオフレームにおいて, 高さ方向の液膜流厚み分布を推定する. 
 The thickness distribution of downward film flow in the height direction was estimated at each video frame.
 %この結果を幅 1ピクセルの画像として, 時間順に水平方向に連結し, 流動画像を作成する. 
 These results as a 1-pixel-wide image were connected horizontally in time order to create a flow image.
 %流動画像の例を Fig. \ref{UnimslugimageAn}a, \ref{UnimimVSpre} に示す (詳細は \S \ref{PandF}で後述). 
-An example of the flow image is shown in Fig. \ref{UnimslugimageAn}a, \ref{UnimimVSpre}. 
+An example of the flow image is shown in Fig. \ref{UnimimVSpre}. 
 %赤い部分は, 暗度ピークが不明瞭な領域であり, 液スラグ部分に対応している. 
 The red parts are the area where the dark peaks are unclear and correspond to the ascending liquid slug part while orange to blue part represent downward film flow.
 %また, オレンジ色から青色の領域は, 液膜流の厚みを表しており, 液膜流は流下しているため, 全体に右下がりの陰になっている. 
@@ -162,18 +191,21 @@ The image area was labeled and the behavior of each liquid slug was traced.
 %二値化および領域のラベリング処理には, MATLAB の Image Processing Toolbox (imagesegmenter) を用いた. 
 MATLAB's Image Processing Toolbox (images segmenter) were used for binarization and region labeling.
 
+\begin{figure}
+\includegraphics{UnimimVSpre.png} 
+\caption{\label{UnimimVSpre}Pressure waveform and flow image: Unimodal STW. Upper: Pressure waveform. Bottom: The film flow thickness of the liquid is indicated in color. Ascending red trails represent liquid slugs while descending yellow-red stripes represent surface disturbances during downward film flow.}
+\end{figure} 
+
 
 \section{Result}\label{res}
-\subsection{Characteristic pressure changes in the chamber}
-
 %パラメータ $Q_\mathrm{in}$, $V_\mathrm{c}$ の値によって計測された様々な特徴的圧力波形と, パイプ内流れの詳細な解析結果を示す. 
 The various characteristic pressure waveforms measured by the values of the parameters $Q_\mathrm{in}$ and $V_ \mathrm{c}$ and detailed analysis results of the flow in the pipe are shown in following part.
-
+\subsection{Characteristic pressure waveforms}
 \subsubsection{Unimodal STW}
 %Fig. \ref{ResultPhaseD}内, $\diamondsuit$ で示した実験パラメータにおいて, 一定の時間幅を持ったノコギリ波状の圧力変動が発生した (Fig. \ref{PplotEx}a).
-In the experimental parameters shown as $\diamondsuit$  in Fig. \ref{ResultPhaseD}, sawtooth wave-like pressure change with a fixed time interval was generated (Fig. \ref{PplotEx}a).
+In the experimental parameters shown as $\diamondsuit$ in Fig. \ref{ResultPhaseD}, sawtooth wave-like pressure change with a fixed time interval was generated (Fig. \ref{PplotEx}a).
 %本研究では, ゆっくりとしたチャンバー圧力の増圧に続いて, 圧力が -5 kPa/s より速く減少し, かつ, 後述する流動様式の遷移が発生するような急減圧が発生した場合, STWが発生したと定義する. 
-In this study, the term of STW will be used if the pressure decreases more rapidly than \SI{-5}{kPa/s} following the gradual pressure increase, which causes the flow mode transition described later.
+In this study, the term of STW will be used when the pressure decreases more rapidly than \SI{-5}{kPa/s} following the gradual pressure increase, which causes the flow pattern transition described later.
 %チャンバー圧力波形の, 急減圧発生から次の急減圧までの時間 ($\Delta t$) をSTW時間幅とし,そのヒストグラムを Fig. \ref{histogramall}a に示す. 
 The time ($\Delta t$) from the onset of the abrupt pressure drop to the next pressure drop of the chamber pressure waveform was taken as the STW time width and the histogram is shown in Fig. \ref {histogramall}a.
 %この時, STW時間幅のヒストグラムは Unimodal な分布となることから, この圧力波形を Unimodal STWとする. Unimodal STW は, \cite{kanno2018} で報告した Periodic STWに対応している.
@@ -189,45 +221,67 @@ The correspondence with the flow pattern in the pipe will be summarized in \S \r
 Under smaller $Q_\mathrm{in}$ and $V_ \mathrm {c} $ than the Unimodal STW conditions (Fig. \ref {ResultPhaseD}, $\times$), STW occurrence was not seen, and there is small pressure fluctuations (Fig. \ref {PplotEx}b).
 These conditions are referred to as the Small fluctuation conditions hereafter.
 %これは, \cite{kanno2018} で報告した Non-STW に対応している. 圧力波形のスペクトルにおけるピーク周波数から推定した振動周期は 5 - 10 秒程度で, STW 発生時よりもやや短く, 振幅が小さいことが特徴である \cite[Fig. 4]{kanno2018}.
-This corresponds to the Non-STW reported in the previous research.
-The oscillation period estimated from the peak frequency in the pressure waveform spectrum was about 5-10 seconds, which was slightly shorter than the Unimodal STW and had a smaller amplitude.
+This corresponds to the Non-STW reported in the previous research \citep{kanno2018}.
+The oscillation period estimated from the peak frequency in the pressure waveform spectrum was about 5 - 10 seconds, which was slightly shorter than the Unimodal STW and had a smaller amplitude.
 
 \subsubsection{Disturbed STW}
 %Unimodal STW 発生領域よりも大きい $Q_\mathrm{in}$ の条件(Fig. \ref{ResultPhaseD}, ◯) では, 圧力波形は STWの特徴を持っているものの, 周期が一定ではない圧力振動パターンが発生する (Fig. \ref{PplotEx}c).
 The pressure waveform has the characteristics of STW but the pressure oscillation pattern was not constant under larger $Q_\mathrm{in} $ condition (Fig. \ref {ResultPhaseD}, $\bigcirc$) than the Unimodal STW conditions.
 %この時の STW時間幅ヒストグラムは, Fig. \ref{histogramall}c で示すように, Unimodal STWと比べてばらつきを持って分布していることから, この特徴的圧力波形を, Disturbed STWとする.
-This characteristic pressure waveform is called Disturbed STW since the STW time width histogram at this time is distributed with variations compared to the Unimodal STW, as shown in Fig. \ref{histogramall}c.
+This characteristic pressure waveform is referred to as the Disturbed STW hereafter since the STW time width histogram at this time was distributed with variations compared to the Unimodal STW conditions, as shown in Fig. \ref{histogramall}c.
 %$Q_\mathrm{in}$ がやや大きい領域 (Fig. \ref{ResultPhaseD}, ☆) では, Unimodal パターン (Fig. \ref{PplotEx}d, $t=0\sim10$, $45\sim85$ s) と Bimodal パターン (Fig. \ref{PplotEx}d, $t=10\sim45$, $85\sim100$ s)を持つ STWサイクルが交互に出現する (Fig. \ref{PplotEx}d).
-In the region where $ Q_ \mathrm{in} $ is somewhat large (Fig. \ref{ResultPhaseD}, $\star$), the unimodal pattern (Fig. \ref{PplotEx}d, $ t = 0 \sim10 $, $ 45 \sim 85 $ s An STW cycle with a) and a Bimodal pattern (Fig. \ref{PplotEx} d, $ t = 10 \sim 45 $, $ 85 \sim100 $ s) alternately appeared (Fig. \ref{PplotEx} d).
+In the region where $ Q_ \mathrm{in} \times V_\mathrm{c} $ was slightly large (Fig. \ref{ResultPhaseD}, $\star$), an unimodal pattern (Fig. \ref{PplotEx}d, $ t = 0 - 10 $, $ 45 - 85 $) and a Bimodal pattern (Fig. \ref{PplotEx}d, $ t = 10 -  45 $, $ 85 - 100 $ s) alternately appeared (Fig. \ref{PplotEx}d).
 %ヒストグラムは, Trimodal な分布になっているため, 以下, この圧力波形を Trimodal STWとする (Fig. \ref{histogramall}e). 
-This pressure waveform is hereafter referred to as Trimodal STW (Fig. \ref{histogramall} e) since the histogram has a trimodal distribution.
+This pressure waveform is hereafter referred to as the Trimodal STW (Fig. \ref{histogramall}e) since the histogram has a trimodal distribution.
 %それぞれのピークは Unimodal STWに比較してばらつきを持って分布しているため, Trimodal STWも Disturbed STWの一種であると分類する. Disturbed STW発生時の波形は, $\Delta t$ が大きいほど, STW各サイクルの圧力振幅 ($\Delta P_c$) が大きくなっている (Fig. \ref{histogramall}d, f).
-Trimodal STW was also classified as a type of Disturbed STW since each peak was distributed with variation compared to Unimodal STW. 
-The pressure amplitude ($ \Delta P_c $) of each STW cycle was larger as $ \Delta t $ was larger (Fig. \ref{histogramall} d, f).
+Trimodal STW was also classified as a type of the Disturbed STW since each peak was distributed with variation compared to Unimodal STW. 
+The pressure amplitude ($ \Delta P_c $) of each STW cycle was proportional to $ \Delta t $ (Fig. \ref{histogramall}d, f).
 
 \subsubsection{Unimodal-HQ STW, n-Type cycle}
 %Disturbed STWが発生する領域よりもさらに $Q_\mathrm{in}$ を大きくすると, 再び Unimodal STWが発生する (Fig. \ref{ResultPhaseD}, ▽, \ref{PplotEx}e).
-If $Q_ \mathrm{in}$ was made larger than the condition where Disturbed STW occurs, Unimodal STW would occur again (Fig. \ref{ResultPhaseD}, $\bigtriangledown$, \ref{PplotEx} e).
+When $Q_ \mathrm{in}$ was made larger than the condition where Disturbed STW occurs, Unimodal STW would occur again (Fig. \ref{ResultPhaseD}, $\bigtriangledown$, \ref{PplotEx}e).
 %この時の特徴的波形を Unimodal-HQ STWとする. 
 The characteristic waveform at this time is referred to as Unimodal-HQ STW hereafter.
 %また, $V_\mathrm{c}$ が小さいが, $Q_\mathrm{in}$ が Disturbed STWと同程度の条件 (Fig. \ref{ResultPhaseD}, △) では, 急激な圧力現象が一定周期で発生するが, STWに特徴的なゆっくりとした増圧過程は見られず, "n" のような形をしたチャンバー圧力サイクルが繰り返される (Fig. \ref{PplotEx}f). 
-Also, under conditions where $ V_ \mathrm{c} $ was small but $ Q_\mathrm{in} $ is similar to Disturbed STW (Fig. \ref{ResultPhaseD}), the abrupt pressure drop constantly occurred.
-On the other hand, the slow pressure increase process characteristic of STW was not observed, and the chamber pressure cycle shaped like "n" was repeated (Fig. \ref{PplotEx} f).
+Also, under conditions where $ V_ \mathrm{c} $ was small but $ Q_\mathrm{in} $ was similar to Disturbed STW (Fig. \ref{ResultPhaseD}), the abrupt pressure drop constantly occurred.
+On the other hand, the gradual pressure increase process characteristic of STW was not observed, and the chamber pressure cycle shaped like "n" was repeated (Fig. \ref{PplotEx}f).
 %このパラメータ下の振動を, n-Type cycle と呼び, Unimodal STWとは区別する.
-The oscillation under this parameter is referred to as an n-Type cycle, which is distinguished from Unimodal STW.
+The oscillation under this parameter is referred to as an n-Type cycle, which is distinguished from the Unimodal STW.
 
-\subsection{The flow pattern and waveforms}
+\begin{figure}
+\includegraphics{ResultPhaseD.png} 
+\caption{\label{ResultPhaseD} Characteristic waveforms: $\times$: Small fluctuation, $\diamondsuit$: Unimodal STW, $\bigcirc$: Disturbed STW, $\star$: Disturbed (Trimodal) STW,  $\bigtriangledown$: Unimodal-HQ STW, $\bigtriangleup$: n-Type cycle. Dotted line represents $R_p = 1$.}
+\end{figure} 
+
+\begin{figure}
+\includegraphics[scale=0.84]{PplotEx.png} 
+\caption{\label{PplotEx}Characteristic waveforms. (a) Unimodal STW, (b) Small fluctuation, (c) Disturbed STW, (d) Disturbed (Trimodal) STW, (e) Unimodal-HQ STW, (f) n-Type cycle.}
+\end{figure} 
+
+\begin{figure}
+\includegraphics{histogramall.png} 
+\caption{\label{histogramall}The histogram of the STW time width ($\Delta t$), and the relationship between $\Delta t$ and chamber pressure amplitude ($dP_c$). (a, b) Unimodal STW, (c, d) Disturbed STW, (e, f) Disturbed (Trimodal) STW.}
+\end{figure} 
+
+
+\subsection{The flow pattern and waveforms}\label{PandF}
 %作成した流動画像と Fig. \ref{ResultPhaseD}, \ref{PplotEx} で示した特徴的圧力波形とを比較する. 
 The fluid images were compared with the characteristic pressure waveforms shown in Fig. \ref{ResultPhaseD}, \ref{PplotEx}.
 
+%There were two types of flow patterns in the pipe flow. 
+%One is an ascending flow of alternation gas and liquid slugs, referred to as the slug flow.
+%In this flow, we define a liquid slug as a continuous zone of liquid that bridges the pipe. 
+%Liquid slugs are separated by gas slugs, which are large bubbles with diameters similar to the pipe diameter.
+%There are also a downward flow of a film of liquid along the pipe wall, which is referred to here as the film flow.
+
 %Unimodal STW 発生時には, パイプ内において規則的にスラグ流と環状流の流動様式遷移が発生している (Fig. \ref{UnimimVSpre}). 
-Under the Unimodal STW conditions, flow pattern transitions of slug flow and annular flow occurred regularly in the pipe (Fig. \ref{UnimimVSpre}).
+Under the Unimodal STW conditions, flow pattern transitions of slug flow and annular flow occurred regularly in the pipe (Fig. \ref{UnimimVSpre}). This flow pattern transition is hereafter referred to as slug-to-annular flow transition \citep{kanno2018}.
 %STW波形のうち, ゆっくりとした圧力上昇はスラグ流に, 急激な圧力の減少は, スラグ-環状流遷移に対応している.
-In the STW waveform, the gradual pressure rise corresponded to the slug flow, and the abrupt pressure drop corresponded to the slug-to-annular flow transition. 
+In the STW waveform, the gradual pressure increasing corresponded to the slug flow, and the abrupt pressure drop corresponded to the slug-to-annular flow transition.
 %液スラグが消失する位置から, とくに強いオレンジ色の右下がりの陰が見える. 
 From the position where the liquid slug disappeared, a strong orange falling shadow to the right was visible.
 %これは, 液スラグの破裂位置で, 液膜流表面の大きな擾乱生じ, 流下している様子を表している.
-This represented that the film flow was largely disturbed and flowing down from the rupture point of the liquid slug.
+This represented that the surface of film flow was largely disturbed and flowing down from the rupture point of the liquid slug.
 %液膜流表面の擾乱が, パイプ内を流下しながら, 後から上昇する液スラグに吸収される様子も確認できる. 
 The disturbance on the surface of the film flow was absorbed by the liquid slug ascending later while flowing down the pipe.
 %また, 各STWサイクルにおいて, 最上部の液スラグが割れる位置はほぼ一定である.
@@ -248,61 +302,110 @@ Immediately after the burst, the velocity of the whole flow ascending slightly, 
 %Unimodal-HQ STW では, パイプ下端における液スラグ再生成の時間間隔よりも, 液スラグがパイプ内で破裂する時間幅のほうが短く, 一つの液スラグしか STW発生に関与していない (Fig. \ref{HiunimVSpre}). 
 Under the Unimodal-HQ STW conditions, the time interval for the liquid slug to rupture in the pipe was shorter than the time interval for liquid slug reconstruction at the lower end of the pipe, and only one liquid slug contributes to STW generation (Fig. \ref{HiunimVSpre}).
 %また, n-Type cycle でも同様に, 液スラグ再生成時間幅よりも, 液スラグがパイプ内で破裂する時間間隔のほうが短いため, 規則的に圧力の急減圧が発生している (Fig. \ref{NtypimVSpre}). 
-Similarly, in the n-Type cycle, the time interval at which the liquid slug ruptures in the pipe was shorter than the liquid slug reconstruction time width, so a sudden pressure reduction occurred regularly (Fig. \ref{NtypimVSpre}).
+Similarly, in the n-Type cycle, the time interval at which the liquid slug ruptures in the pipe was shorter than the liquid slug reconstruction time width, so an abrupt pressure drop occurred regularly (Fig. \ref{NtypimVSpre}).
 %一方で, STWと比較して, 液スラグ上昇中の圧力上昇は見られない.
-On the other hand, no gradual pressure rise was observed during the liquid slug ascending compared with STW.
+On the other hand, no gradual pressure increasing was observed during the liquid slug ascending compared with STW.
 
 %Disturbed STW発生時には, パイプ内流れも不規則である (Fig. \ref{DistimVSpre}).
 When Disturbed STW occurred, the flow in the pipe was also irregular (Fig. \ref{DistimVSpre}).
 %Unimodal STWと同様に, STWの増圧はスラグ流と対応しており, 急減圧はスラグ-環状流遷移に対応する.
-Similar to Unimodal STW, STW pressure increase corresponds to the slug flow, and abrupt pressure drop corresponded to the slug-to-annular flow transition. 
+Similar to the Unimodal STW, STW pressure increase corresponds to the slug flow, and abrupt pressure drop corresponded to the slug-to-annular flow transition. 
 %一方で Unimodal STW発生時との最大の違いは, 液膜流の途中で不規則に液スラグ再生成が発生しているという点と, 各STWサイクルにおける液スラグ破裂位置が不規則である点にある.
-On the other hand, the biggest difference from Unimodal STW conditions was that liquid slug reconstruction occurred irregularly in the middle of film flow and that the liquid slug rupture position in each STW cycle was also irregular.
+On the other hand, the biggest difference from Unimodal STW conditions was that liquid slug reconstruction occurred irregularly in the middle of the film flow and that the liquid slug rupture position in each STW cycle was also irregular.
 %Trimodal STWでは, Unimodal パターンのとき, 単一の液スラグ上昇は発生している (Fig. \ref{TrimimVSpre}).
 Under the Trimodal STW conditions, a single liquid slug ascending occurred in the case of the Unimodal pattern (Fig. \ref{TrimimVSpre}).
 %あるとき液膜流内で液スラグ再生成が発生すると (Fig. \ref{TrimimVSpre}, $t=$71 s), 液スラグが液膜流内で破裂する継続時間の短いSTWと, 比較的上昇速度が遅く, 継続時間が長いSTWとが交互に繰り返し現れる Bimodal なSTWサイクルが繰り返される. 
-When liquid slug reconstruction occurred in the film flow (Fig. \ref{TrimimVSpre}, $ t = $ \SI{71}{s}) once, the Bimodal patterns were repeated in which short and long duration STW alternatively appeared.
+When liquid slug reconstruction occurred in the film flow (e.g., Fig. \ref{TrimimVSpre}, $ t = $ \SI{71}{s}) once, the Bimodal patterns were repeated in which short and long duration STW alternatively appeared.
 
 %特徴的圧力波形発生条件, 特に周期の乱れに対する考察には, 液スラグ再生成及び, 液膜流の構造についてさらに検討する必要がある. 以下, 液スラグと液膜流に関してより詳細な画像解析を用いた検討を行う.
-In order to consider characteristic pressure waveform generation conditions, in particular, disturbed STW, it is necessary to further study the structure of liquid slug reconstruction and liquid film flow.
-In the following, the more detailed image analysis for liquid slug and liquid film flow will be shown.
+In order to consider characteristic pressure waveform generation conditions, in particular, the Disturbed STW conditions, it is necessary to further study the structure of liquid slug reconstruction and the film flow.
+In the following, the more detailed image analysis will be shown.
 
-\subsection{Flow characteristic}
+\begin{figure}
+\includegraphics{FlctimVSpre.png} 
+\caption{\label{FlctimVSpre}Small fluctuation. Refer to the caption of Fig. \ref{UnimimVSpre}}
+\end{figure} 
+
+\begin{figure}
+\includegraphics{HiunimVSpre.png} 
+\caption{\label{HiunimVSpre}Unimodal-HQ STW. Refer to the caption of Fig. \ref{UnimimVSpre}.}
+\end{figure} 
+
+\begin{figure}
+\includegraphics{NtypimVSpre.png} 
+\caption{\label{NtypimVSpre}n-Type cycle. Refer to the caption of Fig. \ref{UnimimVSpre}.}
+\end{figure} 
+
+\begin{figure}
+\includegraphics{DistimVSpre.png} 
+\caption{\label{DistimVSpre}Disturbed STW. Refer to the caption of Fig. \ref{UnimimVSpre}.}
+\end{figure}
+
+\begin{figure}
+\includegraphics{TrimimVSpre.png} 
+\caption{\label{TrimimVSpre}Disturbed (Trimodal) STW. Refer to the caption of Fig. \ref{UnimimVSpre}.}
+\end{figure} 
+
+\subsection{Detailed flow image analyses}
 %作成した流動画像に対して, 画像解析を用いて液スラグ部分を抽出することによって, 各液スラグの位置, 速度, 長さを推定する (\S \ref{ime}). 
 The position, velocity, and length of each liquid slug were estimated by extracting the liquid slug part using image analyses on the created flow image (\S \ref{ime}).
 %この解析結果を用いて, 液スラグ再生成位置と, 液スラグ速度-液膜流厚みの関係を解析する.
 Using these results, the relationship between the liquid slug reconstruction position and the liquid slug velocity-downward film flow thickness were analyzed.
 
 %Unimodal STWや Small fluctuation 発生時には, 液スラグ再生成はパイプ下端で, ほぼ一定間隔で発生していたが, Disturbed STWでは, 液膜流領域内でも液スラグ再生成が発生していた.
-Under the unimodal STW and small fluctuation conditions, liquid slug reconstruction was generated at a substantially constant interval at the lower end of the pipe, but in Disturbed STW conditions, liquid slug reconstruction was also generated in the downward film flow region.
+Under the unimodal STW and small fluctuation conditions, liquid slug reconstruction was generated at a substantially constant interval at the lower end of the pipe. 
+Under the Disturbed STW conditions, however, liquid slug reconstruction was also generated in the downward film flow region, hereafter termed halfway reconstruction.
 %液スラグの再生成位置が, 特徴的圧力波形の違いによってどのように分布しているかを, Fig. \ref{Repsite} に示す. 
 Fig. \ref{Repsite} shows how the reconstruction positions of the liquid slug were distributed due to the difference in the characteristic pressure waveform.
 %Unimodal STW 発生時には, ほぼ全ての液スラグが決まった位置 (パイプ下端) で再生成する. 一方で, Disturbed STWは, スラグ再生成の位置にばらつきがある. 
-Under the Unimodal STW conditions, almost all the liquid slug was reconstructed at a fixed position: pipe bottom.
-On the other hand, there was variation in the position of slug reconstruction position under the Disturbed STW conditions (hereafter termed halfway reconstruction).
+%Under the Unimodal STW conditions, almost all the liquid slug was reconstructed at a fixed position: pipe bottom.
+%On the other hand, there was variation in the position of slug reconstruction position under the Disturbed STW conditions.
 %パイプの途中で液スラグが再生成するとき, その原因となった液膜流擾乱は, 比較的液膜流厚みが大きい擾乱になっている (Fig. \ref{DistimVSpre}, \ref{TrimimVSpre}). 
 Surface disturbance of downward film flow was relatively large when halfway reconstruction occurred.
 %また, 流動画像によれば, 液スラグの速度が速い時には, その直下の液膜流厚みが厚く, 液スラグがゆっくり動くときには薄くなっている. この関係を画像解析を用いて定量的に抽出する.
-Also, according to the flow image, when the velocity of the liquid slug is large, the thickness of the downward film flow immediately below it was thick, and it becomes thin when the liquid slug moving slowly.
+According to the flow image, when the velocity of the liquid slug was large, the thickness of the downward film flow immediately below it was thick, and it became thin when the liquid slug moved slowly.
 This relationship was extracted quantitatively using image analyses.
 
 %映像を取得した全ての実験結果に対して, 液スラグ下端の移動速度と, 液スラグ下端直下の液膜流厚みの関係を Fig. \ref{RDKall} に示す. 以下, 液膜流厚みを $h_f$ とする.
-The relationship between the moving velocity at the lower end of the liquid slug and the thickness of the downward film flow immediately below the lower end of the liquid slug is shown in Fig.  for all the experimental results for which flow images were acquired.
+The relationship between the moving velocity at the lower end of the liquid slug and the thickness of the downward film flow immediately below the lower end of the liquid slug is shown in Fig. \ref{RDKall} for all the experimental results for which flow images were acquired.
 In the following, let the thickness of liquid film flow be $h_f$.
 %この結果から, 液スラグの移動速度が小さい (大きい) と, その直下の$h_f$が小さい (大きい) ことがわかる.
 From this result, it was obtained that $h_f$ immediately below the liquid slug was small (large) if the moving speed is small (large).
 %この結果によれば, 速度が大きくなり, 液スラグの直上の$h_f$よりも, 直下の$h_f$が大きくなれば, 液スラグに流入する液相よりも排出される液相が多くなると考えられる. 
 When the velocity increased and $h_f$ below the liquid slug became larger than $h_f$ above the liquid slug, it is thought that the amount of liquid phase discharged is greater than the liquid phase flowing into the liquid slug.
 %すなわち, 液スラグが液膜流上端に達する前に, 液スラグ長さが小さくなっていくことが示唆される.
-That is, it is suggested that the length of the liquid slug becomes smaller before the liquid slug reaches the upper end of the downward film flow.
+It is suggested that the length of the liquid slug becomes smaller before the liquid slug reaches the upper end of the downward film flow.
 
 
 %それぞれの特徴的圧力波形において, 液スラグ直下の液膜流厚み頻度分布計算した結果を Fig. \ref{RDKhist} に示す. 
-For each characteristic pressure waveform, Fig. \ref{RDKhist} shows the calculated results of the thickness distribution of the downward film flow immediately below the liquid slug.
+For each characteristic pressure waveform, Fig. \ref{RDKhist} shows the results of the thickness distribution of the downward film flow immediately below the liquid slug.
 %この結果, Uniodal STWでは, 液膜流の厚みがほぼ均一である一方で, Distubed STWでは液膜流の厚み分布にばらつきがあり, より厚い液膜流擾乱が発生している.
 As a result, under the Unimodal STW conditions, the thickness of the liquid film flow is almost uniform, but in the Disturbed STW conditions, the thickness distribution of the downward film flow is uneven, and thicker surface disturbance occurs.
 
 
+
+\begin{figure}
+\includegraphics{Repsite.png} 
+\caption{\label{Repsite}Distributions of slug reconstruction position. (a) Unimodal STW, (b) Disturbed STW. When Unimodal STW occurs, almost all the liquid slugs were reconstructed at a lower end of the pipe.
+On the other hand, Disturbed STW had variation in the position of slug reconstruction.}
+\end{figure} 
+
+\begin{figure}
+\includegraphics{RDKall.png} 
+\caption{\label{RDKall}A relationship between slug ascending rate and thickness of the film flow.
+The moving velocity at the lower end of the liquid slug was measured as the slug ascending rate.
+Also, let the thickness of the film flow just below the liquid slug be $ h_f $.
+For all experimental data (including unimodal STW and Disturbed STW), the frequency distribution of the slug ascending rate and $ h_f $.
+When the moving speed of the liquid slug was high, the thickness of the film flow immediately below it would be large.}
+\end{figure} 
+
+
+\begin{figure}
+\includegraphics{RDKhist.png} 
+\caption{\label{RDKhist}Film flow thickness ($ h_f $) distribution just below the liquid slug.
+(a) Unimodal STW, (b) Disturbed STW.
+As a result of the period being disturbed (b), the thickness of the film flow was more variable, and a thicker film flow might be left behind.}
+\end{figure} 
 
 \section{Mechanics}\label{mec}
 \subsection{STW waveforms}
@@ -513,7 +616,7 @@ It is considered that the distribution of the slug time width becomes trimodal b
 
 %Trimodal STWよりもやや $R_p$ が小さい時には, 流れの加速が不十分であるため, 特に$\Delta t_{1}$ となる短いSTWサイクルが安定して発生しにくい. 従って, より液スラグの破裂位置や, 液膜流厚み, 液スラグ再生成位置 (Fig. \ref{Repsite}b) にばらつきが, 結果として周期が乱れたDisturbed STW になると考えられる. \cite{kanno2018} では, 特に液スラグ再生成位置のばらつきが, 周期に大きく影響し, Disturbed STWに近い周期の乱れが発生することを, 数値実験から示している (\cite{kanno2018}, Fig. 9d).
 When $ R_p $ is slightly smaller than the Trimodal STW conditions, short STW cycles, as $ \Delta t_ {1} $, are less likely to occur stably because the flow acceleration is insufficient.
-Therefore, it is thought that the rupturing position of the liquid slug, the thickness of the film flow, and the position of the liquid slag regeneration (Fig. \ref{Repsite} b) are more dispersed resulting in the Disturbed STW.
+Therefore, it is thought that the rupturing position of the liquid slug, the thickness of the film flow, and the position of the liquid slug regeneration (Fig. \ref{Repsite} b) are more dispersed resulting in the Disturbed STW.
 In the case of \cite {kanno 2018}, it is shown from numerical experiments that the dispersion of the liquid slug reconstruction position has a large influence on the cycle and the disturbance of the cycle close to Disturbed STW (\cite{kanno2018}, Fig 9d).
 
 すなわち, Disturbed STWにおいては, $Q_\mathrm{in}$ や, $V_\mathrm{c}$ といった実験パラメータが一定であっても, 前のサイクルのガス噴出によって乱された液膜流の構造が, 液膜流表面の擾乱として流下, 成長し, 次のサイクルの液スラグ再生成条件 (位置, 液スラグ成長速度) を乱すことで自発的に周期が乱れていると考えられる. 

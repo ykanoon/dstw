@@ -506,62 +506,40 @@ In the following, we focus on the Disturbed STW in this paper.
 \end{figure}
 
 
-\subsubsection{The Unimodal STW conditions}
-%数理モデルの検討結果を踏まえた上で, Unimodal STWの発生条件を検討する. Unimodal STWが発生している時, STWの一サイクルには複数の液スラグが発生している (Fig. \ref{UnimimVSpre}). 
-Based on the results of examination of mathematical models, the conditions of Unimodal STW are examined.
-When Unimodal STW occurs, multiple liquid slugs are generated in one cycle of STW (Fig. \ref{UnimimVSpre}).
-%すなわち, パイプ下端における液スラグ再生成時間間隔 ($\Delta t_r$) と, 液スラグの上昇時間, すなわち液スラグが再生成し上昇を始めてから, 破裂するまでの時間 ($\Delta t_a$) を比較すると, $\Delta t_r < \Delta t_a$ となっている (Fig. \ref{UnimimVSpre}, Fig. \ref{ascendpattern}a).
-It is $ \Delta t_r <\Delta t_a $ (Fig. \ref{UnimimVSpre}, Fig. \ref{ascendpattern} a), where the liquid slug reconstruction time interval at the lower end of the pipe is $ \Delta t_r $, and the rising time of the liquid slug, that is, the time from the reconstruction of the liquid slug to start rising to the burst is $ \Delta t_a$. 
-
+\subsection{Liquid slug shortening}
 %再上部の液スラグは, やがて液膜流上端に達すると, 液スラグ上部からの液相の流入がなくなることで, 長さが短くなっていき, 破裂する (Fig. \ref{UnimimVSpre}). 
 %この時, 最上部の液スラグが破裂することで, 流れの実効粘性 (液スラグ長さ) が急減し, 流れがさらに加速する. 
 %ここで, Unimodal STWが発生する領域では, $R_p$ が大きい (概ね $R_p>1$に対応) ため, すぐにはチャンバーの圧力が下がらない (Fig. \ref{ResultPhaseD}, 点線). 
 When the uppermost liquid slug eventually reaches the upper end of the film flow, the inflow of the liquid phase from the upper part of the liquid slug disappears, and the length shortens and ruptures.
 At this time, the rupture of the topmost liquid slug sharply reduces the effective viscosity of the flow (that is liquid slug length) and further accelerates the flow.
-Here, in the region where the unimodal STW occurs, the pressure of the chamber does not immediately decrease because $ R_p $ is large.
+Here, in the region where the STW occurs, the pressure of the chamber does not immediately decrease because $ R_p $ is large.
 %Fig. \ref{UnimimVSpre} によれば, 後に続く液スラグは液膜流の上端に達する前に破裂している. 後続の液スラグの加速及び液膜流内での破裂は, \cite{kanno2018} のモデルでは説明できない. 
 %本研究で行った画像解析によれば, 液スラグ直下の $h_f$ は, 液スラグの移動速度に依存する (Fig. \ref{RDKall}). 
 According to Fig. \ref{UnimimVSpre}, the subsequent liquid slugs burst before they reached the top of the film flow.
-Subsequent acceleration of the liquid slug and rupture in the film flow cannot be explained by the \cite{kanno 2018} model.
+Subsequent acceleration of the liquid slug and rupture in the film flow cannot be explained by the previous model \citep{kanno2018} .
 According to the image analyses conducted in this study, $ h_f $ just below the liquid slug depends on the moving speed of the liquid slug (Fig. \ref{RDKall}).
 
 %Fig. \ref{SlugAnalysisTime2} に, $V_\mathrm{c} = 122$ cm$^3$, $Q_\mathrm{in} = 0.6$ cm$^3$/s 下のUnimodal STWが発生している際のスラグ上昇速度の例を示す. 
 %液スラグ破裂前 ($t<$ 21.5 s), すべての液スラグはほぼ一定速度 (約 0.03 m/s) で上昇しているが, 最上部の液スラグが割れた直後から, 後に続く液スラグが加速し始め, 破裂直前には 0.18 m/s 程度の速度で上昇している. このとき, 後に続く液スラグの上昇速度は, 最上端液スラグ破裂直前の速度 (約 0.05 m/s) よりも大きいため, Fig. \ref{RDKall} の関係から, 液スラグ直下の $h_f$ が直上の $h_f$ よりも大きくなるような速度で移動することで, 液スラグ長さが減少していき, 破裂に至る.
-An example of the slug rise rate when Unimodal STW under $ V_ \mathrm {c} =\SI{122}{cm ^ 3} $, $ Q_ \mathrm {in} = \SI{0.6}{cm ^ 3/ s }$  is shown in Fig. \ref{SlugAnalysisTime2}.
-Before the liquid slug bursts ($ t < \SI{21.5}{s}$), all liquid slugs are rising at a nearly constant velocity (approximately \SI{0.03}{ m / s}), but immediately after the topmost liquid slug rupturing, it begins to accelerate. 
-It is rising at a velocity of about \SI{0.18}{ m / s} just before bursting.
-At this time, the rising velocity of the following liquid slug is higher than the velocity (about \SI{0.05}{ m / s}) just before the topmost liquid slug bursts.
-From the relationship of Fig. \ref{RDKall}, by moving at such a speed that $h_f $ becomes larger than $ h_f $ immediately above, the liquid slug length decreases and it leads to a burst.
+An example of the slug ascending rate when Unimodal STW under $ V_ \mathrm {c} =\SI{122}{cm ^ 3} $, $ Q_ \mathrm {in} = \SI{0.6}{cm ^ 3/ s }$  is shown in Fig. \ref{SlugAnalysisTime2}.
+Before the liquid slug burst ($ t < \SI{21.5}{s}$), all liquid slugs were rising at a nearly constant velocity ($\sim \SI{0.03}{ m / s}$), but immediately after the topmost liquid slug rupturing, it began to accelerate. 
+It was ascending at a velocity of about \SI{0.18}{ m / s} just before bursting.
+At this time, the rising velocity of the following liquid slug was higher than the velocity (about \SI{0.05}{ m / s}) just before the topmost liquid slug burst.
+From the relationship of Fig. \ref{RDKall}, by moving at such a speed that $h_f $ below the liquid slug becomes larger than $ h_f $ immediately above, the liquid slug length decreases and it leads to a burst.
 %Unimodal STW発生時には, パイプ内の $h_f$ の分布が比較的均一であり (Fig. \ref{RDKhist}a), 液スラグ破裂時に大きな擾乱が発生しないため, 液スラグはほぼパイプ下端で発生している (Fig. \ref{Repsite}). 
-%液スラグがパイプ下端で発生する場合, 再生成する液スラグの初期長さのばらつきや, 液スラグ成長速度のばらつきは, STWの周期にほぼ影響しないことは, \cite{kanno2018} (Fig. 9) で数値実験によって確かめている. 
+%液スラグがパイプ下端で発生する場合, 再生成する液スラグの初期長さのばらつきや, 液スラグ成長速度のばらつきは, STWの周期にほぼ影響しないことは, \cite{kanno2018} (Fig. 9) で数値実験によって確かめている.
+
 Under the Unimodal STW conditions, the distribution of $ h_f $ in the pipe is relatively uniform (Fig. \ref{RDKhist}a), and no large disturbance occurs at the time of liquid slug rupture (Fig. \ Ref {Repsite}).
 When the liquid slug is reconstructed at the lower end of the pipe, the dispersion of the initial length of the liquid slug to be reconstructed and the dispersion of the liquid slug growth rate have almost no influence on the STW cycle. 
-It is confirmed by numerical experiments.
+It is confirmed by numerical experiments \citep{kanno2018}.
 
-%以上の検討より, $R_p$ が大きく ($R_p$が1を超える程度), 液スラグ破裂時に大きな擾乱が発生しない程度の $Q_\mathrm{in}$ ($<$0.5-0.6 cm$^3$/s) で, Unimodal STWが発生すると考えられる.
-From the above consideration, it is considered that Unimodal STW occurs when $ R_p $ is large ($ R_p $ is about 1 or more), and $ Q_ \mathrm {in} $ ($< \SI{0.5}{} - \SI{0.6}{cm^3/s}$) that does not cause a large disturbance at the time of liquid slug rupture.
-
-
-%\paragraph{高 $Q_\mathrm{in}$ における $\Delta t_a$ と $\Delta t_r$}
-%本実験では, $Q_\mathrm{in} = 0.5 - 0.7 $ cm$^3$/s を境に, 波形の特徴が変わる (Fig. \ref{ResultPhaseD}). 
-%このパラメータ範囲で計測した特徴的波形の発生条件を考察する上で, まず, $Q_\mathrm{in}$を増加させた時の $\Delta t_r$ と $\Delta t_a$ とに着目する.
-
-%$Q_\mathrm{in}$を増加させた時,  $\Delta t_r$ は小さくなっていくが, $Q_\mathrm{in}> 0.5$ cm$^3$/s ではほとんど $\Delta t_r$ が一定である (Fig. \ref{Intervalcmp}). この振る舞いについて, 実験の解析の結果から得られた $Q_\mathrm{in}-h_f$ の関係と, 液膜流に関する数理モデル \citep{kanno2018} を用いて検討する.
-
-%今回の実験パラメータの範囲内では, $Q_\mathrm{in}$ を増加させていくと, パイプ内流れの上昇速度が大きくなり, 液スラグ直下の $h_f$ が大きくなる (Fig. \ref{RDKall}) ことで, パイプ内鉛直方向の平均的な液膜流厚みは大きくなっていく (Fig. \ref{Raveplot}). $Q_\mathrm{in} > 0.7 $ cm$^3$/s ではパイプ内の平均液膜流厚みはほぼ一定である (Fig. \ref{Raveplot}). この振る舞いは, Fig. \ref{RDKall} で, 液スラグ移動速度が 0.1 m/s よりも大きい時に液スラグ直下の $h_f$ が頭打ちになる様子と整合的である. また, $h_f = 0.4 - 0.6$ mm のとき, 液スラグ上昇速度 $u = 0.1$ m/s は $Q_\alpha = 1.1 \sim 1.4$ cm$^3$/s と対応している.
- 
-%\cite{kanno2018} では, パイプ下端で, ある長さ $L_i$の長さをもつ擾乱か成長するとき, 液膜流の流下速度が大きければ, その分早く擾乱が成長すると考えた. 液膜流が, 重力と壁面剪断応力が釣り合った状態で流下する自由流下液膜流であると考えると, $h_f$が大きいほど液膜流流下平均速度は大きくなる (\cite{kanno2018}, KEq. 23). したがって, \cite{kanno2018}のモデルによれば, $h_f$ が大きいほど, 液膜流流下平均速度が大きくなり, $\Delta t_r$ が小さくなる. この関係は, 実験において $Q_\mathrm{in}$ を増加させたときの液膜流平均厚み ($\bar{h_f}$, Fig. \ref{Raveplot}) 及び $t_r$ の振る舞い(Fig. \ref{Intervalcmp}) と整合的である.
-
-%液スラグ上昇時間 ($\Delta t_a$) は, 個々の液スラグがパイプ内に生成してから破裂するまでの時間を指す. $Q_\mathrm{in}$ を大きくしていくとパイプ内流れの平均上昇速度が大きくなるため, $\Delta t_a$ は小さくなっていく.
-
-%\paragraph{Unimodal-HQ STWの発生条件}
-%Unimodal-HQ STWの発生時には, STWサイクルには一つの液スラグの上昇のみが関与し, STW時間幅は $\Delta t_r$ と同程度である (Fig. \ref{HiunimVSpre}, Fig. \ref{ascendpattern}b). 
-
-%これは, $Q_\mathrm{in}$を増加させると, スラグ流上昇速度が大きなり, $\Delta t_a$ が小さくなっていくが, $\Delta t_r$ は $Q_\mathrm{in}>0.5$ cm$^3$/s でほぼ一定となるためである (Fig. \ref{Intervalcmp}).
-
-%また, Fig. \ref{RDKall} によれば, 液スラグの上昇速度が 0.1 m/s よりも大きい時, 上昇速度が多少ばらついても, 液膜流の厚みが大きく変わらない. さらに, 擾乱が生じたとしても, 液スラグの上昇速度が速く, 液膜流擾乱が十分に成長する前に, 次の液スラグが上昇してくる. この結果, 各STWの液スラグ再生成はパイプ下端で発生し, 大きくサイクルは乱れないと考えられる. 
-
-%以上の検討から, $R_p$ が十分に大きく, STWが発生する条件下で, $Q_\mathrm{in}$ を大きくしていけば, 液スラグの上昇速度も速くなり, $\Delta t_a < \Delta t_r $ となる程度のやや大きい $Q_\mathrm{in}$ ( $> 0.5 $ cm$^3$/s) でUnimodal-HQ STWが発生すると考えられる.
+\begin{figure}
+\includegraphics{SlugAnalysisTime2.png} 
+\caption{\label{SlugAnalysisTime2} Liquid slug time change when Unimodal STW occurs.
+(a) Chamber pressure, (b) liquid slug position, (c) liquid slug velocity.
+The liquid slug ascended at a constant velocity around $ t = 21.5 $ s, and the top liquid slug (b, blue) shortens in length when it reached the upper end of the film flow then ruptured.
+After the top of the liquid slug ruptured, the subsequent liquid slug (red) rose while accelerating and burst in the middle of the film flow.}
+\end{figure} 
 
 \paragraph{The conditions of Distubed STW}
 %ここまでの考察では, 液スラグが必ずパイプの下端で液スラグ再生成が発生し, 液膜流擾乱の影響は考えていない. しかし, このようなパイプ内流れの高粘性化条件が一定の下では, 周期の乱れを説明することができない.

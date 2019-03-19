@@ -62,7 +62,7 @@
 % other information
 % \affiliation can be followed by \email, \homepage, \thanks as well.
 \author{Yo Kanno}
-\email{kanno@email.address}
+\email{yok@eri.u-tokyo.ac.jp}
 
 \author{Mie Ichihara}
 \email{ichihara@eri.u-tokyo.ac.jp}
@@ -100,23 +100,23 @@ Through image analyses, we point out that the disturbed flow structure by the pa
 % References should be done using the \cite, \ref, and \label commands
 \section{Introduction}\label{intro}
 Sawtooth wave-like signals can be found in nature, from laboratory-scale to large-scale natural phenomena. 
-For instance, musical instruments, electrical circuits, a model for action potentials of neurons, flow instabilities of boiling channel, geyser quasiperiodic activity, volcanic explosions or ground deformation, or stick-slip phenomena as a seismic mechanism
+For instance, flow instabilities of boiling channel \citep{Ozawa1979}, geyser quasiperiodic activity \citep{NishimuraIchihara2006}, volcanic explosions or ground deformation \citep{Fujita2004, Iguchi2008, Genco2010}, or stick-slip phenomena as a seismic mechanism \citep{Brace1966}.
 The analysis of the periodic sawtooth signal produced by such systems represents, when possible, a way to investigate the origin, the characteristics and the occurrence of these events.
 It is also important in terms of the prevention of natural disaster to investigate the characteristic of the periodicity of natural events.
 
 Among these systems, we will focus on the sawtooth wave-like signals produced by flow-induced oscillations of coupling between an elastic capacitance and variable flow resistance.
-At laboratory-scale, for example, self-induced pressure perturbations repeatedly occur during flow from a chamber through a pipe for fluids with complex rheologies with a negative correlation between shear stress and shear rate.
-A self-induced oscillation as a "pressure drop oscillation" occurs in systems with a sufficiently compressible volume in a chamber connected upstream to a boiling pipe.
-This mechanism applied to explain oscillatory behavior observed in the 2000 Miyakejima caldera collapse.
-Cyclic pressure changes were also reported as resulting from alternating periods of Poiseuille flow and plug flow in a vertical pipe.
-This was also compared the oscillation to tilt cycles during dome-building eruptions.
+At laboratory-scale, for example, self-induced pressure perturbations repeatedly occur during flow from a chamber through a pipe for fluids with complex rheologies with a negative correlation between shear stress and shear rate \citep{DenDoelder1998, Malkin2010}.
+A self-induced oscillation as a "pressure drop oscillation" occurs in systems with a sufficiently compressible volume in a chamber connected upstream to a boiling pipe \citep{Ozawa1979, Kakac2008}.
+%This mechanism applied to explain oscillatory behavior observed in the 2000 Miyakejima caldera collapse \citep{Fujita2004}.
+Cyclic pressure changes were also reported as resulting from alternating periods of Poiseuille flow and plug flow in a vertical pipe \citep{Lane2008}.
+%This mechanism was compared the oscillation to tilt cycles during dome-building eruptions \citep{Lane2008}.
 
 The sawtooth wave-like signal has been observed at large-scale natural phenomena.
 Inflation-deflation cycles of volcanic edifices, for example, are observed at many active systems.
-These signals are commonly reproduced by flow-induced oscillation models that include coupling between pressure changes in magma chamber as an elastic capacitance and effective magma viscosity variabilities in the conduit flow.
+These signals are commonly reproduced by flow-induced oscillation models that include coupling between pressure changes in magma chamber as an elastic capacitance and effective magma viscosity variabilities in the conduit flow \citep{Barmin2002, Melnik2005b, Kozono2012}.
 On the other hand, these existing models do not fully explain the disturbed periodic behavior of actual volcanic eruption systems.
 
-Here, we present the analysis of the sawtooth wave-like pressure changes appeared in a two-phase flow experiment with pipe-chamber equipment.
+Here, we present the analysis of the sawtooth wave-like pressure changes appeared in a two-phase flow experiment with pipe-chamber equipment \citep{kanno2018}.
 With varying the gas influx into the chamber and a gas volume in the chamber, various kinds of characteristic waveforms were observed.
 The characteristics of unimodal pressure change pattern have been studied in details including mathematical structure comparisons of the existing model for natural phenomena.
 In our study, we focus on the occurrence of the disturbed sawtooth patterns under specific parameters.
@@ -126,23 +126,24 @@ Finally, possible applications to explain a disturbed period in natural phenomen
 \section{Experimental method}\label{met}
 \subsection{Experimental setup}\label{setup}
 The experimental system comprised a chamber and pipe, where a constant gas flux ($Q_\mathrm{in}$) was maintained in the chamber, and the gas-liquid flow in the pipe (Fig. \ref{Apparatus}). 
-The chamber, pipe, and connecting-joint were constructed using acrylic glass to ensure rigidity and enable direct observations.
-At the contact part between this joint and the pipe, an O-ring with a 0.5 mm diameter was inserted to obtain the field of view as much as possible.
-The pipe was fixed so that the central axis was aligned, and the O-ring was pressed downward by fixing at the top the pipe with a drill chuck used for machine tools.
+%The chamber, pipe, and connecting-joint were constructed using acrylic glass to ensure rigidity and enable direct observations.
+%At the contact part between this joint and the pipe, an O-ring with a 0.5 mm diameter was inserted to obtain the field of view as much as possible.
+%The pipe was fixed so that the central axis was aligned, and the O-ring was pressed downward by fixing at the top the pipe with a drill chuck used for machine tools.
 The compressible gas volume in the chamber ($V_\mathrm{c}$) is maintained at a constant value during each experimental run.
-$Q_\mathrm{in}$ was regulated by a microneedle valve (IBS FMNV2) that ensured a constant gas flux of between \SI{1}{\m^3 /s}. 
+$Q_\mathrm{in}$ was regulated by a microneedle valve (IBS FMNV2) that ensured a constant gas flux. 
 We used sugar syrup diluted in distilled water as the liquid phase. 
-The liquid behaved as a Newtonian fluid, and we measured its viscosity using a BOHLIN CVO Rheometer and adjusted it to \SI{1}{\Pa \s} at the experimental temperature of \SI{25}{\degreeCelsius}.
+The liquid behaved as a Newtonian fluid, and we adjusted it to \SI{1}{\Pa \s} at the experimental temperature of \SI{25}{\degreeCelsius}.
 The pipe was filled with syrup of \SI{60}{mm} from the bottom of the pipe, and then gas started to inject into the chamber.
-Injected gas flowed through the pipe and forced the liquid residing in the pipe upward, resulting in gas-liquid flow within the pipe.
+Injected gas flowed through the pipe and forced the liquid ascending in the pipe upward, resulting in gas-liquid flow within the pipe.
 
 A pressure sensor (KISTLER 701A with a 5011A charge amplifier) was installed to measure pressure changes in the chamber, and a microphone (Br\"uel-Kj\ae r 4193+2669L with a Nexus 2690 signal conditioner) was mounted to the top of the pipe. 
 Data were sampled at \SI{10}{kHz} using a PC-based data acquisition system (DEWETRON DEWE-211).
-A high-speed black-and-white camera (Photoron FASTCAM Mini) was synchronized with the data acquisition PC and was focused on the lowermost \SI{200}{\mm} of the pipe, where gas-liquid flow occurred.
-The field of view was illuminated by a flat backlight source. We used a pale-color syrup to improve the visibility of the liquid phase against the gas phase and the pipe. 
-Dark areas were thus shaded according to the thickness of the liquid across the pipe. 
-We used the resulting distribution of light intensity to observe flow patterns.
-The controlled experimental parameters were $V_\mathrm{c}$, $Q_\mathrm{in}$, and the amount of syrup in the pipe; as defined by the initial syrup height $H_\mathrm{s}$. 
+A high-speed black-and-white camera (Photoron FASTCAM Mini) was synchronized with the data acquisition PC and was focused on the lowermost \SI{200}{\mm} of the pipe.
+The field of view was illuminated by a flat backlight source. 
+We used a pale-color syrup to improve the visibility of the liquid phase against the gas phase and the pipe. 
+%Dark areas were thus shaded according to the thickness of the liquid across the pipe. 
+%We used the resulting distribution of light intensity to observe flow patterns.
+The controlled experimental parameters were $V_\mathrm{c}$, $Q_\mathrm{in}$. 
 These parameters were fixed during each experimental run. 
 The parameters varied from 0.2 to \SI{1.5}{cm^3/s} for $Q_\mathrm{in}$, 20 to \SI{157} {\cm^3} for $V_\mathrm{c}$.
 
@@ -152,7 +153,12 @@ The parameters varied from 0.2 to \SI{1.5}{cm^3/s} for $Q_\mathrm{in}$, 20 to \S
 \end{figure}
 
 \subsection{Image Analyses method}\label{ime}
-The thickness of the downward film flow and the position of the liquid slug were analyzed using image analysis.
+There were two types of flow patterns in the pipe flow \cite{kanno2018}. 
+One is an ascending flow of alternation gas and liquid slugs, referred to as the slug flow.
+In this flow, we define a liquid slug as a continuous zone of liquid that bridges the pipe. 
+Liquid slugs are separated by gas slugs, which are large bubbles with diameters similar to the pipe diameter.
+There are also a downward flow of a film of liquid along the pipe wall, which is referred to here as the film flow.
+%The thickness of the film flow along the pipe inner wall and the position of the liquid slug where were analyzed using image analysis.
 
 %Fig. \ref{Rbottom} に, ある時間, ある高さにおけるパイプ画像水平方向断面の暗度分布を示す.  
 Fig. \ref{Rbottom} shows the darkness distribution of the horizontal cross section of a pipe image at a certain height for a certain time.
@@ -161,16 +167,17 @@ In the part where gas exists at the center of the pipe, there are two peaks in t
 %空気, 水あめ, アクリルの屈折率をそれぞれ1, 1.44 (島津製作所, \url{https://www.shimadzu.co.jp/opt/products/ref/ref-app05.html}), 1.49 (島津製作所, \url{https://www.shimadzu.co.jp/opt/products/ref/ref-app03.html}) とした上で, 空気, アクリル部分, 及び色付けした水あめ領域を通過する光路長に比例して光が吸収され, 暗くなると考えた. 
 Assuming that the refractive indices of air, liquid, and acrylics were 1, 1.44, and 1.49, respectively, it was thought that light was absorbed and darkened in proportion to the optical path length passing through the air, the liquid, and the acrylic part.
 %カメラへ到達した光が, どのような光路で空気, アクリルパイプ, 液部分を通過して, バックライトの平面光源から到達したのかを, スネルの法則を用いて見積もると, Fig. \ref{raytraseDk} のようになる. 
-Using Snell's law, the light paths from the flat backlighting source reaching the camera has passed through the air, the acrylic pipe and the liquid parts are calculated as shown in Fig. \ref{raytraseDk}.
+Using Snell's law, the light paths are calculated as shown in Fig. \ref{raytraseDk}.
 %ただし, 光が空気及びアクリル部分を通過する際にも, 距離に比例して光が吸収されるとし, 水あめ領域を通過するときには, 空気及びアクリル領域に比べて光を3倍吸収すると考えた.
-When light passed through the air and acrylic part, it was assumed that the light is absorbed in proportion to the distance, and when passing through the liquid parts, it was considered to absorb three times the light compared to the air and acrylic area.
+When light passed through the air and acrylic part, it was assumed that the light is absorbed in proportion to the distance. 
+It was considered to absorb three times the light compared to the air and acrylic area when passing through the liquid parts.
 %仮定する吸収率によって暗度分布が多少異なるが, 暗度のピーク位置には影響を及ぼさない.
 Although the darkness distribution differs somewhat depending on the assumed absorption factor, it does not affect the peak positions of the darkness distributions.
-%実験画像と同様に, パイプ中心に気体がある場合は二つの暗度ピークがみられ, 液膜の厚さが小さくなるほど, ピーク間の幅は大きくなる. 
+%実験画像と同様に, パイプ中心に気体がある場合は二つの暗度ピークがみられ, 液膜の厚さが小さくなるほど, ピーク間の幅は大きくなる.
 As a result of the calculation, as in the experimental results, when there was gas part at the pipe center, two darkness peaks are seen, and the smaller the thickness of the liquid film, the larger the width between the peaks.
 %そこで, 暗度ピーク間の幅とパイプ内径の比を実験画像と計算で比較し, パイプ各高さで液膜流厚みを推定する. 
 %一方, 明瞭な暗度のピークが見られない断面は, 液体で満たされた部分 (液スラグ, 詳細は \S \ref{flowinpipe})と判定する.
-Therefore, the width between the darkness peaks and the ratio of the inner and outer diameter of the pipe are compared with the experimental image and calculation to estimate the actual thickness of the downward film flow at each height of the pipe.
+Therefore, the width between the darkness peaks and the ratio of the inner and outer diameter of the pipe are compared with the experimental image and calculation to estimate the actual thickness of the film flow at each height of the pipe.
 On the other hand, the cross section where no clear peak of the darkness was judged to be the part filled with liquid.
 
 \begin{figure}
@@ -194,27 +201,23 @@ Fig. \ref{Rbottom} corresponds to the figure in the right column.}
 
 \subsection{Flow image}\label{flowim}
 %撮影したビデオ映像の各ビデオフレームにおいて, 高さ方向の液膜流厚み分布を推定する. 
-The thickness distribution of downward film flow in the height direction was estimated at each video frame.
+The thickness distribution of the film flow in the height direction was estimated at each video frame.
 %この結果を幅 1ピクセルの画像として, 時間順に水平方向に連結し, 流動画像を作成する. 
 These results as a 1-pixel-wide image were connected horizontally in time order to create a flow image.
 %流動画像の例を Fig. \ref{UnimslugimageAn}a, \ref{UnimimVSpre} に示す (詳細は \S \ref{PandF}で後述). 
 An example of the flow image is shown in Fig. \ref{UnimimVSpre}. 
 %赤い部分は, 暗度ピークが不明瞭な領域であり, 液スラグ部分に対応している. 
-The red parts are the area where the dark peaks are unclear and correspond to the ascending liquid slug part while orange to blue part represent downward film flow.
+The red parts correspond to the ascending liquid slug part while orange to blue part represent film flow.
 %また, オレンジ色から青色の領域は, 液膜流の厚みを表しており, 液膜流は流下しているため, 全体に右下がりの陰になっている. 
-
 %作成した流動画像から, 閾値処理によって画像の二値化を行い, 液スラグ領域のピクセルに 1を, それ以外に 0を割り当てる. 
-The created flow image was binarized by thresholding, and 1 was assigned to pixels in the liquid slug area and 0 was assigned to others.
+%The created flow image was binarized by thresholding, and 1 was assigned to pixels in the liquid slug area and 0 was assigned to others.
 %ある液スラグ領域のピクセルに対して, 上下左右の近傍8点のうち, どれかが 1であれば, 同じ液スラグ領域であると判定する, 8点近傍連結を用いて, それぞれの液スラグごとにその画像領域をラベリングし, それぞれの液スラグの挙動を追跡した. 
-For any pixel in a liquid slug area, if any one of the eight points in the upper, lower, left, and right areas is 1, it was determined that there is the liquid slug area was the same. 
+%For any pixel in a liquid slug area, if any one of the eight points in the upper, lower, left, and right areas is 1, it was determined that there is the liquid slug area was the same. 
 The image area was labeled and the behavior of each liquid slug was traced.
 %二値化および領域のラベリング処理には, MATLAB の Image Processing Toolbox (imagesegmenter) を用いた. 
 MATLAB's Image Processing Toolbox (images segmenter) were used for binarization and region labeling.
 
-\begin{figure}
-\includegraphics{UnimimVSpre.png} 
-\caption{\label{UnimimVSpre}Pressure waveform and flow image: Unimodal STW. Upper: Pressure waveform. Bottom: The film flow thickness of the liquid is indicated in color. Ascending red trails represent liquid slugs while descending yellow-red stripes represent surface disturbances during downward film flow.}
-\end{figure} 
+
 
 
 \section{Result}\label{res}
@@ -223,16 +226,16 @@ The various characteristic pressure waveforms measured by the values of the para
 \subsection{Characteristic pressure waveforms}
 \subsubsection{Unimodal STW}
 %Fig. \ref{ResultPhaseD}内, $\diamondsuit$ で示した実験パラメータにおいて, 一定の時間幅を持ったノコギリ波状の圧力変動が発生した (Fig. \ref{PplotEx}a).
-In the experimental parameters shown as $\diamondsuit$ in Fig. \ref{ResultPhaseD}, sawtooth wave-like pressure change with a fixed time interval was generated (Fig. \ref{PplotEx}a).
+In the experimental parameters shown as $\diamondsuit$ in Fig. \ref{ResultPhaseD}, sawtooth wave-like pressure change (hereafter referred to as STW) with a fixed time interval was generated (Fig. \ref{PplotEx}a).
 %本研究では, ゆっくりとしたチャンバー圧力の増圧に続いて, 圧力が -5 kPa/s より速く減少し, かつ, 後述する流動様式の遷移が発生するような急減圧が発生した場合, STWが発生したと定義する. 
 In this study, the term of STW will be used when the pressure decreases more rapidly than \SI{-5}{kPa/s} following the gradual pressure increase, which causes the flow pattern transition described later.
 %チャンバー圧力波形の, 急減圧発生から次の急減圧までの時間 ($\Delta t$) をSTW時間幅とし,そのヒストグラムを Fig. \ref{histogramall}a に示す. 
 The time ($\Delta t$) from the onset of the abrupt pressure drop to the next pressure drop of the chamber pressure waveform was taken as the STW time width and the histogram is shown in Fig. \ref {histogramall}a.
 %この時, STW時間幅のヒストグラムは Unimodal な分布となることから, この圧力波形を Unimodal STWとする. Unimodal STW は, \cite{kanno2018} で報告した Periodic STWに対応している.
-Let this pressure waveform be the unimodal STW since the histogram of the STW time width became a unimodal distribution.
-The Unimodal STW corresponds to the Periodic STW reported at previous study \citep{kanno2018}.
+Let this pressure waveform be the Unimodal STW (corresponds to the Periodic STW in \citep{kanno2018}) since the histogram of $\Delta t$ became a unimodal distribution.
+%The Unimodal STW corresponds to the Periodic STW reported at previous study \citep{kanno2018}.
 %本研究では, 過去の実験に比べて, より大きい $Q_\mathrm{in}$ まで実験を行なった結果, 後述するように, STW波形により多くのバリエーションを見出したため, 特徴的波形の分類を細分化している.
-The classification of characteristic waveforms was subdivided since more variations than the previous study were found in the STW waveform as a result of experimenting to larger $Q_\mathrm{in}$ than past experiments.
+%The classification of characteristic waveforms was subdivided since more variations than the previous study were found in the STW waveform as a result of experimenting to larger $Q_\mathrm{in}$ than past experiments.
 %パイプ内流れとの対応関係は, \S \ref{PandF} でまとめて示す.
 The correspondence with the flow pattern in the pipe will be summarized in \S \ref{PandF}.
 
@@ -241,14 +244,14 @@ The correspondence with the flow pattern in the pipe will be summarized in \S \r
 Under smaller $Q_\mathrm{in}$ and $V_ \mathrm {c} $ than the Unimodal STW conditions (Fig. \ref {ResultPhaseD}, $\times$), STW occurrence was not seen, and there is small pressure fluctuations (Fig. \ref {PplotEx}b).
 These conditions are referred to as the Small fluctuation conditions hereafter.
 %これは, \cite{kanno2018} で報告した Non-STW に対応している. 圧力波形のスペクトルにおけるピーク周波数から推定した振動周期は 5 - 10 秒程度で, STW 発生時よりもやや短く, 振幅が小さいことが特徴である \cite[Fig. 4]{kanno2018}.
-This corresponds to the Non-STW reported in the previous research \citep{kanno2018}.
+This corresponds to the Non-STW reported in the previous study \citep{kanno2018}.
 The oscillation period estimated from the peak frequency in the pressure waveform spectrum was about 5 - 10 seconds, which was slightly shorter than the Unimodal STW and had a smaller amplitude.
 
 \subsubsection{Disturbed STW}
 %Unimodal STW 発生領域よりも大きい $Q_\mathrm{in}$ の条件(Fig. \ref{ResultPhaseD}, ◯) では, 圧力波形は STWの特徴を持っているものの, 周期が一定ではない圧力振動パターンが発生する (Fig. \ref{PplotEx}c).
-The pressure waveform has the characteristics of STW but the pressure oscillation pattern was not constant under larger $Q_\mathrm{in} $ condition (Fig. \ref {ResultPhaseD}, $\bigcirc$) than the Unimodal STW conditions.
+The pressure waveform has the characteristics of STW but the pressure oscillation pattern was disturbed under larger $Q_\mathrm{in} $ condition (Fig. \ref {ResultPhaseD}, $\bigcirc$).
 %この時の STW時間幅ヒストグラムは, Fig. \ref{histogramall}c で示すように, Unimodal STWと比べてばらつきを持って分布していることから, この特徴的圧力波形を, Disturbed STWとする.
-This characteristic pressure waveform is referred to as the Disturbed STW hereafter since the STW time width histogram at this time was distributed with variations compared to the Unimodal STW conditions, as shown in Fig. \ref{histogramall}c.
+This characteristic pressure waveform is referred to as the Disturbed STW hereafter since $\Delta t$ histogram at this time was distributed with variations compared to the Unimodal STW conditions, as shown in Fig. \ref{histogramall}c.
 %$Q_\mathrm{in}$ がやや大きい領域 (Fig. \ref{ResultPhaseD}, ☆) では, Unimodal パターン (Fig. \ref{PplotEx}d, $t=0\sim10$, $45\sim85$ s) と Bimodal パターン (Fig. \ref{PplotEx}d, $t=10\sim45$, $85\sim100$ s)を持つ STWサイクルが交互に出現する (Fig. \ref{PplotEx}d).
 In the region where $ Q_ \mathrm{in} \times V_\mathrm{c} $ was slightly large (Fig. \ref{ResultPhaseD}, $\star$), an unimodal pattern (Fig. \ref{PplotEx}d, $ t = 0 - 10 $, $ 45 - 85 $) and a Bimodal pattern (Fig. \ref{PplotEx}d, $ t = 10 -  45 $, $ 85 - 100 $ s) alternately appeared (Fig. \ref{PplotEx}d).
 %ヒストグラムは, Trimodal な分布になっているため, 以下, この圧力波形を Trimodal STWとする (Fig. \ref{histogramall}e). 
@@ -295,7 +298,8 @@ The fluid images were compared with the characteristic pressure waveforms shown 
 %There are also a downward flow of a film of liquid along the pipe wall, which is referred to here as the film flow.
 
 %Unimodal STW 発生時には, パイプ内において規則的にスラグ流と環状流の流動様式遷移が発生している (Fig. \ref{UnimimVSpre}). 
-Under the Unimodal STW conditions, flow pattern transitions of slug flow and annular flow occurred regularly in the pipe (Fig. \ref{UnimimVSpre}). This flow pattern transition is hereafter referred to as slug-to-annular flow transition \citep{kanno2018}.
+Under the Unimodal STW conditions, flow pattern transitions of slug flow and annular flow occurred regularly in the pipe (Fig. \ref{UnimimVSpre}). 
+This flow pattern transition is hereafter referred to as slug-to-annular flow transition \citep{kanno2018}.
 %STW波形のうち, ゆっくりとした圧力上昇はスラグ流に, 急激な圧力の減少は, スラグ-環状流遷移に対応している.
 In the STW waveform, the gradual pressure increasing corresponded to the slug flow, and the abrupt pressure drop corresponded to the slug-to-annular flow transition.
 %液スラグが消失する位置から, とくに強いオレンジ色の右下がりの陰が見える. 
@@ -311,7 +315,7 @@ The position where the topmost liquid slug ruptured were almost constant in each
 %Small fluctuation 発生時には, パイプ途中の液スラグが全て破裂しないため, 環状流はほとんど発生せず, 準定常的にスラグ流が発生している (Fig. \ref{FlctimVSpre}).
 Almost no annular flow was generated and a quasi-steady slug flow was generated (Fig. \ref{FlctimVSpre}) under the small fluctuation conditions since all the liquid slug in the pipe did not rupture all at once.
 %パイプの下端ではほぼ一定間隔で液膜流の擾乱により液スラグ再生成が起こっている.
-At the lower end of the pipe, liquid slug regeneration due to the disturbance of the film flow occurred at almost constant intervals. 
+At the lower end of the pipe, liquid slug reconstruction due to the disturbance of the film flow occurred at almost constant intervals. 
 %液スラグは, 液膜流厚みの小さい領域に到達すると, 縦方向の長さが小さくなって膜状になっていき, 最終的に破裂する.
 When the liquid slug reached a region where the thickness of the film flow was small, its length became small and film-like, and eventually ruptured.
 %圧力のゆるやかな減少は, 上部での液スラグ膜の破裂と対応している. 
@@ -342,6 +346,11 @@ In order to consider characteristic pressure waveform generation conditions, in 
 In the following, the more detailed image analysis will be shown.
 
 \begin{figure}
+\includegraphics{UnimimVSpre.png} 
+\caption{\label{UnimimVSpre}Pressure waveform and flow image: Unimodal STW. Upper: Pressure waveform. Bottom: The film flow thickness of the liquid is indicated in color. Ascending red trails represent liquid slugs while descending yellow-red stripes represent surface disturbances during film flow.}
+\end{figure} 
+
+\begin{figure}
 \includegraphics{FlctimVSpre.png} 
 \caption{\label{FlctimVSpre}Small fluctuation. Refer to the caption of Fig. \ref{UnimimVSpre}}
 \end{figure} 
@@ -368,38 +377,38 @@ In the following, the more detailed image analysis will be shown.
 
 \subsection{Detailed flow image analyses}
 %作成した流動画像に対して, 画像解析を用いて液スラグ部分を抽出することによって, 各液スラグの位置, 速度, 長さを推定する (\S \ref{ime}). 
-The position, velocity, and length of each liquid slug were estimated by extracting the liquid slug part using image analyses on the created flow image (\S \ref{ime}).
+%The position, velocity, and length of each liquid slug were estimated by extracting the liquid slug part using image analyses on the created flow image (\S \ref{ime}).
 %この解析結果を用いて, 液スラグ再生成位置と, 液スラグ速度-液膜流厚みの関係を解析する.
-Using these results, the relationship between the liquid slug reconstruction position and the liquid slug velocity-downward film flow thickness were analyzed.
+%Using these results, the relationship between the liquid slug reconstruction position and the liquid slug velocity-film flow thickness were analyzed.
 
 %Unimodal STWや Small fluctuation 発生時には, 液スラグ再生成はパイプ下端で, ほぼ一定間隔で発生していたが, Disturbed STWでは, 液膜流領域内でも液スラグ再生成が発生していた.
-Under the unimodal STW and small fluctuation conditions, liquid slug reconstruction was generated at a substantially constant interval at the lower end of the pipe. 
-Under the Disturbed STW conditions, however, liquid slug reconstruction was also generated in the downward film flow region, hereafter termed halfway reconstruction.
+%Under the unimodal STW and small fluctuation conditions, liquid slug reconstruction was generated at a substantially constant interval at the lower end of the pipe. 
+%Under the Disturbed STW conditions, however, liquid slug reconstruction was also generated in the film flow region, hereafter termed halfway reconstruction.
 %液スラグの再生成位置が, 特徴的圧力波形の違いによってどのように分布しているかを, Fig. \ref{Repsite} に示す. 
 Fig. \ref{Repsite} shows how the reconstruction positions of the liquid slug were distributed due to the difference in the characteristic pressure waveform.
 %Unimodal STW 発生時には, ほぼ全ての液スラグが決まった位置 (パイプ下端) で再生成する. 一方で, Disturbed STWは, スラグ再生成の位置にばらつきがある. 
 %Under the Unimodal STW conditions, almost all the liquid slug was reconstructed at a fixed position: pipe bottom.
 %On the other hand, there was variation in the position of slug reconstruction position under the Disturbed STW conditions.
 %パイプの途中で液スラグが再生成するとき, その原因となった液膜流擾乱は, 比較的液膜流厚みが大きい擾乱になっている (Fig. \ref{DistimVSpre}, \ref{TrimimVSpre}). 
-Surface disturbance of downward film flow was relatively large when halfway reconstruction occurred.
+Surface disturbance of film flow was relatively large when halfway reconstruction occurred.
 %また, 流動画像によれば, 液スラグの速度が速い時には, その直下の液膜流厚みが厚く, 液スラグがゆっくり動くときには薄くなっている. この関係を画像解析を用いて定量的に抽出する.
-According to the flow image, when the velocity of the liquid slug was large, the thickness of the downward film flow immediately below it was thick, and it became thin when the liquid slug moved slowly.
+According to the flow image, when the velocity of the liquid slug was large, the thickness of the film flow immediately below it was thick, and it became thin when the liquid slug moved slowly.
 This relationship was extracted quantitatively using image analyses.
 
 %映像を取得した全ての実験結果に対して, 液スラグ下端の移動速度と, 液スラグ下端直下の液膜流厚みの関係を Fig. \ref{RDKall} に示す. 以下, 液膜流厚みを $h_f$ とする.
-The relationship between the moving velocity at the lower end of the liquid slug and the thickness of the downward film flow immediately below the lower end of the liquid slug is shown in Fig. \ref{RDKall} for all the experimental results for which flow images were acquired.
+The relationship between the moving velocity at the lower end of the liquid slug and the thickness of the film flow immediately below the lower end of the liquid slug is shown in Fig. \ref{RDKall} for all the experimental results for which flow images were acquired.
 In the following, let the thickness of film flow be $h_f$.
 %この結果から, 液スラグの移動速度が小さい (大きい) と, その直下の$h_f$が小さい (大きい) ことがわかる.
 From this result, it was obtained that $h_f$ immediately below the liquid slug was small (large) if the moving speed is small (large).
 %この結果によれば, 速度が大きくなり, 液スラグの直上の$h_f$よりも, 直下の$h_f$が大きくなれば, 液スラグに流入する液相よりも排出される液相が多くなると考えられる. 
 When the velocity increased and $h_f$ below the liquid slug became larger than $h_f$ above the liquid slug, it is thought that the amount of liquid phase discharged is greater than the liquid phase flowing into the liquid slug.
 %すなわち, 液スラグが液膜流上端に達する前に, 液スラグ長さが小さくなっていくことが示唆される.
-It is suggested that the length of the liquid slug becomes smaller before the liquid slug reaches the upper end of the downward film flow.
+It is suggested that the length of the liquid slug becomes smaller before the liquid slug reaches the upper end of the film flow.
 
 %それぞれの特徴的圧力波形において, 液スラグ直下の液膜流厚み頻度分布計算した結果を Fig. \ref{RDKhist} に示す. 
-For each characteristic pressure waveform, Fig. \ref{RDKhist} shows the results of the thickness distribution of the downward film flow immediately below the liquid slug.
+For each characteristic pressure waveform, Fig. \ref{RDKhist} shows the results of the thickness distribution of the film flow immediately below the liquid slug.
 %この結果, Uniodal STWでは, 液膜流の厚みがほぼ均一である一方で, Distubed STWでは液膜流の厚み分布にばらつきがあり, より厚い液膜流擾乱が発生している.
-As a result, under the Unimodal STW conditions, the thickness of the film flow is almost uniform, but in the Disturbed STW conditions, the thickness distribution of the downward film flow is uneven, and thicker surface disturbance occurs.
+As a result, under the Unimodal STW conditions, the thickness of the film flow is almost uniform, but in the Disturbed STW conditions, the thickness distribution of the film flow is uneven, and thicker surface disturbance occurs.
 
 \begin{figure}
 \includegraphics{Repsite.png} 
@@ -450,7 +459,6 @@ where $t$ is time, $p$ is the excess pressure in the chamber, $P_0$ is atmospher
 Both the liquid slug and gas in the pipe move upward at velocity $u$ and define $Q_\alpha = \alpha \pi a^2 u$. 
 The area fraction of gas flow in the pipe as $\alpha = r^2/a^2$ where $a$ is the pipe radius and $r$ is the radius of the gas flow.
 
-
 %パイプ内の非線形な圧力損失として, パイプ内気液二相流れが, 半径 $a$の円筒状パイプ内を流れるポアズイユ流であると仮定し, 
 For variable flow resistance, we assume that flow of gas and liquid in the pipe follows the Poiseuille flow relation. 
 Thus, we obtain
@@ -485,13 +493,12 @@ The time change of $L_\mathrm{s}$ is derived from the conservation of the liquid
 %ただし, $w$ は液膜流平均流下速度 ($w<0$), $x$は液スラグ上端位置, $H_\mathrm{w}$は液膜流上端位置であり, 液膜流の厚みは鉛直方向に一定であるとした.
 where $ w $ is the average falling velocity of the film flow ($ w <0 $), $ x $ is the top position of the liquid slug, $ H_ \mathrm {w} $ is the top position of the film flow, and the thickness of the film flow is assumed to be constant in the vertical direction.
 %液スラグが液膜流内を上昇するときには ($x<H_\mathrm{w}$), $L_\mathrm{s}$は一定レートで増加し, 液スラグが液膜流上端に達すると ($x=H_\mathrm{w}$), $dL_\mathrm{s}/dt$は流れの速さ ($u$) に比例して, $L_\mathrm{s}$ は小さくなっていく. 
-When the liquid slug ascends in the film flow ($ x <H_ \mathrm{w} $), $ L_ \mathrm{s} $ increases at a constant rate.
-$ dL_ \mathrm{s} / dt $ is proportional to the flow velocity ($ u $), $ L_ \mathrm{s} $ becomes smaller when the liquid slug reaches the top of the film flow ($ x = H_ \mathrm{w}$).
-
+%When the liquid slug ascends in the film flow ($ x <H_ \mathrm{w} $), $ L_ \mathrm{s} $ increases at a constant rate.
+%$ dL_ \mathrm{s} / dt $ is proportional to the flow velocity ($ u $), $ L_ \mathrm{s} $ becomes smaller when the liquid slug reaches the top of the film flow ($ x = H_ \mathrm{w}$).
 %\cite{kanno2018} では, Eqs. (\ref{dpdtex}) - (\ref{dLdt}) の解の振る舞いを解析的に調べた. 
 The behavior of Eqs. (\ref{dpdtex})-(\ref{dLdt}) has been analytically investigated \citep{kanno2018}.
 %この結果, STW発生と, Small fluctuationを分ける条件として, 液スラグが加速しつつ圧力が急減するか, 液スラグが一定速度を保ったまま短くなっていき, パイプ内圧力損失と釣り合ってチャンバー圧力がゆっくり低下するかどうかで決まると提案した. ここでは, より直感的な説明を試みる.
-As a result, under the conditions that separates STW from small fluctuation, the pressure is rapidly reduced while accelerating the liquid slug, or the liquid slug is shortened while maintaining a constant velocity, and the pressure loss in the pipe is balanced with the chamber pressure.
+%As a result, under the conditions that separates STW from small fluctuation, the pressure is rapidly reduced while accelerating the liquid slug, or the liquid slug is shortened while maintaining a constant velocity, and the pressure loss in the pipe is balanced with the chamber pressure.
 Here, we try a more intuitive explanation.
 
 %$x=H_\mathrm{w}$の状況下で, 液スラグの長さが小さくなっていくとき, $Q_\mathrm{in}$ が大きければ, パイプ内流れがより大きくなり, この結果, より速くパイプ内の圧力損失 (液スラグ長さ) が小さくなっていく (Eq. (\ref{dLdt})). 
@@ -501,13 +508,14 @@ Also, when $ V_ \mathrm{c} $ is large, the chamber pressure acts as a pressure b
 %$Q_\mathrm{in}\times V_\mathrm{c}$ が大きい領域では, チャンバーの圧力が下がるレートよりもパイプ内の圧力損失が小さくなるレートのほうが大きくなる. 
 %このため, パイプ内流れ速度が大きくなっても, 液スラグが短くなることでパイプ内の圧力損失が小さくなる. 
 %この結果, パイプ内流れ速度は増加し続ける. 
+
 In the region where $ Q_ \mathrm{in} \times V_ \mathrm {c} $ is large, the rate at which the pressure drop in the pipe decreases is greater than the rate at which the pressure in the chamber decreases.
 Therefore, even if the flow velocity in the pipe is increased, the pressure loss in the pipe is reduced by shortening the liquid slug.
 As a result, the flow velocity in the pipe continues to increase.
 %この領域は, 比が1より大きい領域とも対応する. 
 This area also corresponds to an area with a ratio greater than one which pressure drop due to viscosity when slug flow in the pipe at $Q_ \mathrm {in}$ to pressure change when gas flows out of the chamber with a volume of $V_\mathrm {c}$.
 %以下, この比を$R_p$とする (\cite{kanno2018}, Model comparisons, $\mu'Q_\mathrm{in}'$ に対応):
-In the following, this ratio is reffered to as $ R_p $ (corresponds to $ \mu' Q_ \mathrm{in} '$ in \cite{kanno2018}).
+In the following, this ratio is reffered to as $R_p$ (corresponds to $ \mu' Q_ \mathrm{in} '$ in \cite{kanno2018}).
 %\begin{eqnarray}
 %R_p= \frac{\mbox{Pressure drop due to viscosity when slug flow in the pipe at $Q_ \mathrm {in}$}} {\mbox{Pressure change when gas flows out of the chamber with a volume of $V_\mathrm {c}$}}.  
 %\end{eqnarray}
@@ -525,13 +533,12 @@ In the following, we focus on the Disturbed STW in this paper.
 \caption{\label{Thismodel}Mathematical model. $H_\mathrm{w}$: the top positions of the film flow, $x$: the top position of the liquid slug, $u$: liquid slug ascending velocity, $w$: average velocity of the film flow, $a$: pipe radius, $r$: radius of gas flow part, $L$: pipe length, $L_s$: liquid slug length, $\mu_A$: viscosity of gas, $\mu$: viscosity of the liquid, $x_i$: slug reconstruction position, $L_i$: initial slug length.}
 \end{figure}
 
-
 \subsection{Liquid slug shortening}
 %再上部の液スラグは, やがて液膜流上端に達すると, 液スラグ上部からの液相の流入がなくなることで, 長さが短くなっていき, 破裂する (Fig. \ref{UnimimVSpre}). 
 %この時, 最上部の液スラグが破裂することで, 流れの実効粘性 (液スラグ長さ) が急減し, 流れがさらに加速する. 
 %ここで, Unimodal STWが発生する領域では, $R_p$ が大きい (概ね $R_p>1$に対応) ため, すぐにはチャンバーの圧力が下がらない (Fig. \ref{ResultPhaseD}, 点線). 
-When the uppermost liquid slug eventually reaches the upper end of the film flow, the inflow of the liquid phase from the upper part of the liquid slug disappears, and the length shortens and ruptures.
-At this time, the rupture of the topmost liquid slug sharply reduces the effective viscosity of the flow (that is liquid slug length) and further accelerates the flow.
+When the uppermost liquid slug eventually reaches the upper end of the film flow, the inflow of the liquid from the upper disappears, and the length shortens and ruptures.
+At this time, the rupture of the topmost liquid slug sharply reduces the effective viscosity (that is liquid slug length) and further accelerates the flow.
 Here, in the region where the STW occurs, the pressure of the chamber does not immediately decrease because $ R_p $ is large.
 %Fig. \ref{UnimimVSpre} によれば, 後に続く液スラグは液膜流の上端に達する前に破裂している. 後続の液スラグの加速及び液膜流内での破裂は, \cite{kanno2018} のモデルでは説明できない. 
 %本研究で行った画像解析によれば, 液スラグ直下の $h_f$ は, 液スラグの移動速度に依存する (Fig. \ref{RDKall}). 
@@ -541,10 +548,10 @@ According to the image analyses conducted in this study, $ h_f $ just below the 
 
 %Fig. \ref{SlugAnalysisTime2} に, $V_\mathrm{c} = 122$ cm$^3$, $Q_\mathrm{in} = 0.6$ cm$^3$/s 下のUnimodal STWが発生している際のスラグ上昇速度の例を示す. 
 %液スラグ破裂前 ($t<$ 21.5 s), すべての液スラグはほぼ一定速度 (約 0.03 m/s) で上昇しているが, 最上部の液スラグが割れた直後から, 後に続く液スラグが加速し始め, 破裂直前には 0.18 m/s 程度の速度で上昇している. このとき, 後に続く液スラグの上昇速度は, 最上端液スラグ破裂直前の速度 (約 0.05 m/s) よりも大きいため, Fig. \ref{RDKall} の関係から, 液スラグ直下の $h_f$ が直上の $h_f$ よりも大きくなるような速度で移動することで, 液スラグ長さが減少していき, 破裂に至る.
-An example of the slug ascending rate when Unimodal STW under $ V_ \mathrm {c} =\SI{122}{cm ^ 3} $, $ Q_ \mathrm {in} = \SI{0.6}{cm ^ 3/ s }$  is shown in Fig. \ref{SlugAnalysisTime2}.
-Before the liquid slug burst ($ t < \SI{21.5}{s}$), all liquid slugs were ascending at a nearly constant velocity ($\sim \SI{0.03}{ m / s}$), but immediately after the topmost liquid slug rupturing, it began to accelerate. 
-It was ascending at a velocity of about \SI{0.18}{ m / s} just before bursting.
-At this time, the ascending velocity of the following liquid slug was higher than the velocity (about \SI{0.05}{ m / s}) just before the topmost liquid slug burst.
+%An example of the slug ascending rate when Unimodal STW under $ V_ \mathrm {c} =\SI{122}{cm ^ 3} $, $ Q_ \mathrm {in} = \SI{0.6}{cm ^ 3/ s }$  is shown in Fig. \ref{SlugAnalysisTime2}.
+%Before the liquid slug burst ($ t < \SI{21.5}{s}$), all liquid slugs were ascending at a nearly constant velocity ($\sim \SI{0.03}{ m / s}$), but immediately after the topmost liquid slug rupturing, it began to accelerate. 
+%It was ascending at a velocity of about \SI{0.18}{ m / s} just before bursting.
+%At this time, the ascending velocity of the following liquid slug was higher than the velocity (about \SI{0.05}{ m / s}) just before the topmost liquid slug burst.
 From the relationship of Fig. \ref{RDKall}, by moving at such a speed that $h_f $ below the liquid slug becomes larger than $ h_f $ immediately above, the liquid slug length decreases and it leads to a burst.
 %Unimodal STW発生時には, パイプ内の $h_f$ の分布が比較的均一であり (Fig. \ref{RDKhist}a), 液スラグ破裂時に大きな擾乱が発生しないため, 液スラグはほぼパイプ下端で発生している (Fig. \ref{Repsite}). 
 %液スラグがパイプ下端で発生する場合, 再生成する液スラグの初期長さのばらつきや, 液スラグ成長速度のばらつきは, STWの周期にほぼ影響しないことは, \cite{kanno2018} (Fig. 9) で数値実験によって確かめている.
@@ -553,13 +560,13 @@ Under the Unimodal STW conditions, the distribution of $ h_f $ in the pipe is re
 When the liquid slug is reconstructed at the lower end of the pipe, the dispersion of the initial length of the liquid slug to be reconstructed and the dispersion of the liquid slug growth rate have almost no influence on the STW cycle. 
 It is confirmed by numerical experiments \citep{kanno2018}.
 
-\begin{figure}
-\includegraphics{SlugAnalysisTime2.png} 
-\caption{\label{SlugAnalysisTime2} Liquid slug time change when Unimodal STW occurs.
-(a) Chamber pressure, (b) liquid slug position, (c) liquid slug velocity.
-The liquid slug ascended at a constant velocity around $ t = 21.5 $ s, and the top liquid slug (b, blue) shortens in length when it reached the upper end of the film flow then ruptured.
-After the top of the liquid slug ruptured, the subsequent liquid slug (red) rose while accelerating and burst in the middle of the film flow.}
-\end{figure} 
+%\begin{figure}
+%\includegraphics{SlugAnalysisTime2.png} 
+%\caption{\label{SlugAnalysisTime2} Liquid slug time change when Unimodal STW occurs.
+%(a) Chamber pressure, (b) liquid slug position, (c) liquid slug velocity.
+%The liquid slug ascended at a constant velocity around $ t = 21.5 $ s, and the top liquid slug (b, blue) shortens in length when it reached the upper end of the film flow then ruptured.
+%After the top of the liquid slug ruptured, the subsequent liquid slug (red) rose while accelerating and burst in the middle of the film flow.}
+%\end{figure} 
 
 \subsection{The conditions of the Distubed STW}
 %ここまでの考察では, 液スラグが必ずパイプの下端で液スラグ再生成が発生し, 液膜流擾乱の影響は考えていない. しかし, このようなパイプ内流れの高粘性化条件が一定の下では, 周期の乱れを説明することができない.
@@ -567,26 +574,26 @@ In the discussion so far, the liquid slug is assumed to be always reconstructed 
 We can not, however, explain the disturbance of the cycle without considering the influence of film flow disturbance.
 %実験において, $Q_\mathrm{in}$ を大きくしていくと, 徐々に $\Delta t_r$が小さくなっていき, $Q_\mathrm{in} \sim 0.7$ cm$^3$/s になると, $\Delta t_r$ がSTW時間幅と同程度となる (Fig. \ref{Intervalcmp}). この付近の $Q_\mathrm{in}$ 条件下で,  Disturbed STWが発生し始める. 
 In the experiment, as $ Q_ \mathrm {in} $ is increased, $ \Delta t_r $ becomes smaller gradually. 
-Around $ Q_ \mathrm{in} \sim \SI{0.7}{cm^ 3 / s}$, $ \Delta t_r $ becomes comparable to the STW time width (Fig. \ref{Intervalcmp}).
+Around $ Q_ \mathrm{in} \sim \SI{0.7}{cm^ 3 / s}$, $ \Delta t_r $ becomes comparable to $\Delta t$ (Fig. \ref{Intervalcmp}).
 Disturbed STW starts to occur above this $ Q_ \mathrm {in} $ condition.
 
 %Disturbed STWでは, 液膜流中で不規則に液スラグの再生成が発生していた (Fig. \ref{Repsite}b).
 %このような液膜流途中での液スラグの再生成 (以下, 液膜流内再生成) は, 前のSTWサイクルで破裂した液スラグによって生じた液膜流擾乱が大きい時, その擾乱が流下しつつ成長していくことで発生する (Fig. \ref{DistimVSpre}, \ref{TrimimVSpre}). 実際, Fig. \ref{RDKhist}b によれば, Unimodal STW発生時に比べて, $h_f$の分布にばらつきがあり, より大きな $h_f$ が生じている. これは, Fig. \ref{RDKall} の関係を基にすれば, 液スラグの移動速度が大きいことで, より大きな $h_f$ が生じていると考えられる. 一方で, さらに大きな $Q_\mathrm{in}$ (> 1.4 cm$^3$/s, Unimodal-HQ STW) では, 液膜流擾乱が十分に成長する前に, 次の液スラグが上昇することで, 液膜流内再生成が発生しない (Fig. \ref{HiunimVSpre}). このことから, Disturbed STW では, 液膜流擾乱が成長するタイムスケールと, $\Delta t_r$, $\Delta t_a$ が同程度であることも, 液膜流内再生成が発生する一つの条件であると考えられる.
-In Disturbed STW, reconstruction of liquid slug occurred irregularly in the film flow (Fig. \ref{Repsite}b).
-Such reconstruction during the film flow (hereinafter referred to as halfway reconstruction) was caused when the surface disturbance generated in the previous STW cycle was large and it grew fast (Fig. \ref{DistimVSpre}, \ref{TrimimVSpre}).
+In Disturbed STW, halfway reconstruction occurred (Fig. \ref{Repsite}b).
+It was caused when the surface disturbance generated in the previous STW cycle was large and it grew fast (Fig. \ref{DistimVSpre}, \ref{TrimimVSpre}).
 In fact, according to Fig. \ref{RDKhist}b, the distribution of $ h_f $ was more uneven than under the Unimodal STW conditions, and a larger $ h_f $ was generated.
-Based on the relation in Fig. \ref{RDKall}, a larger $ h_f $ was generated because the ascending speed of the liquid slug is large.
-On the other hand, in the larger $ Q_ \mathrm {in} $ ($> \SI{1.4}{cm ^ 3/ s}$, Unimodal-HQ STW), the next liquid slug rose before the film flow disturbance grows sufficiently.
-As a result, reconstruction within the film flow did not occur (Fig. \ref{HiunimVSpre}).
-From this, in the Disturbed STW, the time scale on which film flow disturbance growing and that slug reconstruction interval and slug ascending time width are comparable.
-It is considered to be one condition that the halfway reconstruction occurs.
+Based on the relation in Fig. \ref{RDKall}, a larger $h_f$ was generated because the ascending speed of the liquid slug is large.
+%On the other hand, in the larger $ Q_ \mathrm {in} $ ($> \SI{1.4}{cm ^ 3/ s}$, Unimodal-HQ STW), the next liquid slug rose before the film flow disturbance grows sufficiently.
+%As a result, reconstruction within the film flow did not occur (Fig. \ref{HiunimVSpre}).
+%From this, in the Disturbed STW, the time scale on which film flow disturbance growing and that slug reconstruction interval and slug ascending time width are comparable.
+%It is considered to be one condition that the halfway reconstruction occurs.
 
 %まず, Disturbed STWのうち, $R_p$ よりが大きい領域で発生する Trimodal STWの発生メカニズムを検討する.  
 %Trimodal STWでは, Unimodal パターンと, Bimodal パターンとが交互に現れていた. 以下, Unimodal パターンを Uni-T, Bimodal パターンを Bi-Tと表記する. 
 %実験では, Uni-T 発生時, パイプ内では, ほぼ一つの液スラグが上昇しており, $\Delta t_a \sim \Delta t_r$ である. この状況は Unimodal-HQ STWに近い. 
 %以下, Uni-T 発生時のSTW時間幅を $\bar{\Delta t}$ と表記する. また, Bi-T 発生時のSTW時間幅を $\Delta t_1$, $\Delta t_2$ ($\Delta t_1<\bar{\Delta t}<\Delta t_2$) とする. ヒストグラムで見えていた3つのピークは, $\Delta t_1$, $\bar{\Delta t}$, $\Delta t_2$ (Fig. \ref{histogramall}e) に対応している. 
 First, we will investigate the generation mechanism of the Trimodal STW that occurs in the region where $ R_p $ is larger than Disturbed STW.
-Under the Trimodal STW conditions, Unimodal pattern and Bimodal pattern appeared alternately.
+%Under the Trimodal STW conditions, Unimodal pattern and Bimodal pattern appeared alternately.
 In the following, Unimodal pattern is described as Uni-T, and Bimodal pattern is described as Bi-T.
 In the experiment, when Uni-T occurs, almost one liquid slug was ascending in the pipe.
 In the following, the STW time width when Uni-T occurs is denoted as $ \bar {\Delta t} $.
@@ -618,7 +625,7 @@ It is considered that the distribution of the slug time width becomes trimodal b
 
 %Trimodal STWよりもやや $R_p$ が小さい時には, 流れの加速が不十分であるため, 特に$\Delta t_{1}$ となる短いSTWサイクルが安定して発生しにくい. 従って, より液スラグの破裂位置や, 液膜流厚み, 液スラグ再生成位置 (Fig. \ref{Repsite}b) にばらつきが, 結果として周期が乱れたDisturbed STW になると考えられる. \cite{kanno2018} では, 特に液スラグ再生成位置のばらつきが, 周期に大きく影響し, Disturbed STWに近い周期の乱れが発生することを, 数値実験から示している (\cite{kanno2018}, Fig. 9d).
 When $ R_p $ is slightly smaller than the Trimodal STW conditions, short STW cycles, as $ \Delta t_ {1} $, are less likely to occur stably because the flow acceleration is insufficient.
-Therefore, it is thought that the rupturing position of the liquid slug, the thickness of the film flow, and the position of the liquid slug regeneration (Fig. \ref{Repsite}b) are more dispersed resulting in the Disturbed STW.
+Therefore, it is thought that the rupturing position of the liquid slug, the thickness of the film flow, and the position of the liquid slug reconstruction (Fig. \ref{Repsite}b) are more dispersed resulting in the Disturbed STW.
 In the case of \cite{kanno2018}, it is shown from numerical experiments that the dispersion of the liquid slug reconstruction position has a large influence on the cycle and the disturbance of the cycle close to Disturbed STW (\cite{kanno2018}, Fig 9d).
 
 %すなわち, Disturbed STWにおいては, $Q_\mathrm{in}$ や, $V_\mathrm{c}$ といった実験パラメータが一定であっても, 前のサイクルのガス噴出によって乱された液膜流の構造が, 液膜流表面の擾乱として流下, 成長し, 次のサイクルの液スラグ再生成条件 (位置, 液スラグ成長速度) を乱すことで自発的に周期が乱れていると考えられる. 
@@ -638,38 +645,40 @@ After all, in Disturbed STW, even if the experimental parameters are constant, t
 \section{Discussion}\label{mec}
 \subsection{Similarly to natural systems}
 As discussed in the previous study, this STW mechanism universally exists in natural systems, for example, as cyclic eruption systems.
-In that case, our gas chamber is equivalent to a magma chamber in terms of an elastic capacitance. Regarding the flow viscosity, the two-phase flow in the pipe corresponds to the magma flow in the conduit in an eruption system.
-
+In that case, our gas chamber is equivalent to a magma chamber in terms of an elastic capacitance. Regarding the flow viscosity, the two-phase flow in the pipe corresponds to the magma flow in the conduit in an eruption system \citep{kanno2018}.
 Previous mathematical models for such natural oscillation could not explain the disturbance in periodicity.
 On the other hand, it is important that our experimental system behaves in disturbed periodicity even in constant parameter and fixed geometry of the equipment.
+It has been discussed that flow structure disturbance due to past eruption could modulate not only eruption style but also periodicity \citep{kanno2018}.
 
 
-\subsection{Implications for natural systems}
+
+%\subsection{Implications for natural systems}
 %実験では, 過去のパイプ内流れに起因する流路構造の乱れが, 液膜流として流下していき, 次の液スラグの高粘性化条件を乱していくことで, 周期が乱れていく場合があった. 
 %この高粘性化条件の乱れは, 過去の流れの情報, 特にスラグ-環状流遷移の際の液膜流擾乱に影響を受けていた. 
 %自然現象においても, 同様の効果が周期を乱す可能性が想定される.
 %一つには噴火の噴出物のフォールバックやドレインバックが考えられる. 
 %過去の噴出物のフォールバックが火口浅部を埋めることによって, 噴火の規模が噴火様式が変化することが, 最近の噴火の観測や, 噴出物の組織解析, 室内実験から示唆されている \citep{Patrick2007, Gurioli2014, DelBello2015a, Capponi2016}. 
 %噴出物が火口に堆積することによって, マグマヘッドが冷却され, より結晶化が起こり, 火道浅部の高粘性化条件が乱されるような状況が考えられる. 
-In the experiment, there was a case that the cycle was disturbed by the past flow in the pipe disturbing the next condition to increase the effective viscosity of the flow.
-Such flow structure disturbance descends in the pipe and affects the effective viscosity condition of the flow in the next cycle.
-Also in natural phenomena, the possibility that the same effect may disturb the cycle is assumed.
-One of the possible phenomena is the fallback of erupted materials in eruption cycles.
-It is suggested from observation of recent eruptions, structure analysis of eruptive materials, and laboratory experiments that the fallback of past erupted material filling the crater shallow part results in modulating the eruption style \citep{Patrick2007, Gurioli2014, DelBello2015a, Capponi2016}.
-It is possible that the deposition of the erupted material at the crater cools the magma head and causes more crystallization, thus disturbing the viscosity condition in the shallow part of the conduit.
+%In the experiment, there was a case that the cycle was disturbed by the past flow in the pipe disturbing the next condition to increase the effective viscosity of the flow.
+%Flow structure disturbance descends in the pipe and affects the effective viscosity condition of the flow in the next cycle.
+%Also in natural phenomena, the possibility that the same effect may disturb the cycle is assumed, for example, the fallback of erupted materials in eruption cycles.
+%It is suggested from observation of recent eruptions, the fallback of past erupted material filling the crater shallow part results in modulating the eruption style \citep{Patrick2007, Gurioli2014, DelBello2015a, Capponi2016}.
+%It is also possible to disturb the periodicity.
+%It is possible that the deposition of the erupted material at the crater cools the magma head and causes more crystallization, thus disturbing the viscosity condition in the shallow part of the conduit.
 
 %また, 先行研究では, 流れの高粘性化は毎サイクル同じように起こると想定されており, 実験においても, 液スラグ再生成の位置が一定であれば, 同じようなサイクルが繰り返されていた \citep{Melnik2005b, Kozono2012}. 
 %一方, 高粘性化が始まる位置が前のサイクルと違えば, 周期も異なる可能性がある. 
 %例えば, 爆発的噴火では火道内の周囲岩体の圧力差により, 火道が変形・崩壊する可能性も指摘されている \citep{Dobran1992, Costa2009a}. 火道の崩壊によって, 火道内の実効粘性の増加の仕方が前回のサイクルと異なる場合, 実験と同様に, 前回とは違う規模と周期をもったサイクルになること考えられる.
-Moreover, in the previous research, it was assumed that the viscosity increase of the flow occurred in every cycle in the same way, and in the experiment, the same cycle was repeated if the position of liquid slug reconstruction was constant \citep{Melnik2005b, Kozono2012}.
-On the other hand, if the position where viscosity increase starts differs from the previous cycle, the cycle may also differ.
-For example, in explosive eruptions, it is also pointed out that the conduit may be deformed or collapsed due to the pressure difference of the surrounding rock in the conduit \citep{Dobran1992, Costa2009a}.
+%Moreover, in the previous research, it was assumed that the viscosity increase of the flow occurred in every cycle in the same way, and in the experiment, the same cycle was repeated if the position of liquid slug reconstruction was constant \citep{Melnik2005b, Kozono2012}.
+%On the other hand, if the position where viscosity increase starts differs from the previous cycle, the cycle may also differ.
+%For example, in explosive eruptions, it is also pointed out that the conduit may be deformed or collapsed due to the pressure difference of the surrounding rock in the conduit \citep{Dobran1992, Costa2009a}.
 If the way of increase of the effective viscosity in the conduit was different from the previous cycle due to the collapse of the conduit, it is considered that the cycle will have a different from the previous one as in the experiment.
+
 
 \section{Conclusion}\label{con}
 We have reported here sawtooth wave-like pressure changes appeared in two-phase flow with pipe-chamber equipment.
 Gradual pressure increased with slug flow while an abrupt pressure drop corresponded to slug-to-annular flow transition.
-There are various waveforms appeared with experimental parameter: Qin and Vc.
+There are various waveforms appeared with experimental parameter: $Q_\mathrm{in}$ and $V_\mathrm{c}$.
 In particular, we have reported the Disturbed STW conditions where the cycles are spontaneously disturbed even in constant experimental parameter and fixed geometry.
 Image analyses revealed that the faster liquid slug ascends, the thicker the film flow below the liquid slug.
 Under the Disturbed STW condition, large surface disturbance of the film flow sometimes occurs at the slug-to-annular flow transition.
@@ -677,7 +686,7 @@ Such surface disturbance grows their thickness while it descends, and sometimes 
 These flow structure disturbances modulate the effective viscosity of the next cycle and disturb the periodicity.
 
 Even if our laboratory-scale system does not have the same physics reproducing large-scale complex natural phenomena, it is important to point out the implications of such a study from a geophysical point of view.
-As discussed above, fallback material or flow structure change due to past eruption have been observed on volcanoes. 
+As discussed above, fallback material or flow structure change due to past eruption have been observed on volcanoes.
 At the laboratory scale, we point out that the flow structure modulation, due to the surface disturbance of the film flow, and halfway reconstruction, may be responsible, for the disturbance in periodicity.
 % If in two-column mode, this environment will change to single-column
 % format so that long equations can be displayed. Use

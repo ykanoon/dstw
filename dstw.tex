@@ -101,51 +101,69 @@ Through image analyses, we point out that the disturbed flow structure by the pa
 \section{Introduction}\label{intro}
 Sawtooth wave-like signals can be found in nature, from laboratory-scale to large-scale natural phenomena. 
 For instance, musical instruments, electrical circuits \citep{VANDERPOL1927, Kanamaru2007}, a model for action potentials of neurons, flow instabilities of boiling channel \citep{Ozawa1979}, geyser quasiperiodic activity \citep{NishimuraIchihara2006}, volcanic explosions or ground deformation \citep{Fujita2004, Iguchi2008, Genco2010}, or stick-slip phenomena as a seismic mechanism \citep{Brace1966}.
-The analysis of the periodic sawtooth signal produced by such systems represents, when possible, a way to investigate the origin, the characteristics and the occurrence of these events.
-It is also important in terms of the prevention of natural disaster to investigate the characteristic of the periodicity of natural events.
+The analysis of the periodic, and even of the nonperiodic signal produced by such systems represent, when possible, a way to investigate the origin, the characteristics and the occurrence of these events.
+
+These types of oscillatory signals are often known as relaxation vibrations from the point of view of nonlinear dynamical systems \citep{Kanamaru2007}.
+When oscillatory behavior occurred in response to a steady input, a nonlinear process of some kind could be essential to its occurrence.
+Nonlinear oscillators that obey ordinary differential equations of third or higher order can exhibit chaotic nonperiodic oscillations.
+In these processes, a static state becomes unstable as nonlinear effects become stronger in response to changes in some parameter, and limit-cycle oscillations begin. With increasing nonlinearity, a nonperiodic oscillation appears \citep{Lorenz1963, Strogatz1994}.
 
 Among these systems, we will focus on the sawtooth wave-like signals produced by flow-induced oscillations of coupling between an elastic capacitance and variable flow resistance.
 At laboratory-scale, for example, self-induced pressure perturbations repeatedly occur during flow from a chamber through a pipe for fluids with complex rheologies with a negative correlation between shear stress and shear rate \citep{DenDoelder1998, Malkin2010}.
 A self-induced oscillation as a "pressure drop oscillation" occurs in systems with a sufficiently compressible volume in a chamber connected upstream to a boiling pipe \citep{Ozawa1979, Kakac2008}.
-%This mechanism applied to explain oscillatory behavior observed in the 2000 Miyakejima caldera collapse \citep{Fujita2004}.
-Cyclic pressure changes were also reported as resulting from alternating periods of Poiseuille flow and plug flow in a vertical pipe \citep{Lane2008}.
+The momentum equation in that system was reduced to a Van der Pol equation that evolved in time according to the second-order differential equation \citep{Kanamaru2007}.
+This mechanism also applied to explain oscillatory behavior observed in the 2000 Miyakejima caldera collapse \citep{Fujita2004}.
+%Cyclic pressure changes were also reported as resulting from alternating periods of Poiseuille flow and plug flow in a vertical pipe \citep{Lane2008}.
 %This mechanism was compared the oscillation to tilt cycles during dome-building eruptions \citep{Lane2008}.
 
 The sawtooth wave-like signal has been observed at large-scale natural phenomena.
-Inflation-deflation cycles of volcanic edifices, for example, are observed at many active systems.
-These signals are commonly reproduced by flow-induced oscillation models that include coupling between pressure changes in magma chamber as an elastic capacitance and effective magma viscosity variabilities in the conduit flow \citep{Barmin2002, Melnik2005b, Kozono2012}.
+Inflation-deflation cycles of volcanic edifices, for example, are observed at many active systems \citep{Fujita2004, Iguchi2008, Genco2010}.
+These signals are commonly reproduced by flow-induced oscillation models that include coupling between pressure changes in magma chamber as an elastic capacitance and effective magma viscosity variabilities in the conduit flow \citep{Melnik2005b, Kozono2012}.
 On the other hand, these existing models do not fully explain the disturbed periodic behavior of actual volcanic eruption systems.
 
-Here, we present the analysis of the sawtooth wave-like pressure changes appeared in a two-phase flow experiment with pipe-chamber equipment \citep{kanno2018}.
+We presented the analysis of the sawtooth wave-like pressure changes appeared in a two-phase flow experiment with pipe-chamber equipment as an analog for volcanic systems \citep{kanno2018}.
 With varying the gas influx into the chamber and a gas volume in the chamber, various kinds of characteristic waveforms were observed.
 The characteristics of unimodal pressure change pattern have been studied in details including mathematical structure comparisons of the existing model for natural phenomena.
-In our study, we focus on the occurrence of the disturbed sawtooth patterns under specific parameters.
+In the previous study, disturbed pressure changes were reported at high gas mass influx rate even when experimental parameters were at a constant value.
+These disturbed periodicities in response to a constant input are not only important for applying disaster preventions but also physically interesting in terms of a dynamical system.
+The number of measurements, however, were not enough to analyze the characteristic of them.
+For the experimental equipment, the field of view in the pipe was also insufficient to conduct image analyses of the flow.
+In this study, we conducted experiments with the higher gas influx conditions and with the new equipment to ensure the field of view in the flow entire flow region.
+As a result, various pressure waveforms were observed than we had expected.
+Here, we mainly focus on the occurrence of the disturbed sawtooth patterns under specific parameters.
 We conduct a detailed image analysis of flow structure and point out that the disturbed flow structure by the past flow modulates the effective flow viscosity and the cycle.
 Finally, possible applications to explain a disturbed period in natural phenomena would be suggested.
 
 \section{Experimental method}\label{met}
 \subsection{Experimental setup}\label{setup}
+The experimental setup basically followed the previous study \citep{kanno2018}.
+The main difference is that we conducted experiments with higher gas mass influx into the chamber. 
+A new pipe-chamber connection is introduced to obtain a clear field of view in the pipe.
+
+An experimental setup was basically the same as the previous study as follows.
 The experimental system comprised a chamber and pipe, where a constant gas flux ($Q_\mathrm{in}$) was maintained in the chamber, and the gas-liquid flow in the pipe (Fig. \ref{Apparatus}). 
 %The chamber, pipe, and connecting-joint were constructed using acrylic glass to ensure rigidity and enable direct observations.
-%At the contact part between this joint and the pipe, an O-ring with a 0.5 mm diameter was inserted to obtain the field of view as much as possible.
-%The pipe was fixed so that the central axis was aligned, and the O-ring was pressed downward by fixing at the top the pipe with a drill chuck used for machine tools.
 The compressible gas volume in the chamber ($V_\mathrm{c}$) is maintained at a constant value during each experimental run.
-$Q_\mathrm{in}$ was regulated by a microneedle valve (IBS FMNV2) that ensured a constant gas flux. 
+%$Q_\mathrm{in}$ was regulated by a microneedle valve (IBS FMNV2) that ensured a constant gas flux. 
 We used sugar syrup diluted in distilled water as the liquid phase. 
 The liquid behaved as a Newtonian fluid, and we adjusted it to \SI{1}{\Pa \s} at the experimental temperature of \SI{25}{\degreeCelsius}.
 The pipe was filled with syrup of \SI{60}{mm} from the bottom of the pipe, and then gas started to inject into the chamber.
 Injected gas flowed through the pipe and forced the liquid ascending in the pipe upward, resulting in gas-liquid flow within the pipe.
+In this study, a new contact part between this joint and the pipe was introduced.
+An O-ring with a 0.5 mm diameter was inserted to obtain the field of view as much as possible.
+The pipe was fixed so that the central axis was aligned, and the O-ring was pressed downward by fixing at the top the pipe with a drill chuck used for machine tools.
 
+Data acquisition setup was the same as the previous study as follows.
 A pressure sensor (KISTLER 701A with a 5011A charge amplifier) was installed to measure pressure changes in the chamber, and a microphone (Br\"uel-Kj\ae r 4193+2669L with a Nexus 2690 signal conditioner) was mounted to the top of the pipe. 
 Data were sampled at \SI{10}{kHz} using a PC-based data acquisition system (DEWETRON DEWE-211).
 A high-speed black-and-white camera (Photoron FASTCAM Mini) was synchronized with the data acquisition PC and was focused on the lowermost \SI{200}{\mm} of the pipe.
-The field of view was illuminated by a flat backlight source. 
-We used a pale-color syrup to improve the visibility of the liquid phase against the gas phase and the pipe. 
+%The field of view was illuminated by a flat backlight source. 
+%We used a pale-color syrup to improve the visibility of the liquid phase against the gas phase and the pipe. 
 %Dark areas were thus shaded according to the thickness of the liquid across the pipe. 
 %We used the resulting distribution of light intensity to observe flow patterns.
 The controlled experimental parameters were $V_\mathrm{c}$, $Q_\mathrm{in}$. 
 These parameters were fixed during each experimental run. 
-The parameters varied from 0.2 to \SI{1.5}{cm^3/s} for $Q_\mathrm{in}$, 20 to \SI{157} {\cm^3} for $V_\mathrm{c}$.
+The parameters varied from 0.2 to \SI{1.5}{cm^3/s} for $Q_\mathrm{in}$, which was extended higher value compared to the previous study, and 20 to \SI{157} {\cm^3} for $V_\mathrm{c}$.
 
 \begin{figure}
 \includegraphics{Newapparatus.eps}%
@@ -222,8 +240,13 @@ MATLAB's Image Processing Toolbox (images segmenter) were used for binarization 
 
 \section{Result}\label{res}
 %パラメータ $Q_\mathrm{in}$, $V_\mathrm{c}$ の値によって計測された様々な特徴的圧力波形と, パイプ内流れの詳細な解析結果を示す. 
-The various characteristic pressure waveforms measured by the values of the parameters $Q_\mathrm{in}$ and $V_ \mathrm{c}$ and detailed analysis results of the flow in the pipe are shown in following part.
+As we conducted the experiment with higher $Q_\mathrm{in}$ than previous experiments, the various characteristic pressure waveforms measured than we had we expected by the values of the parameters $Q_\mathrm{in}$ and $V_ \mathrm{c}$.
+Detailed analysis results of the flow in the pipe are shown in the following part.
+
+
 \subsection{Characteristic pressure waveforms}
+The Unimodal STW and small fluctuations were observed as the previous study. 
+Characteristics are briefly shown in the following part.
 \subsubsection{Unimodal STW}
 %Fig. \ref{ResultPhaseD}内, $\diamondsuit$ で示した実験パラメータにおいて, 一定の時間幅を持ったノコギリ波状の圧力変動が発生した (Fig. \ref{PplotEx}a).
 In the experimental parameters shown as $\diamondsuit$ in Fig. \ref{ResultPhaseD}, sawtooth wave-like pressure change (hereafter referred to as STW) with a fixed time interval was generated (Fig. \ref{PplotEx}a).
@@ -247,6 +270,8 @@ These conditions are referred to as the Small fluctuation conditions hereafter.
 This corresponds to the Non-STW reported in the previous study \citep{kanno2018}.
 The oscillation period estimated from the peak frequency in the pressure waveform spectrum was about 5 - 10 seconds, which was slightly shorter than the Unimodal STW and had a smaller amplitude.
 
+At the large $Q_\mathrm{in}$ conditions, not only nonperiodic pattern as the previous study but also various waveforms were observed as follows.
+
 \subsubsection{Disturbed STW}
 %Unimodal STW 発生領域よりも大きい $Q_\mathrm{in}$ の条件(Fig. \ref{ResultPhaseD}, ◯) では, 圧力波形は STWの特徴を持っているものの, 周期が一定ではない圧力振動パターンが発生する (Fig. \ref{PplotEx}c).
 The pressure waveform has the characteristics of STW but the pressure oscillation pattern was disturbed under larger $Q_\mathrm{in} $ condition (Fig. \ref {ResultPhaseD}, $\bigcirc$).
@@ -255,7 +280,7 @@ This characteristic pressure waveform is referred to as the Disturbed STW hereaf
 %$Q_\mathrm{in}$ がやや大きい領域 (Fig. \ref{ResultPhaseD}, ☆) では, Unimodal パターン (Fig. \ref{PplotEx}d, $t=0\sim10$, $45\sim85$ s) と Bimodal パターン (Fig. \ref{PplotEx}d, $t=10\sim45$, $85\sim100$ s)を持つ STWサイクルが交互に出現する (Fig. \ref{PplotEx}d).
 In the region where $ Q_ \mathrm{in} \times V_\mathrm{c} $ was slightly large (Fig. \ref{ResultPhaseD}, $\star$), an unimodal pattern (Fig. \ref{PplotEx}d, $ t = 0 - 10 $, $ 45 - 85 $) and a Bimodal pattern (Fig. \ref{PplotEx}d, $ t = 10 -  45 $, $ 85 - 100 $ s) alternately appeared (Fig. \ref{PplotEx}d).
 %ヒストグラムは, Trimodal な分布になっているため, 以下, この圧力波形を Trimodal STWとする (Fig. \ref{histogramall}e). 
-This pressure waveform is hereafter referred to as the Trimodal STW (Fig. \ref{histogramall}e) since the histogram has a trimodal distribution.
+This pressure waveform is hereafter referred to as the Trimodal STW (Fig. \ref{histogramall}e) since the histogram has a trimodal distribution. It is firstly reported in this paper.
 %それぞれのピークは Unimodal STWに比較してばらつきを持って分布しているため, Trimodal STWも Disturbed STWの一種であると分類する. Disturbed STW発生時の波形は, $\Delta t$ が大きいほど, STW各サイクルの圧力振幅 ($\Delta P_c$) が大きくなっている (Fig. \ref{histogramall}d, f).
 Trimodal STW was also classified as a type of the Disturbed STW since each peak was distributed with variation compared to Unimodal STW. 
 The pressure amplitude ($ \Delta P_c $) of each STW cycle was proportional to $ \Delta t $ (Fig. \ref{histogramall}d, f).
@@ -270,6 +295,7 @@ Also, under conditions where $ V_ \mathrm{c} $ was small but $ Q_\mathrm{in} $ w
 On the other hand, the gradual pressure increase process characteristic of STW was not observed, and the chamber pressure cycle shaped like "n" was repeated (Fig. \ref{PplotEx}f).
 %このパラメータ下の振動を, n-Type cycle と呼び, Unimodal STWとは区別する.
 The oscillation under this parameter is referred to as an n-Type cycle, which is distinguished from the Unimodal STW.
+These waveforms are also not reported in the previous study.
 
 \begin{figure}
 \includegraphics{ResultPhaseD.png} 
@@ -290,6 +316,7 @@ The oscillation under this parameter is referred to as an n-Type cycle, which is
 \subsection{The flow pattern and waveforms}\label{PandF}
 %作成した流動画像と Fig. \ref{ResultPhaseD}, \ref{PplotEx} で示した特徴的圧力波形とを比較する. 
 The fluid images were compared with the characteristic pressure waveforms shown in Fig. \ref{ResultPhaseD}, \ref{PplotEx}.
+The relationships between the flow pattern and pressure waveforms are basically the same as previously reported and briefly summarized as follows.
 
 %There were two types of flow patterns in the pipe flow. 
 %One is an ascending flow of alternation gas and liquid slugs, referred to as the slug flow.
@@ -342,8 +369,8 @@ Under the Trimodal STW conditions, a single liquid slug ascending occurred in th
 When liquid slug reconstruction occurred in the film flow (e.g., Fig. \ref{TrimimVSpre}, $ t = $ \SI{71}{s}) once, the Bimodal patterns were repeated in which short and long duration STW alternatively appeared.
 
 %特徴的圧力波形発生条件, 特に周期の乱れに対する考察には, 液スラグ再生成及び, 液膜流の構造についてさらに検討する必要がある. 以下, 液スラグと液膜流に関してより詳細な画像解析を用いた検討を行う.
-In order to consider characteristic pressure waveform generation conditions, in particular, the Disturbed STW conditions, it is necessary to further study the structure of liquid slug reconstruction and the film flow.
-In the following, the more detailed image analysis will be shown.
+%In order to consider characteristic pressure waveform generation conditions, in particular, the Disturbed STW conditions, it is necessary to further study the structure of liquid slug reconstruction and the film flow.
+In the following, the more detailed image analysis using new equipment will be shown.
 
 \begin{figure}
 \includegraphics{UnimimVSpre.png} 
@@ -434,12 +461,15 @@ As a result of the period being disturbed (b), the thickness of the film flow wa
 \end{figure} 
 
 \section{Mechanics}\label{mec}
+Firstly, suggested mechanisms for STW occurrences were briefly summarized.
+In the following parts, new insights for the liquid slug shortening are reported and possible mechanisms of the Disturbed STW using image analyses are suggested.
+
 \subsection{STW waveforms}
 The generation mechanism of STW waveform and its generation condition has been examined based on a simple mathematical model \citep{kanno2018}.
 In following, the basic STW mechanisms are briefly summarized.
 %本実験システムは, ガスチャンバーの Elastic capacitance (Eq. (\ref{dpdtex})) と, パイプ内の非線形な圧力損失 (Eq. (\ref{pdropex})), という二つの基本的要素が圧力振動に対して重要な役割を果たしていると考えている (Fig. \ref{Thismodel}).
 
-This experimental system is based on the two basic elements: Elastic capacitance (Eq. (\ref{dpdtex})) and nonlinear pressure drop in the pipe (Eq. (\ref{pdropex})). 
+This experimental system is based on the two basic elements: Elastic capacitance and nonlinear pressure drop in the pipe. 
 They play an important role in oscillation.
 %そこで, 実験の物理量を抽象化してシステムを捉えることによって (Fig. \ref{Thismodel}a), 以下のように基礎方程式を得た. 
 Therefore, by abstracting the physical quantities of the experiment (Fig. \ref{Thismodel}), the basic equations are obtained as follows.
@@ -447,36 +477,36 @@ Therefore, by abstracting the physical quantities of the experiment (Fig. \ref{T
 %ガスチャンバーの Elastic capacitanceの効果として, ガスチャンバー内のガスの圧縮性を考慮し, チャンバーへのガス流入出量の収支が, チャンバー圧力の時間変化を決めると考えた (KEq. (1), Fig. \ref{Thismodel}a).
 It is thought that the balance of the gas flow into and out of the chamber determines the time change of the chamber pressure change, considering the compressibility of the gas in the gas chamber as the effect of the elastic capacitance.
 %チャンバー過剰圧 $p$ が, ガスチャンバーへのガス流量 $Q_\mathrm{in}$ とチャンバーからのガス流出流量 $Q_\alpha$ のバランスによって決まると想定すると, $p$ の時間変化は,
-Assuming that the chamber overpressure $p$ is determined by the balance between the gas flux into the chamber ($ Q_ \mathrm{in} $) and out of the chamber ($ Q_ \alpha $), the time change of $ p $ is given by
-\begin{eqnarray}
-\frac{dp}{dt}=\frac{P_0}{V_\mathrm{c}} \left(  Q_\mathrm{in} - Q_\alpha \right),
-\label{dpdtex}
-\end{eqnarray}
-where $t$ is time, $p$ is the excess pressure in the chamber, $P_0$ is atmospheric pressure.
+%Assuming that the chamber overpressure $p$ is determined by the balance between the gas flux into the chamber ($ Q_ \mathrm{in} $) and out of the chamber ($ Q_ \alpha $), the time change of $ p $ is given by
+%\begin{eqnarray}
+%\frac{dp}{dt}=\frac{P_0}{V_\mathrm{c}} \left(  Q_\mathrm{in} - Q_\alpha \right),
+%\label{dpdtex}
+%\end{eqnarray}
+%where $t$ is time, $p$ is the excess pressure in the chamber, $P_0$ is atmospheric pressure.
 %ここで $P_0$ は大気圧であり, $V_\mathrm{c}$ はチャンバー体積である. 
 %また, 液スラグとガススラグはパイプ内流れ速さ $u$ でパイプ内を上昇するとし, $Q_\alpha = \alpha \pi a^2 u$ と定義する. 
 %ただし, パイプ内半径を $a$, ガス流れ部分の半径を $r$とすると, $\alpha$はパイプの断面積に対するガス流れ部分面積の比で, $\alpha = r^2/a^2$. 
-Both the liquid slug and gas in the pipe move upward at velocity $u$ and define $Q_\alpha = \alpha \pi a^2 u$. 
-The area fraction of gas flow in the pipe as $\alpha = r^2/a^2$ where $a$ is the pipe radius and $r$ is the radius of the gas flow.
+%Both the liquid slug and gas in the pipe move upward at velocity $u$ and define $Q_\alpha = \alpha \pi a^2 u$. 
+%The area fraction of gas flow in the pipe as $\alpha = r^2/a^2$ where $a$ is the pipe radius and $r$ is the radius of the gas flow.
 
 %パイプ内の非線形な圧力損失として, パイプ内気液二相流れが, 半径 $a$の円筒状パイプ内を流れるポアズイユ流であると仮定し, 
 For variable flow resistance, we assume that flow of gas and liquid in the pipe follows the Poiseuille flow relation. 
-Thus, we obtain
-\begin{eqnarray}
-p=\frac{8\mu_\mathrm{E} L}{\pi a^4 \alpha} Q_\alpha  + \rho_\mathrm{v} g L,
-\label{pdropex}
-\end{eqnarray}
+%Thus, we obtain
+%\begin{eqnarray}
+%p=\frac{8\mu_\mathrm{E} L}{\pi a^4 \alpha} Q_\alpha  + \rho_\mathrm{v} g L,
+%\label{pdropex}
+%\end{eqnarray}
 %を得た. ただし, $L$ はパイプ長さ, $\mu_\mathrm{E}$, $\rho_\mathrm{v}$ はパイプ内流れの実効粘性及び実効密度である.
-where $\mu_\mathrm{E}$ and $\rho_\mathrm{v}$ are the average viscosity and density of the slug flow in the pipe, respectively, $L$ is the pipe length, $g$ is gravitational acceleration.
+%where $\mu_\mathrm{E}$ and $\rho_\mathrm{v}$ are the average viscosity and density of the slug flow in the pipe, respectively, $L$ is the pipe length, $g$ is gravitational acceleration.
 
 %パイプ内流れの実効粘性 ($\mu_\mathrm{E}$) 及び, 実効密度 ($\rho_\mathrm{v}$) はそれぞれ, 液スラグ長さ $L_\mathrm{s}$ としたとき, 以下のように与えられる:
-When the liquid slug length is $L_ \mathrm{s}$, $\mu_\mathrm{E}$ and $\rho_\mathrm{v}$ are given as follows:
+When the liquid slug length is $L_ \mathrm{s}$, the average viscosity $\mu_\mathrm{E}$ and density $\rho_\mathrm{v}$ of the slug flow are given as follows:
 \begin{eqnarray}
 \mu_\mathrm{E} &=& \frac{\mu L_\mathrm{s}}{L} + \Gamma_\mu \label{mue},\\
 \rho_\mathrm{v} &=& \frac{\rho L_\mathrm{s}}{L}. \label{rhov}
 \end{eqnarray}
 %ただし, $\mu$と$\rho$は液相の粘性と密度であり, $\Gamma_\mu$ は液スラグの破裂直前に現れる, 表面張力に起因する項である  (KEq. (7)). 
-where $\mu$ and $\rho$ are the viscosity and density of the liquid, and $\Gamma_ \mu$ is a term due to surface tension that appears just before the rupture of the liquid slug \citep{kanno2018}.
+where $\mu$ and $\rho$ are the viscosity and density of the liquid, $L$ is the pipe length, and $\Gamma_ \mu$ is a term due to surface tension that appears just before the rupture of the liquid slug \citep{kanno2018}.
 %ここで, パイプ内流れは, 単純化のために, ひとつの液スラグの上昇を考えた. 
 The flow in the pipe considered the ascending of one liquid slug for simplification.
 %$L_\mathrm{s}$ の時間変化は, パイプ内の液相の体積保存より, 以下のように導出した:
@@ -491,12 +521,13 @@ The time change of $L_\mathrm{s}$ is derived from the conservation of the liquid
   \label{dLdt}
 \end{eqnarray}
 %ただし, $w$ は液膜流平均流下速度 ($w<0$), $x$は液スラグ上端位置, $H_\mathrm{w}$は液膜流上端位置であり, 液膜流の厚みは鉛直方向に一定であるとした.
-where $ w $ is the average falling velocity of the film flow ($ w <0 $), $ x $ is the top position of the liquid slug, $ H_ \mathrm {w} $ is the top position of the film flow, and the thickness of the film flow is assumed to be constant in the vertical direction.
+where $ w $ is the average falling velocity of the film flow ($w<0$), $ x $ is the top position of the liquid slug, $ H_ \mathrm {w} $ is the top position of the film flow, and the thickness of the film flow is assumed to be constant in the vertical direction.
+The area fraction of gas flow in the pipe is represented as $\alpha = r^2/a^2$ where $a$ is the pipe radius and $r$ is the radius of the gas flow.
 %液スラグが液膜流内を上昇するときには ($x<H_\mathrm{w}$), $L_\mathrm{s}$は一定レートで増加し, 液スラグが液膜流上端に達すると ($x=H_\mathrm{w}$), $dL_\mathrm{s}/dt$は流れの速さ ($u$) に比例して, $L_\mathrm{s}$ は小さくなっていく. 
 %When the liquid slug ascends in the film flow ($ x <H_ \mathrm{w} $), $ L_ \mathrm{s} $ increases at a constant rate.
 %$ dL_ \mathrm{s} / dt $ is proportional to the flow velocity ($ u $), $ L_ \mathrm{s} $ becomes smaller when the liquid slug reaches the top of the film flow ($ x = H_ \mathrm{w}$).
 %\cite{kanno2018} では, Eqs. (\ref{dpdtex}) - (\ref{dLdt}) の解の振る舞いを解析的に調べた. 
-The behavior of Eqs. (\ref{dpdtex})-(\ref{dLdt}) has been analytically investigated \citep{kanno2018}.
+The behavior of the equations has been analytically investigated \citep{kanno2018}.
 %この結果, STW発生と, Small fluctuationを分ける条件として, 液スラグが加速しつつ圧力が急減するか, 液スラグが一定速度を保ったまま短くなっていき, パイプ内圧力損失と釣り合ってチャンバー圧力がゆっくり低下するかどうかで決まると提案した. ここでは, より直感的な説明を試みる.
 %As a result, under the conditions that separates STW from small fluctuation, the pressure is rapidly reduced while accelerating the liquid slug, or the liquid slug is shortened while maintaining a constant velocity, and the pressure loss in the pipe is balanced with the chamber pressure.
 Here, we try a more intuitive explanation.
@@ -504,7 +535,7 @@ Here, we try a more intuitive explanation.
 %$x=H_\mathrm{w}$の状況下で, 液スラグの長さが小さくなっていくとき, $Q_\mathrm{in}$ が大きければ, パイプ内流れがより大きくなり, この結果, より速くパイプ内の圧力損失 (液スラグ長さ) が小さくなっていく (Eq. (\ref{dLdt})). 
 %また, $V_\mathrm{c}$ が大きい時には, チャンバーが圧力バッファとして働くため, チャンバーからガスが流出しても, すぐにチャンバー圧力は下がらない (Eq. (\ref{dpdtex})). 
 Under the condition of $ x = H_ \mathrm{w}$, when the length of the liquid slug becomes smaller, if $ Q_ \mathrm {in}$ is larger, the flow in the pipe becomes larger, and as a result, the pressure drop (liquid slug length) in the pipe decreases faster (Eq. (\ref{dLdt})).
-Also, when $ V_ \mathrm{c} $ is large, the chamber pressure acts as a pressure buffer, so even if gas flows out of the chamber, the chamber pressure does not immediately decrease (Eq. (\ref{dpdtex})).
+Also, when $ V_ \mathrm{c} $ is large, the chamber pressure acts as a pressure buffer, so even if gas flows out of the chamber, the chamber pressure does not immediately decrease.
 %$Q_\mathrm{in}\times V_\mathrm{c}$ が大きい領域では, チャンバーの圧力が下がるレートよりもパイプ内の圧力損失が小さくなるレートのほうが大きくなる. 
 %このため, パイプ内流れ速度が大きくなっても, 液スラグが短くなることでパイプ内の圧力損失が小さくなる. 
 %この結果, パイプ内流れ速度は増加し続ける. 
@@ -643,9 +674,18 @@ After all, in Disturbed STW, even if the experimental parameters are constant, t
 \end{figure} 
 
 \section{Discussion}\label{mec}
-\subsection{Similarly to natural systems}
+\sebsection{Implications for nonperiodic phenomena}
+We experimentally reported the nonperiodic behavior with a simple experimental setup.
+Nonperiodic oscillatory response to a steady input is quite interesting from a perspective of dynamical systems.
+The modulation of waveforms is likely to similar that of high-order dynamical systems: in response to changes in some parameter, a static equilibrium state becomes unstable to begin limit-cycle oscillations and more complicated oscillations \citep{Strogatz1994}.
+The most characteristic flow behavior is that disturbed flow structure due to past flow affected the effective viscosity increasing manner in the next cycle.
+In other words, a hysteresis of the past cycle affected the behavior of the future cycle with time delay.
+This behavior might be important to investigate the origin, the characteristic, and the occurrence of these non-periodic oscillations associated with a dynamical system.
+
+\subsection{Implications for natural systems}
 As discussed in the previous study, this STW mechanism universally exists in natural systems, for example, as cyclic eruption systems.
-In that case, our gas chamber is equivalent to a magma chamber in terms of an elastic capacitance. Regarding the flow viscosity, the two-phase flow in the pipe corresponds to the magma flow in the conduit in an eruption system \citep{kanno2018}.
+In that case, our gas chamber is equivalent to a magma chamber in terms of an elastic capacitance. 
+Regarding the flow viscosity, the two-phase flow in the pipe corresponds to the magma flow in the conduit in an eruption system \citep{kanno2018}.
 Previous mathematical models for such natural oscillation could not explain the disturbance in periodicity.
 On the other hand, it is important that our experimental system behaves in disturbed periodicity even in constant parameter and fixed geometry of the equipment.
 It has been discussed that flow structure disturbance due to past eruption could modulate not only eruption style but also periodicity \citep{kanno2018}.
@@ -685,8 +725,9 @@ Under the Disturbed STW condition, large surface disturbance of the film flow so
 Such surface disturbance grows their thickness while it descends, and sometimes halfway reconstruction occurs in the film flow.
 These flow structure disturbances modulate the effective viscosity of the next cycle and disturb the periodicity.
 
-Even if our laboratory-scale system does not have the same physics reproducing large-scale complex natural phenomena, it is important to point out the implications of such a study from a geophysical point of view.
-As discussed above, fallback material or flow structure change due to past eruption have been observed on volcanoes.
+%Even if our laboratory-scale system does not have the same physics reproducing large-scale complex natural phenomena, it is important to point out the implications of such a study from a geophysical point of view.
+This behavior might be important to investigate the origin, the characteristic, and the occurrence of these non-periodic oscillations associated with a high-order dynamical system.
+As discussed above, a hysteresis of the past cycle affected the behavior of the future cycle with time delay.
 At the laboratory scale, we point out that the flow structure modulation, due to the surface disturbance of the film flow, and halfway reconstruction, may be responsible, for the disturbance in periodicity.
 % If in two-column mode, this environment will change to single-column
 % format so that long equations can be displayed. Use

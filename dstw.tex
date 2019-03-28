@@ -183,12 +183,19 @@ Fig. \ref{Rbottom} shows the darkness distribution of the horizontal cross secti
 %パイプ中心に気体が存在する部分 (ガススラグ, 詳細は \S \ref{flowinpipe}) では, パイプ領域内に二つピークが存在し, 管内壁の液膜 (液膜流, 詳細は \S \ref{flowinpipe}) の厚みが薄くなるほどこの二つのピーク間の幅は大きくなる. 
 In the part where gas exists at the center of the pipe, there are two peaks in the pipe area, and as the thickness of the liquid film on the inner wall of the pipe becomes thinner, the width between these two peaks becomes larger.
 %空気, 水あめ, アクリルの屈折率をそれぞれ1, 1.44 (島津製作所, \url{https://www.shimadzu.co.jp/opt/products/ref/ref-app05.html}), 1.49 (島津製作所, \url{https://www.shimadzu.co.jp/opt/products/ref/ref-app03.html}) とした上で, 空気, アクリル部分, 及び色付けした水あめ領域を通過する光路長に比例して光が吸収され, 暗くなると考えた. 
-Assuming that the refractive indices of air, liquid, and acrylics were 1, 1.44, and 1.49, respectively, it was thought that light was absorbed and darkened in proportion to the optical path length passing through the air, the liquid, and the acrylic part.
+Assuming that the refractive indices of air, liquid, and acrylics were 1, 1.44, and 1.49, respectively.
+We calculated how incident ray parallel to the x-axis positive direction passed through the pipe.
+The light source was assumed to be a flat light parallel to the y-axis on the negative side of the x-axis.
+%, it was thought that light was absorbed and darkened in proportion to the optical path length passing through the air, the liquid, and the acrylic part.
+%The light path was assumed to come from the flat backlighting source.
 %カメラへ到達した光が, どのような光路で空気, アクリルパイプ, 液部分を通過して, バックライトの平面光源から到達したのかを, スネルの法則を用いて見積もると, Fig. \ref{raytraseDk} のようになる. 
 Using Snell's law, the light paths are calculated as shown in Fig. \ref{raytraseDk}.
 %ただし, 光が空気及びアクリル部分を通過する際にも, 距離に比例して光が吸収されるとし, 水あめ領域を通過するときには, 空気及びアクリル領域に比べて光を3倍吸収すると考えた.
-When light passed through the air and acrylic part, it was assumed that the light is absorbed in proportion to the distance. 
-It was considered to absorb three times the light compared to the air and acrylic area when passing through the liquid parts.
+When light passed through the air and acrylic part, it was assumed that the light is absorbed in proportion to the distance.
+The total amount of light attenuation was arbitrarily assumed to be 1 per unit length when passing through the air and acrylic parts, and 3 for passing through the liquid part.
+The source of light paths of the edge of the pipe was long because of the flat-backlight source so that the peak always appeared at the edge ( $\pm$ \SI{5}{mm}.
+These results were consistent with the results of the experiments.
+%It was considered to absorb three times the light compared to the air and acrylic area when passing through the liquid parts.
 %仮定する吸収率によって暗度分布が多少異なるが, 暗度のピーク位置には影響を及ぼさない.
 Although the darkness distribution differs somewhat depending on the assumed absorption factor, it does not affect the peak positions of the darkness distributions.
 %実験画像と同様に, パイプ中心に気体がある場合は二つの暗度ピークがみられ, 液膜の厚さが小さくなるほど, ピーク間の幅は大きくなる.
@@ -203,6 +210,8 @@ On the other hand, the cross section where no clear peak of the darkness was jud
 \caption{\label{Rbottom} Horizontal darkness distribution in the pipe.
 (Left) Enlarged views of the flow area in the pipe.
 (Right) The spatial distribution of the darkness of the horizontal section indicated by the red line of the left figure.
+The darker in the left figure, the larger the value.
+The darkness was normalized by the value when the pipe center was the liquid part.
 In the cross section where the gas flow was at the center of the pipe, there were two peaks in the darkness distribution.}
 \end{figure}
 
@@ -212,7 +221,8 @@ In the cross section where the gas flow was at the center of the pipe, there wer
 (Left) The result of using Snell's law to estimate what kind of light path the light reaching the camera had passed through.
 The blue, red, and green lines indicate the light paths that have passed through the air, the acrylic pipe, and the liquid, respectively.
 (Right) Distribution of darkness on the image.
-The larger the value, the longer the liquid part passes and the darker it was.
+The larger the value, the more the total amount of light attenuation was.
+The amout of attenuation was normalized as Fig. \ref{Rbottom}.
 If there is a gas at the center of the pipe, two dark peaks appear in the area inside the pipe width.
 Fig. \ref{Rbottom} corresponds to the figure in the right column.}
 \end{figure}
